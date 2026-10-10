@@ -1,12 +1,12 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:14:17-04:00",
+ "updated": "2026-10-10T15:15:41-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "TEM closed 70.93 on 10/9. Bias neutral, momentum cooling: daily RSI 48, MACD hist -1.87, price above SMA50 65.60 and above SMA200 56.65. Nearest support 70.63, resistance 71.89. Options (2026-10-16) show balanced positioning, expected move ±5.49 (65.44-76.42), max pain 70.0.",
+    "summary": "TEM closed 70.93 on 10/9. Bias neutral, momentum cooling: daily RSI 48, MACD hist -1.87, price above SMA50 65.60 and above SMA200 56.65. Nearest support 70.63, resistance 71.89. Options (2026-10-16) show balanced positioning, expected move \u00b15.49 (65.44-76.42), max pain 70.0.",
     "bias": "neutral, momentum cooling",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -389,7 +389,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "QCOM closed 175.5 on 10/9. Bias neutral, momentum cooling: daily RSI 44, MACD hist -2.34, price above SMA50 173.11 and above SMA200 169.35. Nearest support 173.11, resistance 178.65. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±7.88 (167.62-183.38), max pain 175.0.",
+    "summary": "QCOM closed 175.5 on 10/9. Bias neutral, momentum cooling: daily RSI 44, MACD hist -2.34, price above SMA50 173.11 and above SMA200 169.35. Nearest support 173.11, resistance 178.65. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b17.88 (167.62-183.38), max pain 175.0.",
     "bias": "neutral, momentum cooling",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -750,7 +750,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "IONQ closed 39.89 on 10/9. Bias weak: daily RSI 44, MACD hist -0.35, price below SMA50 41.33 and below SMA200 43.27. Nearest support 39.77, resistance 40.0. Options (2026-10-16) show balanced positioning, expected move ±2.62 (37.27-42.51), max pain 40.0.",
+    "summary": "IONQ closed 39.89 on 10/9. Bias weak: daily RSI 44, MACD hist -0.35, price below SMA50 41.33 and below SMA200 43.27. Nearest support 39.77, resistance 40.0. Options (2026-10-16) show balanced positioning, expected move \u00b12.62 (37.27-42.51), max pain 40.0.",
     "bias": "weak",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1107,7 +1107,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "SPCX closed 162.57 on 10/9. Bias constructive: daily RSI 58, MACD hist +0.98, price above SMA50 144.24. Nearest support 160.0, resistance 165.23. Options (2026-10-12) show call-heavy positioning (bullish lean), expected move ±3.58 (159.0-166.14), max pain 165.0.",
+    "summary": "SPCX closed 162.57 on 10/9. Bias constructive: daily RSI 58, MACD hist +0.98, price above SMA50 144.24. Nearest support 160.0, resistance 165.23. Options (2026-10-12) show call-heavy positioning (bullish lean), expected move \u00b13.58 (159.0-166.14), max pain 165.0.",
     "bias": "constructive",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1468,7 +1468,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "COP closed 134.1 on 10/9. Bias constructive: daily RSI 60, MACD hist +0.49, price above SMA50 129.38 and above SMA200 117.50. Nearest support 132.57, resistance 135.0. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±4.25 (129.85-138.35), max pain 125.0.",
+    "summary": "COP closed 134.1 on 10/9. Bias constructive: daily RSI 60, MACD hist +0.49, price above SMA50 129.38 and above SMA200 117.50. Nearest support 132.57, resistance 135.0. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b14.25 (129.85-138.35), max pain 125.0.",
     "bias": "constructive",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1837,7 +1837,7 @@
    "status": "partial",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "RKLB closed 68.21 on 10/9. Bias weak: daily RSI 46, MACD hist -0.02, price below SMA50 70.53 and below SMA200 81.61. Nearest support 64.51, resistance 69.72. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±4.42 (63.79-72.63), max pain 70.0.",
+    "summary": "RKLB closed 68.21 on 10/9. Bias weak: daily RSI 46, MACD hist -0.02, price below SMA50 70.53 and below SMA200 81.61. Nearest support 64.51, resistance 69.72. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b14.42 (63.79-72.63), max pain 70.0.",
     "bias": "weak",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -2125,7 +2125,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:14:17-04:00",
+  "updated": "2026-10-10T15:15:41-04:00",
   "notices": [
    {
     "type": "info",
@@ -2259,6 +2259,13 @@
     "msg": "Recommended splits updated from analysis (not flat): QCOM 20, COP 17, SPCX 13, FCX 11, RKLB 9.5, TEM 8, IONQ 5.5, cash 16.0%. Deploy-now parts and triggers are in feed.allocation. Recommendations only.",
     "source": "Trading Assistant long-term workups (10/9 close) + app plan planRev 137",
     "at": "2026-10-10T15:14:17-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": null,
+    "msg": "Prices request answered for TEM, QCOM, IONQ, SPCX, COP, RKLB and FCX with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
+    "at": "2026-10-10T15:15:41-04:00"
    }
   ],
   "allocation": {
@@ -2718,7 +2725,7 @@
     "plan": "app request.plan planRev 137 (reanalyze 2026-10-10 15:03 ET)",
     "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
    },
-   "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split ∝ composite² ÷ √IV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R≥1.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
+   "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split \u221d composite\u00b2 \u00f7 \u221aIV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R\u22651.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
    "notes": [
     "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
     "Targets total 84.0% invested, 16.0% cash (10% reserve + 6.0% dry powder for the deeper zones). Deploy-now total 21.68% ($21,675).",
@@ -2730,11 +2737,11 @@
   },
   "prices": {
    "id": null,
-   "requestId": "2d30719f-2b3c-4eb0-80b3-afef3c7510d2",
-   "requestAt": "2026-10-10T19:08:26.562Z",
+   "requestId": "850a118f-0ec5-4506-ba2d-3e1acfe39b7b",
+   "requestAt": "2026-10-10T19:15:10.270Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T15:10:00-04:00",
+   "at": "2026-10-10T15:15:41-04:00",
    "tickers": [
     "TEM",
     "QCOM",
@@ -2759,11 +2766,11 @@
      "low": 69.2,
      "volume": 6275746,
      "vwap": 71.1,
+     "avgVolume20d": 7984555,
      "lastTradeExtHours": 71.1858,
      "lastTradeTime": "2026-10-09T19:59:28-04:00",
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 12:52 ET)",
      "position": null,
-     "avgVolume20d": 7984554.75
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 12:52 ET"
     },
     {
      "ticker": "QCOM",
@@ -2779,11 +2786,11 @@
      "low": 171.79,
      "volume": 7586807,
      "vwap": 174.42,
-     "avgVolume20d": 13584326.35,
+     "avgVolume20d": 13584326,
      "lastTradeExtHours": 175.4,
      "lastTradeTime": "2026-10-09T19:58:42-04:00",
      "position": null,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 14:34 ET)"
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
     },
     {
      "ticker": "IONQ",
@@ -2799,11 +2806,11 @@
      "low": 38.99,
      "volume": 13296796,
      "vwap": 39.6,
-     "avgVolume20d": 23615421.05,
+     "avgVolume20d": 23615421,
      "lastTradeExtHours": 39.8151,
      "lastTradeTime": "2026-10-09T19:59:52-04:00",
      "position": null,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 14:34 ET)"
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
     },
     {
      "ticker": "SPCX",
@@ -2819,11 +2826,11 @@
      "low": 160.61,
      "volume": 93125079,
      "vwap": 162.8,
-     "avgVolume20d": 95831796.75,
+     "avgVolume20d": 95831797,
      "lastTradeExtHours": 162.76,
      "lastTradeTime": "2026-10-09T19:59:58-04:00",
      "position": null,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 14:35 ET)"
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
     },
     {
      "ticker": "COP",
@@ -2839,11 +2846,11 @@
      "low": 132.9447,
      "volume": 3840020,
      "vwap": 134.61,
-     "avgVolume20d": 6825928.8,
+     "avgVolume20d": 6825929,
      "lastTradeExtHours": 134.46,
      "lastTradeTime": "2026-10-09T19:11:49-04:00",
      "position": null,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 14:35 ET)"
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
     },
     {
      "ticker": "RKLB",
@@ -2854,12 +2861,16 @@
      "prevClose": 68.4,
      "change": -0.19,
      "changePct": -0.28,
+     "open": 68.71,
+     "high": 69.25,
+     "low": 66.98,
      "volume": 14943012,
      "vwap": 67.91,
-     "avgVolume20d": 21516510.0,
+     "avgVolume20d": 21516510,
      "lastTradeExtHours": 68.2,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 14:35 ET)",
-     "position": null
+     "lastTradeTime": "2026-10-09T19:58:26-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
     },
     {
      "ticker": "FCX",
@@ -2870,14 +2881,170 @@
      "prevClose": 71.14,
      "change": 2.55,
      "changePct": 3.58,
+     "open": 73.02,
+     "high": 74,
+     "low": 72.505,
      "volume": 6982310,
      "vwap": 73.47,
-     "avgVolume20d": 10793803.9,
+     "avgVolume20d": 10793804,
      "lastTradeExtHours": 73.68,
-     "source": "Alpaca SIP via Trading Assistant system (Research pull, 2026-10-10 15:04 ET)",
-     "position": null
+     "lastTradeTime": "2026-10-09T19:41:55-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 15:04 ET"
     }
-   ]
+   ],
+   "quotes": {
+    "TEM": {
+     "ticker": "TEM",
+     "price": 70.93,
+     "priceC": 7093,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 69.28,
+     "change": 1.65,
+     "changePct": 2.38,
+     "open": 70.2,
+     "high": 72.96,
+     "low": 69.2,
+     "volume": 6275746,
+     "vwap": 71.1,
+     "avgVolume20d": 7984555,
+     "lastTradeExtHours": 71.1858,
+     "lastTradeTime": "2026-10-09T19:59:28-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 12:52 ET"
+    },
+    "QCOM": {
+     "ticker": "QCOM",
+     "price": 175.5,
+     "priceC": 17550,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 176.01,
+     "change": -0.51,
+     "changePct": -0.29,
+     "open": 176.4,
+     "high": 176.4,
+     "low": 171.79,
+     "volume": 7586807,
+     "vwap": 174.42,
+     "avgVolume20d": 13584326,
+     "lastTradeExtHours": 175.4,
+     "lastTradeTime": "2026-10-09T19:58:42-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    "IONQ": {
+     "ticker": "IONQ",
+     "price": 39.89,
+     "priceC": 3989,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 39.45,
+     "change": 0.44,
+     "changePct": 1.12,
+     "open": 40,
+     "high": 40.24,
+     "low": 38.99,
+     "volume": 13296796,
+     "vwap": 39.6,
+     "avgVolume20d": 23615421,
+     "lastTradeExtHours": 39.8151,
+     "lastTradeTime": "2026-10-09T19:59:52-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    "SPCX": {
+     "ticker": "SPCX",
+     "price": 162.57,
+     "priceC": 16257,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 160.57,
+     "change": 2.0,
+     "changePct": 1.25,
+     "open": 165.34,
+     "high": 166.38,
+     "low": 160.61,
+     "volume": 93125079,
+     "vwap": 162.8,
+     "avgVolume20d": 95831797,
+     "lastTradeExtHours": 162.76,
+     "lastTradeTime": "2026-10-09T19:59:58-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
+    "COP": {
+     "ticker": "COP",
+     "price": 134.1,
+     "priceC": 13410,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 134.19,
+     "change": -0.09,
+     "changePct": -0.07,
+     "open": 133.85,
+     "high": 135.561,
+     "low": 132.9447,
+     "volume": 3840020,
+     "vwap": 134.61,
+     "avgVolume20d": 6825929,
+     "lastTradeExtHours": 134.46,
+     "lastTradeTime": "2026-10-09T19:11:49-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
+    "RKLB": {
+     "ticker": "RKLB",
+     "price": 68.21,
+     "priceC": 6821,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 68.4,
+     "change": -0.19,
+     "changePct": -0.28,
+     "open": 68.71,
+     "high": 69.25,
+     "low": 66.98,
+     "volume": 14943012,
+     "vwap": 67.91,
+     "avgVolume20d": 21516510,
+     "lastTradeExtHours": 68.2,
+     "lastTradeTime": "2026-10-09T19:58:26-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
+    "FCX": {
+     "ticker": "FCX",
+     "price": 73.69,
+     "priceC": 7369,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 71.14,
+     "change": 2.55,
+     "changePct": 3.58,
+     "open": 73.02,
+     "high": 74,
+     "low": 72.505,
+     "volume": 6982310,
+     "vwap": 73.47,
+     "avgVolume20d": 10793804,
+     "lastTradeExtHours": 73.68,
+     "lastTradeTime": "2026-10-09T19:41:55-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 15:04 ET"
+    }
+   },
+   "requested": [
+    "TEM",
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP",
+    "RKLB",
+    "FCX"
+   ],
+   "withheld": []
   },
   "reanalyze": {
    "requestId": "c5720904-6261-4510-9788-29bb1accb369",
@@ -3812,7 +3979,7 @@
    "plan": "app request.plan planRev 137 (reanalyze 2026-10-10 15:03 ET)",
    "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
   },
-  "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split ∝ composite² ÷ √IV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R≥1.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
+  "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split \u221d composite\u00b2 \u00f7 \u221aIV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R\u22651.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
   "notes": [
    "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
    "Targets total 84.0% invested, 16.0% cash (10% reserve + 6.0% dry powder for the deeper zones). Deploy-now total 21.68% ($21,675).",
