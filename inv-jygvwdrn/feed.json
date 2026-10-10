@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:24:00-04:00",
+ "updated": "2026-10-10T13:25:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -237,7 +237,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T13:24:00-04:00",
+  "updated": "2026-10-10T13:25:00-04:00",
   "notices": [
    {
     "type": "info",
@@ -277,16 +277,16 @@
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Allocation recommendation ra-mv2nw5bj-4hc: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
+    "msg": "Allocation recommendation ra-mv2nzi3h-29q: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
     "source": "Trading Plan analysis",
-    "at": "2026-10-10T13:24:00-04:00"
+    "at": "2026-10-10T13:25:00-04:00"
    }
   ],
   "allocation": {
-   "id": "ra-mv2nw5bj-4hc",
+   "id": "ra-mv2nzi3h-29q",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T13:24:00-04:00",
+   "at": "2026-10-10T13:25:00-04:00",
    "units": "cents",
    "fundC": 2500000,
    "reserveC": 125000,
@@ -330,8 +330,8 @@
    ],
    "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
    "accountC": 2500000,
-   "requestId": "ra-mv2nw5bj-4hc",
-   "request_id": "ra-mv2nw5bj-4hc",
+   "requestId": "ra-mv2nzi3h-29q",
+   "request_id": "ra-mv2nzi3h-29q",
    "reply": "feed.allocation",
    "tickers": [
     "TEM"
@@ -343,14 +343,15 @@
      "ticker": "TEM",
      "amountC": 813503
     }
-   ]
+   ],
+   "requestAt": "2026-10-10T17:24:42.461Z"
   }
  },
  "allocation": {
-  "id": "ra-mv2nw5bj-4hc",
+  "id": "ra-mv2nzi3h-29q",
   "kind": "recommend-allocation",
   "status": "ok",
-  "at": "2026-10-10T13:24:00-04:00",
+  "at": "2026-10-10T13:25:00-04:00",
   "units": "cents",
   "fundC": 2500000,
   "reserveC": 125000,
@@ -394,8 +395,8 @@
   ],
   "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
   "accountC": 2500000,
-  "requestId": "ra-mv2nw5bj-4hc",
-  "request_id": "ra-mv2nw5bj-4hc",
+  "requestId": "ra-mv2nzi3h-29q",
+  "request_id": "ra-mv2nzi3h-29q",
   "reply": "feed.allocation",
   "tickers": [
    "TEM"
@@ -407,6 +408,7 @@
     "ticker": "TEM",
     "amountC": 813503
    }
-  ]
+  ],
+  "requestAt": "2026-10-10T17:24:42.461Z"
  }
 }
