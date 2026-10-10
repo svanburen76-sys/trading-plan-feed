@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T14:41:24-04:00",
+ "updated": "2026-10-10T14:43:30-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -301,7 +301,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T14:41:24-04:00",
+  "updated": "2026-10-10T14:43:30-04:00",
   "notices": [
    {
     "type": "info",
@@ -385,14 +385,14 @@
     "ticker": null,
     "msg": "Prices request answered for TEM, QCOM, IONQ, SPCX and COP with Friday 10/9 closing data; markets are closed Saturday. RKLB dropped because the app no longer requests it.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
-    "at": "2026-10-10T14:41:24-04:00"
+    "at": "2026-10-10T14:43:30-04:00"
    },
    {
     "type": "info",
     "ticker": null,
     "msg": "QCOM, IONQ, SPCX and COP have no position in the app plan; quotes only.",
     "source": "app request.plan (planRev 48)",
-    "at": "2026-10-10T14:41:24-04:00"
+    "at": "2026-10-10T14:43:30-04:00"
    }
   ],
   "allocation": {
@@ -461,11 +461,11 @@
   },
   "prices": {
    "id": null,
-   "requestId": "a78f168d-065eef20d0ca",
-   "requestAt": "2026-10-10T18:40:03.956Z",
+   "requestId": "49fb5f00-5b53-49f3-bff2-3b3006880cd5",
+   "requestAt": "2026-10-10T18:43:09.120Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T14:41:24-04:00",
+   "at": "2026-10-10T14:43:30-04:00",
    "tickers": [
     "TEM",
     "QCOM",
