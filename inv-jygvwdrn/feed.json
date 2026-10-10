@@ -1,9 +1,9 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T18:43:00-04:00",
+ "updated": "2026-10-10T22:43:13Z",
  "analysis": {
   "TEM": {
-   "status": "ok",
+   "status": "data pending",
    "updated": "2026-10-10T17:41:57-04:00",
    "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 163,
@@ -884,7 +884,8 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 163"
+   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 163",
+   "statusAt": "2026-10-10T22:43:13Z"
   },
   "QCOM": {
    "status": "ok",
@@ -8142,252 +8143,24 @@
   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 163."
  },
  "reanalyze": {
-  "id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
-  "request_id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
-  "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
-  "kind": "reanalyze",
-  "scope": "all",
-  "requestAt": "2026-10-10T21:31:06.393Z",
-  "planRev": 163,
-  "at": "2026-10-10T17:41:57-04:00",
-  "status": "ok",
+  "status": "data pending",
+  "scope": "single",
   "tickers": [
-   "TEM",
-   "QCOM",
-   "IONQ",
-   "SPCX",
-   "COP",
-   "RKLB",
-   "FCX"
+   "TEM"
   ],
-  "pending": [],
-  "reply": "analysis.<TICKER>",
-  "summary": "Reanalyze planRev 163 complete for TEM, QCOM, IONQ, SPCX, COP, RKLB, FCX on the app's $111,000 cash, no positions: recommended splits QCOM 17.75, COP 17.25, SPCX 13.25, FCX 12.75, RKLB 9.0, TEM 5.75, IONQ 5.5, cash 18.75%; deploy now 20.79% ($23,075). Data is the 10/9 close (markets closed). Methodology update: study-agreement thesis, odds estimates and odds-weighted rungs. Recommendations only.",
-  "perTicker": {
-   "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); deploy now 0 sh ($0); agreement +0.23.",
-   "QCOM": "17.75% split; entry 171.3 (zone A, 3.61R to 180.8); deploy now 45 sh ($7,698); agreement +0.23.",
-   "IONQ": "5.5% split; entry 38.1 (zone A, 1.62R to 41.3); deploy now 0 sh ($0); agreement -0.23.",
-   "SPCX": "13.25% split; entry 154.4 (zone A, 1.53R to 170.9); deploy now 23 sh ($3,540); agreement +0.08.",
-   "COP": "17.25% split; entry 130.07 (zone B, 1.95R to 135.7); deploy now 58 sh ($7,532); agreement +0.54.",
-   "RKLB": "9.0% split; entry 64.5 (zone A, 1.75R to 73.2); deploy now 23 sh ($1,484); agreement -0.15.",
-   "FCX": "12.75% split; entry 68.8 (zone B, 2.8R to 75.7); deploy now 41 sh ($2,821); agreement +0.54."
-  },
-  "charts": {
-   "TEM": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-   },
-   "QCOM": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
-   },
-   "IONQ": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
-   },
-   "SPCX": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
-   },
-   "COP": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
-   },
-   "RKLB": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
-   },
-   "FCX": {
-    "charts": [
-     {
-      "tf": "1d",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1d.png"
-     },
-     {
-      "tf": "1h",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1h.png"
-     },
-     {
-      "tf": "15m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_15m.png"
-     },
-     {
-      "tf": "5m",
-      "type": "png",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_5m.png"
-     },
-     {
-      "tf": "all",
-      "type": "pdf",
-      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
-     }
-    ],
-    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
-   }
-  },
-  "allocationId": "ra-split-20261010T1741",
-  "standingRules": {
-   "version": "2",
-   "hash": "4766c73"
+  "requestAt": "2026-10-10T22:42:45.096Z",
+  "planRev": 168,
+  "requestedFromTradingAssistant": "2026-10-10T22:43:13Z",
+  "msg": "Fresh Trading Assistant data requested for TEM; analysis and charts will publish when it arrives.",
+  "at": "2026-10-10T22:43:13Z"
+ },
+ "notices": [
+  {
+   "type": "info",
+   "ticker": "TEM",
+   "msg": "Reanalyze requested (planRev 168); fresh data pending from Trading Assistant.",
+   "source": "Trading Assistant",
+   "at": "2026-10-10T22:43:13Z"
   }
- }
+ ]
 }
