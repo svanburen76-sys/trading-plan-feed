@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:25:00-04:00",
+ "updated": "2026-10-10T13:26:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -283,10 +283,10 @@
    }
   ],
   "allocation": {
-   "id": "ra-mv2nzi3h-29q",
+   "id": "ra-mv2o0okb-e4bg",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T13:25:00-04:00",
+   "at": "2026-10-10T13:26:00-04:00",
    "units": "cents",
    "fundC": 2500000,
    "reserveC": 125000,
@@ -330,8 +330,8 @@
    ],
    "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
    "accountC": 2500000,
-   "requestId": "ra-mv2nzi3h-29q",
-   "request_id": "ra-mv2nzi3h-29q",
+   "requestId": "ra-mv2o0okb-e4bg",
+   "request_id": "ra-mv2o0okb-e4bg",
    "reply": "feed.allocation",
    "tickers": [
     "TEM"
@@ -348,10 +348,10 @@
   }
  },
  "allocation": {
-  "id": "ra-mv2nzi3h-29q",
+  "id": "ra-mv2o0okb-e4bg",
   "kind": "recommend-allocation",
   "status": "ok",
-  "at": "2026-10-10T13:25:00-04:00",
+  "at": "2026-10-10T13:26:00-04:00",
   "units": "cents",
   "fundC": 2500000,
   "reserveC": 125000,
@@ -395,8 +395,8 @@
   ],
   "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
   "accountC": 2500000,
-  "requestId": "ra-mv2nzi3h-29q",
-  "request_id": "ra-mv2nzi3h-29q",
+  "requestId": "ra-mv2o0okb-e4bg",
+  "request_id": "ra-mv2o0okb-e4bg",
   "reply": "feed.allocation",
   "tickers": [
    "TEM"
