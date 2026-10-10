@@ -1,10 +1,10 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T14:05:06-04:00",
+ "updated": "2026-10-10T14:05:39-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
-   "updated": "2026-10-10T13:52:25-04:00",
+   "updated": "2026-10-10T14:05:39-04:00",
    "plan": {
     "summary": "HOLD the 101 shares with the Nov 20 65 put in place. TEM is consolidating 66.7\u201373 after the 10/6 reversal from 87.99, sitting on the 61.8% retracement (69.70) of the 57.72\u219289.09 swing and above the rising SMA50 (65.60). Bias neutral-to-constructive while daily closes hold above 66.7; the put caps downside below 65.",
     "bias": "neutral / constructive above 66.7",
@@ -258,11 +258,11 @@
     ],
     "strategy": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
     "ladder_review": {
-     "R1 12@62.38": "Good spot: inside the untested bullish order block 57.72-62.81 and just under the 78.6% fib area below 64.43.",
-     "R2 12@59.36": "Good spot: deeper in the same order block.",
-     "R3 19@56.34": "Just under the SMA200 (56.65) and below the order block; only fill if the uptrend from the July low (40.77) still holds on the weekly.",
-     "R4 21@53.32": "Below all mapped support; treat as a trend-break level and re-check before it fills.",
-     "hedge_note": "Every ladder rung adds unhedged shares (the put covers 100 shares only), so each fill raises downside below 65.",
+     "R1 18@62.38": "Good spot: inside the untested bullish order block 57.72-62.81, below the 65 put wall and the 78.6% fib 64.43.",
+     "R2 18@59.36": "Good spot: deeper in the same order block.",
+     "R3 29@56.34": "Just under the SMA200 (56.65) and below the order block; only fill if the weekly uptrend from the July low (40.77) still holds.",
+     "R4 31@53.32": "Below all mapped support; a trend-break level, so re-check before it fills.",
+     "hedge_note": "The put covers 100 shares only. All four rungs add 96 unhedged shares (about $5,500), so each fill raises downside below 65. Consider sizing rungs so total unhedged exposure stays within your risk limit, or add a second put if the ladder fills.",
      "trim 7@87.59": "Sits inside the bearish order block 84-88 (10/6 distribution bar), a sensible first trim."
     }
    },
@@ -297,11 +297,11 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
    "sources": "Trading Assistant system (Research raw pull: Alpaca SIP bars, Alpaca OPRA options), as of 2026-10-10 12:53 ET",
-   "requestId": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f"
+   "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225"
   }
  },
  "feed": {
-  "updated": "2026-10-10T14:05:06-04:00",
+  "updated": "2026-10-10T14:05:39-04:00",
   "notices": [
    {
     "type": "info",
@@ -365,6 +365,20 @@
     "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
     "at": "2026-10-10T14:05:06-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 48 answered: markets closed Saturday, so levels, studies and charts are unchanged from the 10/9-close study; ladder review updated for the new rung sizes (R1-R4 = 96 unhedged shares). App plan shows 100 shares; Seth's Schwab figure of 101 at 70.07 is used.",
+    "source": "Alpaca SIP/OPRA via Trading Assistant system, 10/9 close",
+    "at": "2026-10-10T14:05:39-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 48: 4h and 1w are covered in the analysis but not charted (charts are 1d, 1h, 15m, 5m). Gamma flip and live order-book walls n/a; open-interest walls used.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T14:05:39-04:00"
    }
   ],
   "allocation": {
@@ -528,18 +542,18 @@
    }
   },
   "reanalyze": {
-   "id": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
-   "request_id": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
-   "requestId": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
+   "id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
+   "request_id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
+   "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225",
    "kind": "reanalyze",
    "scope": "single",
    "tickers": [
     "TEM"
    ],
-   "planRev": 35,
-   "requestAt": "2026-10-10T17:47:05.869Z",
+   "planRev": 48,
+   "requestAt": "2026-10-10T18:04:44.569Z",
    "status": "ok",
-   "at": "2026-10-10T13:48:07-04:00",
+   "at": "2026-10-10T14:05:39-04:00",
    "reply": "analysis.TEM",
    "summary": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
    "next_moves": [
@@ -568,7 +582,35 @@
      "when": "before 11/3 earnings (unconfirmed)",
      "move": "Keep the put through earnings; it expires 11/20, after the report."
     }
-   ]
+   ],
+   "charts": [
+    {
+     "tf": "1d",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
+    },
+    {
+     "tf": "1h",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
+    },
+    {
+     "tf": "15m",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
+    },
+    {
+     "tf": "5m",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
+    },
+    {
+     "tf": "all",
+     "type": "pdf",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+    }
+   ],
+   "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
   }
  },
  "allocation": {
