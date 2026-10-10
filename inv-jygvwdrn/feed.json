@@ -1,12 +1,12 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:54:01-04:00",
+ "updated": "2026-10-10T15:54:30-04:00",
  "analysis": {
   "TEM": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
-   "planRev": 140,
+   "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
+   "planRev": 141,
    "plan": {
     "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($5,750), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
     "bias": "pullback inside a larger range",
@@ -624,7 +624,8 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140"
+   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
+   "pendingSince": "2026-10-10T15:54:30-04:00"
   },
   "QCOM": {
    "status": "ok",
@@ -4204,8 +4205,15 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:54:01-04:00",
+  "updated": "2026-10-10T15:54:30-04:00",
   "notices": [
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 141 for TEM: fresh data requested from Trading Assistant; analysis.TEM shows previous results until the update lands.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T15:54:30-04:00"
+   },
    {
     "type": "info",
     "ticker": null,
@@ -6535,22 +6543,18 @@
   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 140."
  },
  "reanalyze": {
-  "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
-  "requestAt": "2026-10-10T19:19:39.586Z",
-  "planRev": 140,
-  "at": "2026-10-10T15:32:53-04:00",
-  "status": "ok",
+  "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
+  "requestAt": "2026-10-10T19:53:42.423Z",
+  "planRev": 141,
+  "at": "2026-10-10T15:54:30-04:00",
+  "status": "pending",
   "tickers": [
-   "TEM",
-   "QCOM",
-   "IONQ",
-   "SPCX",
-   "COP",
-   "RKLB",
-   "FCX"
+   "TEM"
   ],
-  "pending": [],
-  "summary": "Reanalyze planRev 140 complete for TEM, QCOM, IONQ, SPCX, COP, RKLB, FCX: recommended splits QCOM 18.0, COP 17.25, SPCX 13.75, FCX 12.75, RKLB 9.5, IONQ 6.0, TEM 5.75, cash 17.0%; deploy now 20.96%. Markets closed since the 10/9 close, so all data is current as of that close. Recommendations only.",
+  "pending": [
+   "TEM"
+  ],
+  "summary": "Reanalyze planRev 141 (TEM only) received: data pending from Trading Assistant; fresh TEM analysis, strategy and charts will follow. Other tickers unchanged. Recommendations only.",
   "perTicker": {
    "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); 0% now.",
    "QCOM": "18.0% split; entry 171.3 (zone A, 3.61R to 180.8); 40% now (rungs 1-2, 171.",
@@ -6772,6 +6776,7 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
    }
   },
-  "allocationId": "ra-split-20261010T1532"
+  "allocationId": "ra-split-20261010T1532",
+  "scope": "single"
  }
 }
