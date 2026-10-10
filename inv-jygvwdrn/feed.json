@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T17:50:16-04:00",
+ "updated": "2026-10-10T18:43:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -5988,7 +5988,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T17:50:16-04:00",
+  "updated": "2026-10-10T18:43:00-04:00",
   "notices": [
    {
     "type": "info",
@@ -6031,6 +6031,13 @@
     "msg": "Prices request answered for TEM with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
     "at": "2026-10-10T17:50:16-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Prices request re-answered for TEM with Friday 10/9 closing data (70.93); markets are closed for the weekend, so the latest Trading Assistant pull is still current.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
+    "at": "2026-10-10T18:43:00-04:00"
    }
   ],
   "allocation": {
@@ -6931,11 +6938,11 @@
   },
   "prices": {
    "id": null,
-   "requestId": "3956f622-6895-4ec9-882f-29ae46e86ddc",
-   "requestAt": "2026-10-10T21:49:22.796Z",
+   "requestId": "06122d68-1924-408d-9f01-06b8c9706330",
+   "requestAt": "2026-10-10T22:42:00.285Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T17:50:16-04:00",
+   "at": "2026-10-10T18:43:00-04:00",
    "tickers": [
     "TEM"
    ],
