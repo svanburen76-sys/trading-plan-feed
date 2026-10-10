@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:15:41-04:00",
+ "updated": "2026-10-10T15:20:33-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -2125,7 +2125,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:15:41-04:00",
+  "updated": "2026-10-10T15:20:33-04:00",
   "notices": [
    {
     "type": "info",
@@ -2266,6 +2266,13 @@
     "msg": "Prices request answered for TEM, QCOM, IONQ, SPCX, COP, RKLB and FCX with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
     "at": "2026-10-10T15:15:41-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "ALL",
+    "msg": "Reanalyze planRev 140 received; fresh data pending from Trading Assistant.",
+    "source": "Trading Assistant",
+    "at": "2026-10-10T15:20:33-04:00"
    }
   ],
   "allocation": {
@@ -3990,11 +3997,11 @@
   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 137."
  },
  "reanalyze": {
-  "requestId": "c5720904-6261-4510-9788-29bb1accb369",
-  "requestAt": "2026-10-10T19:03:20.093Z",
-  "planRev": 137,
-  "at": "2026-10-10T15:07:11-04:00",
-  "status": "partial",
+  "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+  "requestAt": "2026-10-10T19:19:39.586Z",
+  "planRev": 140,
+  "at": "2026-10-10T15:20:33-04:00",
+  "status": "data pending",
   "tickers": [
    "TEM",
    "QCOM",
@@ -4005,463 +4012,14 @@
    "FCX"
   ],
   "pending": [
-   "FCX",
-   "RKLB (long-term workup)"
+   "TEM",
+   "QCOM",
+   "IONQ",
+   "SPCX",
+   "COP",
+   "RKLB",
+   "FCX"
   ],
-  "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. Each first tranche is the smaller of 40% of the name's target or about $750 of risk to its hard stop. Recommendations only; no trades placed or recorded.",
-  "allocation": {
-   "account": 100000,
-   "reserve_pct": 10,
-   "riskPerNameUsd": 750.0,
-   "items": {
-    "TEM": {
-     "targetPct": 22.5,
-     "targetUsd": 22500,
-     "sector": "AI health/tech",
-     "entry_zone_A": [
-      66.71,
-      68.66
-     ],
-     "zone_A_mid": 67.69,
-     "hard_stop": 61.71,
-     "tranche_A_shares": 125,
-     "tranche_A_usd": 8461.25,
-     "tranche_A_risk_usd": 747.5,
-     "targets": [
-      76.5,
-      81.7,
-      88.0
-     ],
-     "R_mid_to_T1": 1.48,
-     "app_next_rung": "Buy-now 98@68.80",
-     "app_next_trim": "4@82.56",
-     "hedge": "Largest target (22.5%) with weak R at buy-now: if the full ladder fills, pair each 100 shares with a protective put near the zone B floor (Nov 20 65 put quoted 4.53 mid at the 10/9 close) or size rungs to 100-share lots.",
-     "zones": [
-      {
-       "tranche": "A",
-       "zone": [
-        66.71,
-        68.66
-       ],
-       "hard_stop": 61.71,
-       "close_stop": 63.61,
-       "invalidation": "8/25 swing low 63.61",
-       "why": "10/7-10/8 lows 68.66/66.71 (10/8 not yet a confirmed pivot); 9/02 pivot high 67.10 now support; SMA50 65.60; VP20 VAL 68.32; VP12m HVN 67.2-68.6"
-      },
-      {
-       "tranche": "B",
-       "zone": [
-        57.72,
-        60.06
-       ],
-       "hard_stop": 53.4,
-       "close_stop": 54.81,
-       "invalidation": "8/19 breakaway-gap top 54.81 (gap 51.10-54.81)",
-       "why": "pivot lows 9/14 57.72 and 9/02 60.06; SMA100 58.33 / SMA200 56.65"
-      },
-      {
-       "tranche": "C",
-       "zone": [
-        49.35,
-        51.1
-       ],
-       "hard_stop": 43.39,
-       "close_stop": 44.8,
-       "invalidation": "8/06 swing low 44.80",
-       "why": "8/18 pivot low 49.35; 8/19 gap bottom 51.10; VP12m POC 50.4 / HVN 47.6-51.8"
-      }
-     ],
-     "LT_invalidation": {
-      "px": 39.36,
-      "why": "weekly close below 2026 low 40.77 (7/28) - 0.25xATR (S-081 s2 rounding)"
-     },
-     "score": 71.5,
-     "buy_now_check": {
-      "level": 68.96,
-      "position": "ABOVE zone A top 68.66 by 0.30 (0.05xATR)",
-      "governing_zone": "A (nearest; entry outside)",
-      "R_at_level": 1.04,
-      "R_class": "FAIL"
-     },
-     "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-     "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "QCOM": {
-     "targetPct": 13.5,
-     "targetUsd": 13500,
-     "sector": "semis/tech",
-     "entry_zone_A": [
-      170.51,
-      172.12
-     ],
-     "zone_A_mid": 171.31,
-     "hard_stop": 168.67,
-     "tranche_A_shares": 31,
-     "tranche_A_usd": 5310.61,
-     "tranche_A_risk_usd": 81.84,
-     "targets": [
-      180.8,
-      194.2,
-      205.8
-     ],
-     "R_mid_to_T1": 3.59,
-     "app_next_rung": "Buy-now 23@170.23",
-     "app_next_trim": "1@204.28",
-     "hedge": "Best setup of the group (highest score, R passes at buy-now). No hedge needed for tranche A; a put under 165 could cover a full fill into the 11/4 earnings.",
-     "zones": [
-      {
-       "tranche": "A",
-       "zone": [
-        170.51,
-        172.12
-       ],
-       "hard_stop": 168.67,
-       "close_stop": 170.51,
-       "invalidation": "9/14 swing low 170.51 (= zone floor; launch low of the 205.85 rally)",
-       "why": "9/14 pivot low 170.51; 9/08 gap 170.63-172.04; 7/02 pivot 172.12; 10/8 low 171.02; SMA200 169.35 / SMA50 173.11; VP20 HVN 173.74"
-      },
-      {
-       "tranche": "B",
-       "zone": [
-        155.22,
-        156.72
-       ],
-       "hard_stop": 149.84,
-       "close_stop": 151.68,
-       "invalidation": "8/04 breakaway-gap bottom 151.68 (gap 151.68-155.31)",
-       "why": "pivot lows 8/06 155.22, 8/24 156.22, 8/18 156.72; 8/04 gap top 155.31"
-      }
-     ],
-     "LT_invalidation": {
-      "px": 119.63,
-      "why": "weekly close below 2026 low 121.99 (4/07) - 0.25xATR, round-number rule (S-081 s2)"
-     },
-     "score": 89.0,
-     "buy_now_check": {
-      "level": 170.23,
-      "position": "BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top",
-      "governing_zone": "A (nearest; entry outside)",
-      "R_at_level": 6.78,
-      "R_class": "PASS"
-     },
-     "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-     "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "IONQ": {
-     "targetPct": 4.5,
-     "targetUsd": 4500,
-     "sector": "quantum/tech",
-     "entry_zone_A": [
-      37.65,
-      38.56
-     ],
-     "zone_A_mid": 38.11,
-     "hard_stop": 36.13,
-     "tranche_A_shares": 47,
-     "tranche_A_usd": 1791.17,
-     "tranche_A_risk_usd": 93.06,
-     "targets": [
-      41.3,
-      43.7,
-      47.3
-     ],
-     "R_mid_to_T1": 1.62,
-     "app_next_rung": "Buy-now 34@38.69",
-     "app_next_trim": "1@46.43",
-     "hedge": "Small speculative weight (4.5%); size is the hedge, no option needed.",
-     "zones": [
-      {
-       "tranche": "A",
-       "zone": [
-        37.65,
-        38.56
-       ],
-       "hard_stop": 36.13,
-       "close_stop": 36.78,
-       "invalidation": "9/02 swing low 36.78",
-       "why": "9/17 gap 37.65-38.09; 9/14 pivot high 38.56 now support; 10/8 low 38.83 just above"
-      },
-      {
-       "tranche": "B",
-       "zone": [
-        35.0,
-        35.84
-       ],
-       "hard_stop": 31.16,
-       "close_stop": 31.81,
-       "invalidation": "7/29 swing low 31.81",
-       "why": "9/14 pivot low 35.00; VP12m HVN 35.84; (put wall M 35 confirm only)"
-      }
-     ],
-     "LT_invalidation": {
-      "px": 25.24,
-      "why": "weekly close below 2026 low 25.89 (3/30) - 0.25xATR"
-     },
-     "score": 67.5,
-     "buy_now_check": {
-      "level": 38.69,
-      "position": "ABOVE zone A top 38.56 by 0.13 (0.05xATR)",
-      "governing_zone": "A (nearest; entry outside)",
-      "R_at_level": 1.02,
-      "R_class": "FAIL"
-     },
-     "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-     "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "SPCX": {
-     "targetPct": 18,
-     "targetUsd": 18000,
-     "sector": "space",
-     "entry_zone_A": [
-      152.6,
-      155.41
-     ],
-     "zone_A_mid": 154.0,
-     "hard_stop": 143.59,
-     "tranche_A_shares": 46,
-     "tranche_A_usd": 7084.0,
-     "tranche_A_risk_usd": 478.86,
-     "targets": [
-      170.9,
-      176.4,
-      185.0
-     ],
-     "R_mid_to_T1": 1.62,
-     "app_next_rung": "Buy-now 34@157.69",
-     "app_next_trim": "1@189.23",
-     "hedge": "18% target in a 4-month-old name with high IV: consider a put at or below the 145 swing low (Nov monthly) once zone A fills, or keep size to the risk budget instead of the full target.",
-     "zones": [
-      {
-       "tranche": "A",
-       "zone": [
-        152.6,
-        155.41
-       ],
-       "hard_stop": 143.59,
-       "close_stop": 145.36,
-       "invalidation": "9/28 swing low 145.36 (last higher low of the Sept base)",
-       "why": "9/08 pivot high 155.00 now support; SMA20 154.40 / EMA21 155.38; AVWAP(9/15 low) 155.41; VP20 HVN 152.6-154.7; VP-since-IPO HVN 153.12"
-      },
-      {
-       "tranche": "B",
-       "zone": [
-        142.87,
-        145.36
-       ],
-       "hard_stop": 136.4,
-       "close_stop": 138.17,
-       "invalidation": "9/02 swing low 138.17",
-       "why": "pivot lows 9/15 142.87, 9/10 144.89, 9/28 145.36; SMA50 144.24; VP20 VAL 145.6; VP-since-IPO HVN 142.56"
-      }
-     ],
-     "LT_invalidation": {
-      "px": 102.64,
-      "why": "weekly close below post-IPO low 104.83 (8/03) - 0.25xATR, round-number rule"
-     },
-     "score": 79.5,
-     "buy_now_check": {
-      "level": 157.69,
-      "position": "ABOVE zone A top 155.41 by 2.28 (0.32xATR)",
-      "governing_zone": "A (nearest; entry outside)",
-      "R_at_level": 0.94,
-      "R_class": "FAIL"
-     },
-     "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-     "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "COP": {
-     "targetPct": 13.5,
-     "targetUsd": 13500,
-     "sector": "energy (oil)",
-     "entry_zone_A": [
-      132.0,
-      132.57
-     ],
-     "zone_A_mid": 132.28,
-     "hard_stop": 127.18,
-     "tranche_A_shares": 40,
-     "tranche_A_usd": 5291.2,
-     "tranche_A_risk_usd": 204.0,
-     "targets": [
-      135.7,
-      141.2
-     ],
-     "R_mid_to_T1": 0.67,
-     "app_next_rung": "Buy-now 31@130.07",
-     "app_next_trim": "1@156.08",
-     "hedge": "Oil exposure: COP diversifies the tech/space weight. Thin R to T1 now; a put near the 125 wall is the cheapest protection if bought before an oil-moving event.",
-     "zones": [
-      {
-       "tranche": "A",
-       "zone": [
-        132.0,
-        132.57
-       ],
-       "hard_stop": 127.18,
-       "close_stop": 128.0,
-       "invalidation": "8/27 swing low 128.00",
-       "why": "nearest >=2-method zone: 9/04 pivot low 132.57; 10/8 gap 132.12-132.13; 10/7 high 132.115; VP20 HVN 132.0"
-      },
-      {
-       "tranche": "B",
-       "zone": [
-        129.36,
-        130.97
-       ],
-       "hard_stop": 127.18,
-       "close_stop": 128.0,
-       "invalidation": "8/27 swing low 128.00",
-       "why": "9/24 pivot high 130.97 and 9/17 low 130.97 now support; SMA20 129.97 / EMA21 130.04 / SMA50 129.38; VP20 HVN 129.36"
-      },
-      {
-       "tranche": "C",
-       "zone": [
-        123.46,
-        125.4
-       ],
-       "hard_stop": 118.35,
-       "close_stop": 119.17,
-       "invalidation": "8/10 breakaway-gap top 119.17 (gap 118.52-119.17)",
-       "why": "pivot lows 9/29 123.46, 9/22 124.47; VP20 POC 125.4 / VAL 124.74; VP12m HVN 123.93"
-      }
-     ],
-     "LT_invalidation": {
-      "px": 92.31,
-      "why": "weekly close below 2026 low 93.13 (1/02) - 0.25xATR"
-     },
-     "score": 72.0,
-     "buy_now_check": {
-      "level": 130.07,
-      "position": "INSIDE zone B",
-      "governing_zone": "B",
-      "R_at_level": 1.95,
-      "R_class": "PASS"
-     },
-     "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-     "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "RKLB": {
-     "targetPct": 9,
-     "targetUsd": 9000,
-     "sector": "space",
-     "entry_zone_A": [
-      61.45,
-      64.51
-     ],
-     "zone_A_mid": 62.98,
-     "hard_stop": 58.49,
-     "tranche_A_shares": 57,
-     "tranche_A_usd": 3589.86,
-     "tranche_A_risk_usd": 255.93,
-     "targets": [
-      69.72,
-      72.94
-     ],
-     "R_mid_to_T1": 0.87,
-     "app_next_rung": "Buy-now 40@66.16",
-     "app_next_trim": "2@79.39",
-     "hedge": "Space overlap with SPCX (27% combined target); treat RKLB and SPCX as one bucket for risk and hedge with a put only if both fill.",
-     "zones": null,
-     "LT_invalidation": null,
-     "score": null,
-     "buy_now_check": null,
-     "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
-     "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    },
-    "FCX": {
-     "status": "pending",
-     "targetPct": 9,
-     "targetUsd": 9000,
-     "note": "Long-term workup requested from Trading Assistant; expected in about 10-20 minutes."
-    }
-   },
-   "notes": [
-    "Concentration: tech/AI names (TEM, QCOM, IONQ) total 40.5% and space (SPCX, RKLB) 27% of the plan; COP and FCX are the only diversifiers. Keep the 10% reserve unspent until a zone is hit.",
-    "Risk per name: each first tranche is capped at the smaller of 40% of the target or about $750 (0.75% of the $100,000 account) of loss to its hard stop, so wide-stop names like TEM hit the risk cap while tight-stop names hit the 40% cap.",
-    "Setup ranking by Trading Assistant's long-term score: QCOM 89, SPCX 79.5, COP 72, TEM 71.5, IONQ 67.5 (RKLB, FCX pending). Only QCOM passes R at the app's buy-now price; the rest are better filled at zone A.",
-    "News and macro (oil vs geopolitics for COP, copper/China for FCX, earnings dates) feed the hedge notes; QCOM reports 11/4."
-   ]
-  },
-  "items": {
-   "TEM": {
-    "bias": "neutral, momentum cooling",
-    "buy_zone": [
-     66.71,
-     68.66
-    ],
-    "stop": 61.71,
-    "targets": [
-     76.5,
-     81.7,
-     88.0
-    ]
-   },
-   "QCOM": {
-    "bias": "neutral, momentum cooling",
-    "buy_zone": [
-     170.51,
-     172.12
-    ],
-    "stop": 168.67,
-    "targets": [
-     180.8,
-     194.2,
-     205.8
-    ]
-   },
-   "IONQ": {
-    "bias": "weak",
-    "buy_zone": [
-     37.65,
-     38.56
-    ],
-    "stop": 36.13,
-    "targets": [
-     41.3,
-     43.7,
-     47.3
-    ]
-   },
-   "SPCX": {
-    "bias": "constructive",
-    "buy_zone": [
-     152.6,
-     155.41
-    ],
-    "stop": 143.59,
-    "targets": [
-     170.9,
-     176.4,
-     185.0
-    ]
-   },
-   "COP": {
-    "bias": "constructive",
-    "buy_zone": [
-     132.0,
-     132.57
-    ],
-    "stop": 127.18,
-    "targets": [
-     135.7,
-     141.2
-    ]
-   },
-   "RKLB": {
-    "bias": "weak",
-    "buy_zone": [
-     61.45,
-     64.51
-    ],
-    "stop": 58.49,
-    "targets": [
-     69.72,
-     72.94
-    ]
-   },
-   "FCX": {
-    "status": "pending"
-   }
-  }
+  "summary": "Fresh long-term data requested from Trading Assistant for all 7 names (about 10-20 min). New analysis, splits, entries and charts will replace this when it arrives. Earlier analysis below is from planRev 137 and is not the answer to this request."
  }
 }
