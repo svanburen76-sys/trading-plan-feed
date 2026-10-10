@@ -348,7 +348,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (same ~$750 budget per name), capped at 40% of the $22,500 target; app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -708,7 +708,7 @@
             "R_class": "PASS"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -1064,7 +1064,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (same ~$750 budget per name), capped at 40% of the $4,500 target; app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -1424,7 +1424,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (same ~$750 budget per name), capped at 40% of the $18,000 target; app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -1792,7 +1792,7 @@
             "R_class": "PASS"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -2056,7 +2056,7 @@
           "score": null,
           "buy_now_check": null,
           "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
-          "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (same ~$750 budget per name), capped at 40% of the $9,000 target; Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         }
       },
       "deep": {
@@ -2594,7 +2594,7 @@
         "FCX",
         "RKLB (long-term workup)"
       ],
-      "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. First tranches are sized to about $750 risk each. Recommendations only; no trades placed or recorded.",
+      "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. Each first tranche is the smaller of 40% of the name's target or about $750 of risk to its hard stop. Recommendations only; no trades placed or recorded.",
       "allocation": {
         "account": 100000,
         "reserve_pct": 10,
@@ -2670,7 +2670,7 @@
               "R_class": "FAIL"
             },
             "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-            "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (same ~$750 budget per name), capped at 40% of the $22,500 target; app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "QCOM": {
             "targetPct": 13.5,
@@ -2731,7 +2731,7 @@
               "R_class": "PASS"
             },
             "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-            "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "IONQ": {
             "targetPct": 4.5,
@@ -2792,7 +2792,7 @@
               "R_class": "FAIL"
             },
             "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-            "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (same ~$750 budget per name), capped at 40% of the $4,500 target; app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "SPCX": {
             "targetPct": 18,
@@ -2853,7 +2853,7 @@
               "R_class": "FAIL"
             },
             "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-            "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (same ~$750 budget per name), capped at 40% of the $18,000 target; app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "COP": {
             "targetPct": 13.5,
@@ -2924,7 +2924,7 @@
               "R_class": "PASS"
             },
             "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-            "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "RKLB": {
             "targetPct": 9,
@@ -2952,7 +2952,7 @@
             "score": null,
             "buy_now_check": null,
             "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
-            "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (same ~$750 budget per name), capped at 40% of the $9,000 target; Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+            "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
           },
           "FCX": {
             "status": "pending",
@@ -2963,7 +2963,7 @@
         },
         "notes": [
           "Concentration: tech/AI names (TEM, QCOM, IONQ) total 40.5% and space (SPCX, RKLB) 27% of the plan; COP and FCX are the only diversifiers. Keep the 10% reserve unspent until a zone is hit.",
-          "Risk per name is equalized at about $750 (0.75% of the $100,000 account) for each first tranche to its hard stop, so wide-stop names get fewer shares.",
+          "Risk per name: each first tranche is capped at the smaller of 40% of the target or about $750 (0.75% of the $100,000 account) of loss to its hard stop, so wide-stop names like TEM hit the risk cap while tight-stop names hit the 40% cap.",
           "Setup ranking by Trading Assistant's long-term score: QCOM 89, SPCX 79.5, COP 72, TEM 71.5, IONQ 67.5 (RKLB, FCX pending). Only QCOM passes R at the app's buy-now price; the rest are better filled at zone A.",
           "News and macro (oil vs geopolitics for COP, copper/China for FCX, earnings dates) feed the hedge notes; QCOM reports 11/4."
         ]
@@ -3136,7 +3136,7 @@
       "FCX",
       "RKLB (long-term workup)"
     ],
-    "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. First tranches are sized to about $750 risk each. Recommendations only; no trades placed or recorded.",
+    "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. Each first tranche is the smaller of 40% of the name's target or about $750 of risk to its hard stop. Recommendations only; no trades placed or recorded.",
     "allocation": {
       "account": 100000,
       "reserve_pct": 10,
@@ -3212,7 +3212,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (same ~$750 budget per name), capped at 40% of the $22,500 target; app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "QCOM": {
           "targetPct": 13.5,
@@ -3273,7 +3273,7 @@
             "R_class": "PASS"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "IONQ": {
           "targetPct": 4.5,
@@ -3334,7 +3334,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (same ~$750 budget per name), capped at 40% of the $4,500 target; app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "SPCX": {
           "targetPct": 18,
@@ -3395,7 +3395,7 @@
             "R_class": "FAIL"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (same ~$750 budget per name), capped at 40% of the $18,000 target; app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "COP": {
           "targetPct": 13.5,
@@ -3466,7 +3466,7 @@
             "R_class": "PASS"
           },
           "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-          "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (same ~$750 budget per name), capped at 40% of the $13,500 target; app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "RKLB": {
           "targetPct": 9,
@@ -3494,7 +3494,7 @@
           "score": null,
           "buy_now_check": null,
           "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
-          "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (same ~$750 budget per name), capped at 40% of the $9,000 target; Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
+          "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
         },
         "FCX": {
           "status": "pending",
@@ -3505,7 +3505,7 @@
       },
       "notes": [
         "Concentration: tech/AI names (TEM, QCOM, IONQ) total 40.5% and space (SPCX, RKLB) 27% of the plan; COP and FCX are the only diversifiers. Keep the 10% reserve unspent until a zone is hit.",
-        "Risk per name is equalized at about $750 (0.75% of the $100,000 account) for each first tranche to its hard stop, so wide-stop names get fewer shares.",
+        "Risk per name: each first tranche is capped at the smaller of 40% of the target or about $750 (0.75% of the $100,000 account) of loss to its hard stop, so wide-stop names like TEM hit the risk cap while tight-stop names hit the 40% cap.",
         "Setup ranking by Trading Assistant's long-term score: QCOM 89, SPCX 79.5, COP 72, TEM 71.5, IONQ 67.5 (RKLB, FCX pending). Only QCOM passes R at the app's buy-now price; the rest are better filled at zone A.",
         "News and macro (oil vs geopolitics for COP, copper/China for FCX, earnings dates) feed the hedge notes; QCOM reports 11/4."
       ]
