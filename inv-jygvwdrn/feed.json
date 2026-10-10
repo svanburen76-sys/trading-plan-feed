@@ -1,18 +1,18 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T22:43:13Z",
+ "updated": "2026-10-10T18:47:25-04:00",
  "analysis": {
   "TEM": {
-   "status": "data pending",
-   "updated": "2026-10-10T17:41:57-04:00",
+   "status": "ok",
+   "updated": "2026-10-10T18:47:25-04:00",
    "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
-   "planRev": 163,
+   "planRev": 168,
    "plan": {
     "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
     "bias": "pullback inside a larger range",
-    "planRev": 163,
+    "planRev": 168,
     "position": {
-     "source": "app request.plan (planRev 163)",
+     "source": "app request.plan (planRev 168)",
      "shares": 0,
      "avgCost": null,
      "last_close": 70.93,
@@ -240,7 +240,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move \u00b15.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move ±5.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.0,
@@ -308,7 +308,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2"
        ]
       },
@@ -326,7 +326,7 @@
        "R_mid_T1": 3.21,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       },
@@ -345,7 +345,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       }
@@ -392,8 +392,14 @@
       "price": 68.8,
       "shares": 254,
       "R_to_T1": 1.09,
-      "verdict": "Buy-now Buy-now 254@68.80: 0.14 above zone A (66.71-68.66); 1.09R to T1 76.5 vs hard stop 61.71. Size: 254 sh = $17,475 vs the recommended $6,382 for the whole name and $0 deploy-now. FAIL.",
-      "correction": "Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)."
+      "verdict": "Buy-now Buy-now 254@68.80: 0.14 above zone A (66.71-68.66); 1.09R to T1 76.5 vs hard stop 61.71. Size: 254 sh = $17,475 vs the recommended $6,382 for the whole name and $0 deploy-now. FAIL. App buy-now 254 shares (~$17,475) is far above the recommended whole-name size $6,382 and deploy-now $0. App rungs 60.99, 57.09, 53.19 sit below the 61.71 hard stop and are not used.",
+      "correction": "Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional).",
+      "sizeFlag": "254 sh (~$17,475) vs recommended $6,382 whole name / $0 deploy-now",
+      "belowHardStop": [
+       60.99,
+       57.09,
+       53.19
+      ]
      },
      "trim": {
       "app": "10@82.56",
@@ -411,10 +417,50 @@
        "verdict": "FAIL",
        "flag": "OUTSIDE ZONES",
        "why": "0.14 above zone A (66.71-68.66); 1.09R to T1 76.5 vs hard stop 61.71. Size: 254 sh = $17,475 vs the recommended $6,382 for the whole name and $0 deploy-now."
+      },
+      {
+       "app": "R1 23@64.89",
+       "price": 64.89,
+       "shares": 23,
+       "zone": "1.82 below zone A (66.71-68.66)",
+       "R_T1": 3.65,
+       "verdict": "FAIL",
+       "flag": "OUTSIDE ZONES",
+       "why": "1.82 below zone A (66.71-68.66); 3.65R to T1 76.5 vs hard stop 61.71. Size: 23 sh = $1,492 vs the recommended $6,382 for the whole name and $0 deploy-now."
+      },
+      {
+       "app": "R2 24@60.99",
+       "price": 60.99,
+       "shares": 24,
+       "zone": "0.93 above zone B (57.72-60.06)",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "0.93 above zone B (57.72-60.06); past the hard stop. Size: 24 sh = $1,464 vs the recommended $6,382 for the whole name and $0 deploy-now."
+      },
+      {
+       "app": "R3 39@57.09",
+       "price": 57.09,
+       "shares": 39,
+       "zone": "0.63 below zone B (57.72-60.06)",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "0.63 below zone B (57.72-60.06); past the hard stop. Size: 39 sh = $2,227 vs the recommended $6,382 for the whole name and $0 deploy-now."
+      },
+      {
+       "app": "R4 42@53.19",
+       "price": 53.19,
+       "shares": 42,
+       "zone": "2.09 above zone C (49.35-51.1)",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "2.09 above zone C (49.35-51.1); past the hard stop. Size: 42 sh = $2,234 vs the recommended $6,382 for the whole name and $0 deploy-now."
       }
      ],
-     "ladderNote_app": "The app sent only its next rung (0/5 filled); rungs 2-5 were not in the request, so only buy-now is checked.",
-     "ladderVerdict": "App buy-now FAIL (OUTSIDE ZONES). Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional).",
+     "ladderNote_app": "The app sent its full ladder (5 rungs: Buy-now 254@68.80, R1 23@64.89, R2 24@60.99, R3 39@57.09, R4 42@53.19); every rung is checked against Trading Assistant zones and the hard stop.",
+     "ladderVerdict": "App buy-now FAIL (OUTSIDE ZONES). App buy-now 254 shares (~$17,475) is far above the recommended whole-name size $6,382 and deploy-now $0. App rungs 60.99, 57.09, 53.19 sit below the 61.71 hard stop and are not used. Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional).",
      "taCheck": "Trading Assistant (10/10): 68.80 above zone A 66.71-68.66, R FAIL; app rungs 60.99/57.09/53.19 below the 61.71 hard stop; trim 82.56 above T2 81.7, below T3 88.0."
     },
     "entry": {
@@ -841,18 +887,20 @@
      "Data as of the 10/9 close; markets closed until Monday."
     ],
     "changes": [
-     "Fund: $100,000 -> $111,000 (app planRev 163)",
-     "Recommended split: 5.75% ($5,750) -> 5.75% ($6,382)",
+     "Fund: $111,000 -> $111,000 (app planRev 168)",
+     "Recommended split: unchanged (5.75% ($6,382))",
      "Entry: unchanged (67.6)",
      "Deploy now: unchanged (0 sh ($0))",
-     "Ladder: 5 rungs: 21@67.6, 21@67.1, 17@66.75, 14@60.0, 14@58.9 -> 5 rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9",
+     "Ladder: unchanged (5 rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9)",
      "Trims: unchanged (76.4, 81.6, 87.9)",
      "Hard stop: unchanged (61.71)",
-     "Options: put now specified as 1x 2026-11-20 65P (quoted 4.525) (was hedge text only)",
-     "Odds (estimates, new this run): up 56% / down 44% over ~20 sessions; T1 before stop 42%",
-     "Strategy: sizing now also weighs study agreement (+0.23, split x1.03); rung sizes weighted by estimated odds"
+     "Options: put now specified as 1x 2026-11-20 65P (quoted 4.525)",
+     "Odds (estimates): up 56% / down 44% over ~20 sessions; T1 before stop 42%",
+     "Strategy: study agreement (+0.23, split x1.03); odds-weighted rungs; Wyckoff labeled as a guess",
+     "App plan (planRev 168): buy-now 254@68.80 (~$17,475) vs recommended $6,382; rungs 60.99/57.09/53.19 below hard stop 61.71 -> corrected ladder 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9",
+     "Data: weekend reuse of TEM_20261010/ (10/9 close); no fresh Trading Assistant pull"
     ],
-    "methodology": "planRev 163: added study-agreement thesis (13 studies), agreement-tilted odds estimates, odds-weighted rung sizes (min ~10 sh), and an agreement multiplier (1 +/- 0.15) on the split score. Logged for scoring once new sessions arrive."
+    "methodology": "planRev 168 TEM-only reanalyze (v2 standingRules hash 4766c73): same study-agreement thesis, agreement-tilted odds, odds-weighted rungs and Wyckoff-as-guess as planRev 163. Weekend: reused /workspace/trading_plan/TEM_20261010/ (10/9 close); no fresh Trading Assistant pull. App ladder fully checked; corrected ladder keeps primary rungs above the 61.71 hard stop."
    },
    "deep": {
     "charts": [
@@ -884,8 +932,27 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 163",
-   "statusAt": "2026-10-10T22:43:13Z"
+   "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
+   "strategy": "Long-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.",
+   "nextMoves": [
+    "1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
+    "2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)",
+    "3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.",
+    "4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.",
+    "5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
+    "6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print."
+   ],
+   "next_moves": [
+    "1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
+    "2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)",
+    "3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.",
+    "4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.",
+    "5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
+    "6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print."
+   ],
+   "text": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).\n\nStrategy: Long-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.\n\nNext moves:\n1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)\n3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.\n4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.\n5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print.\n\nEntry 67.6: Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\nThesis: 5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure.\n\nRecommendation: No position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.\n\nHedge: Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n\nRisk: Earnings 2026-11-03 AMC (UNC (unconfirmed)).; ATR14 5.61 (7.9% of price); full-ladder stop risk $549.; Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls.; Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.; Data as of the 10/9 close; markets closed until Monday.",
+   "markdown": "# TEM plan (planRev 168)\n\n## Summary\nTEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).\n\n## Strategy\nLong-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.\n\n## Next moves\n- 1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n- 2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)\n- 3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.\n- 4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.\n- 5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n- 6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print.\n\n## Entry\n**67.6** in zone A 66.71-68.66 (1.51R to T1 76.5; hard stop 61.71).\n\nEntry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\nTrigger: 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n\n## Thesis\n5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure.\nAgreement score: +0.23. Supporting: Trend / moving averages, Weekly (1w), 1h MACD (short-term), OBV (20d), Fibonacci at S/R. Disagreeing: Daily MACD, 4h MACD.\n\nWyckoff (guess, confidence medium): markup (Phase E) or re-accumulation. Contextual hypothesis from daily bars by this bot (Trading Assistant Wyckoff tagging n/a); conflicts are flagged, not resolved.\n\n## Recommendation\nNo position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.\n\nCorrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9.\nTargets / trims: 76.4 (T1), 81.6 (T2), 87.9 (T3).\n\n## Hedge\nPrimary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n\n## Risk / cautions\n- Earnings 2026-11-03 AMC (UNC (unconfirmed)).\n- ATR14 5.61 (7.9% of price); full-ladder stop risk $549.\n- Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls.\n- Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.\n- Data as of the 10/9 close; markets closed until Monday.\n\nApp check: App buy-now FAIL (OUTSIDE ZONES). App buy-now 254 shares (~$17,475) is far above the recommended whole-name size $6,382 and deploy-now $0. App rungs 60.99, 57.09, 53.19 sit below the 61.71 hard stop and are not used. Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional).\n\n_Recommendations only; no trades placed. Data: 10/9 close (weekend reuse)._",
+   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 168"
   },
   "QCOM": {
    "status": "ok",
@@ -1112,7 +1179,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move \u00b17.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move ±7.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.59,
@@ -1180,7 +1247,7 @@
        "R_class": "PASS",
        "flags": [
         "USED",
-        "WEAK-TREND\u2192reclaim"
+        "WEAK-TREND→reclaim"
        ]
       },
       {
@@ -1198,7 +1265,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-04)"
        ]
       }
@@ -1956,7 +2023,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move \u00b12.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move ±2.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -2024,7 +2091,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80 (IONQ swing stops locked 40.80 close / 39.80 hard; LT zone is a separate proposal, locked stops untouched)"
        ]
@@ -2045,7 +2112,7 @@
        "flags": [
         "NEAR",
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(below Keltner-lo; ER 2026-11-04)",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80"
@@ -2760,7 +2827,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move \u00b17.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move ±7.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -3600,7 +3667,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move \u00b14.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move ±4.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.54,
@@ -4448,7 +4515,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move \u00b14.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move ±4.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.65,
@@ -4568,7 +4635,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "A hard sits inside zone B"
        ]
       },
@@ -4587,7 +4654,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-10)"
        ]
       }
@@ -5354,7 +5421,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move \u00b13.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move ±3.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.68,
@@ -5523,7 +5590,7 @@
        "flags": [
         "FAIL",
         "USED",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2"
        ]
       },
@@ -5541,7 +5608,7 @@
        "R_mid_T1": 2.76,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "B hard sits inside zone C"
        ]
       },
@@ -5559,7 +5626,7 @@
        "R_mid_T1": 2.74,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR; ER 2026-10-27)"
        ]
       }
@@ -6109,14 +6176,14 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T18:43:00-04:00",
+  "updated": "2026-10-10T18:47:25-04:00",
   "notices": [
    {
     "type": "info",
     "ticker": null,
     "msg": "Markets are closed today (Saturday); all prices are Friday 10/9 closes.",
     "source": "Alpaca SIP via Trading Assistant system",
-    "at": "2026-10-10T17:41:57-04:00"
+    "at": "2026-10-10T18:47:25-04:00"
    },
    {
     "type": "info",
@@ -6159,13 +6226,20 @@
     "msg": "Prices request re-answered for TEM with Friday 10/9 closing data (70.93); markets are closed for the weekend, so the latest Trading Assistant pull is still current.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
     "at": "2026-10-10T18:43:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 168 answered for TEM (weekend reuse of 10/9 Trading Assistant data): full v2 plan rewrite, app ladder check, corrected odds-sized ladder, trims, put hedge and charts. Split 5.75% ($6,382); entry 67.6 in zone A, 0% now (needs a reclaim). App buy-now 254@68.80 is far above the recommended size; app rungs 60.99/57.09/53.19 are below the 61.71 hard stop. Other names unchanged. Recommendations only.",
+    "source": "Trading Assistant TEM long-term workup (10/9 close) + app plan planRev 168",
+    "at": "2026-10-10T18:47:25-04:00"
    }
   ],
   "allocation": {
-   "id": "ra-split-20261010T1741",
+   "id": "ra-split-20261010T1847",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T17:41:57-04:00",
+   "at": "2026-10-10T18:47:25-04:00",
    "units": "cents",
    "fundC": 11100000,
    "reserveC": 1110000,
@@ -7019,8 +7093,8 @@
    "deployNowTotalPct": 20.79,
    "sectorExposurePct": {
     "tech/semis": 29.0,
-    "space": 22.25,
-    "energy/materials": 30.0
+    "energy/materials": 30.0,
+    "space": 22.25
    },
    "sectorCapsPct": {
     "tech/semis": 40,
@@ -7038,22 +7112,24 @@
     "IONQ"
    ],
    "max": 10,
-   "requestId": "ra-split-20261010T1741",
-   "request_id": "ra-split-20261010T1741",
+   "requestId": "ra-split-20261010T1847",
+   "request_id": "ra-split-20261010T1847",
    "reply": "feed.allocation",
    "reanalyzeRequestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "basedOn": {
     "plan": "app request.plan planRev 163 (reanalyze 2026-10-10T21:31:06.393Z)",
-    "fund": "plan cash.base $111,000; reserve 10% = plan unallocated"
+    "fund": "plan cash.base $111,000; reserve 10% = plan unallocated",
+    "tem": "TEM recomputed for app request.plan planRev 168 (TEM-only reanalyze 2026-10-10T22:42:45.096Z); other names unchanged from planRev 163; weekend reuse of TEM_20261010/"
    },
    "method": "Score 0-10 per name: setup = half R from the data-based entry to T1 (x2.5) + half Trading Assistant long-term score; risk = 10 minus penalties for ATR% and ATM IV (and short history); upside = % to top structure, blended 50/50 with the published PT median when one exists; macro/news (judgment from the 7-day news and copper note); concentration (diversification value). Composite = 30/25/20/15/10. Split proportional to composite^2 / sqrt(ATR%) (volatile = smaller, about equal dollar risk; TEM x1.1 for its quoted put) x study-agreement multiplier (1 + 0.15 x agreement score, new in planRev 163), scaled to 85% invested, then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (excess to cash); 10% reserve + 5% held back. Rounded to 0.25%. Deploy-now = rungs placed now: resting limits only where trend allows (SPCX up, COP mixed); weak-trend names confirm with a daily close above the prior day's high in the zone; 0% when R<1.5 at the zone or a trend knockout. Rung sizes weighted by estimated odds, min ~10 shares.",
    "notes": [
     "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
     "81.25% invested at full targets, 18.75% cash (10% reserve + 8.75% held back). Deploy-now total 20.79% ($23,075).",
-    "Amounts from the app plan only (planRev 163: $111,000 cash, 0 shares in every name, no options).",
+    "Amounts from the app plan only (planRev 168 for TEM: target 22.5% / $24,975 in the app, 0 shares, full ladder; other six names from planRev 163).",
+    "TEM recomputed for planRev 168 with the v2 study-agreement method: 5.75% (was 5.75%); cash rebalanced to keep totals at 100%. Other six names unchanged.",
     "Full-ladder stop risk per name is $426-$852 (0.38-0.77% of the fund).",
     "Gamma flip, IV rank, order-book depth, 2-year history and Trading Assistant order-block/candlestick/Wyckoff tagging are n/a; oil price for COP is n/a; TEM/QCOM/IONQ have no published PTs in the data.",
-    "Levels are 10/9 closes (markets closed since Friday's close)."
+    "Levels are 10/9 closes (markets closed since Friday's close). Weekend TEM reanalyze reused the existing Trading Assistant folder; no new pull."
    ],
    "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 163."
   },
@@ -7121,23 +7197,17 @@
    "request_id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "kind": "reanalyze",
-   "scope": "all",
-   "requestAt": "2026-10-10T21:31:06.393Z",
-   "planRev": 163,
-   "at": "2026-10-10T17:41:57-04:00",
+   "scope": "single",
+   "requestAt": "2026-10-10T22:42:45.096Z",
+   "planRev": 168,
+   "at": "2026-10-10T18:47:25-04:00",
    "status": "ok",
    "tickers": [
-    "TEM",
-    "QCOM",
-    "IONQ",
-    "SPCX",
-    "COP",
-    "RKLB",
-    "FCX"
+    "TEM"
    ],
    "pending": [],
-   "reply": "analysis.<TICKER>",
-   "summary": "Reanalyze planRev 163 complete for TEM, QCOM, IONQ, SPCX, COP, RKLB, FCX on the app's $111,000 cash, no positions: recommended splits QCOM 17.75, COP 17.25, SPCX 13.25, FCX 12.75, RKLB 9.0, TEM 5.75, IONQ 5.5, cash 18.75%; deploy now 20.79% ($23,075). Data is the 10/9 close (markets closed). Methodology update: study-agreement thesis, odds estimates and odds-weighted rungs. Recommendations only.",
+   "reply": "analysis.TEM",
+   "summary": "Reanalyze planRev 168 complete for TEM (TEM-only) on the app's $111,000 cash, 0 shares: split 5.75%, entry 67.6 zone A (1.51R to 76.5), deploy now 0%. App buy-now 254@68.80 far above recommended size; app rungs 60.99/57.09/53.19 below the 61.71 hard stop — corrected ladder used. Weekend: reused TEM_20261010/ (10/9 close). Other tickers untouched. Recommendations only.",
    "perTicker": {
     "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); deploy now 0 sh ($0); agreement +0.23.",
     "QCOM": "17.75% split; entry 171.3 (zone A, 3.61R to 180.8); deploy now 45 sh ($7,698); agreement +0.23.",
@@ -7359,7 +7429,7 @@
      "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
     }
    },
-   "allocationId": "ra-split-20261010T1741",
+   "allocationId": "ra-split-20261010T1847",
    "standingRules": {
     "version": "2",
     "hash": "4766c73"
@@ -7367,10 +7437,10 @@
   }
  },
  "allocation": {
-  "id": "ra-split-20261010T1741",
+  "id": "ra-split-20261010T1847",
   "kind": "recommend-allocation",
   "status": "ok",
-  "at": "2026-10-10T17:41:57-04:00",
+  "at": "2026-10-10T18:47:25-04:00",
   "units": "cents",
   "fundC": 11100000,
   "reserveC": 1110000,
@@ -8224,8 +8294,8 @@
   "deployNowTotalPct": 20.79,
   "sectorExposurePct": {
    "tech/semis": 29.0,
-   "space": 22.25,
-   "energy/materials": 30.0
+   "energy/materials": 30.0,
+   "space": 22.25
   },
   "sectorCapsPct": {
    "tech/semis": 40,
@@ -8243,44 +8313,269 @@
    "IONQ"
   ],
   "max": 10,
-  "requestId": "ra-split-20261010T1741",
-  "request_id": "ra-split-20261010T1741",
+  "requestId": "ra-split-20261010T1847",
+  "request_id": "ra-split-20261010T1847",
   "reply": "feed.allocation",
   "reanalyzeRequestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
   "basedOn": {
    "plan": "app request.plan planRev 163 (reanalyze 2026-10-10T21:31:06.393Z)",
-   "fund": "plan cash.base $111,000; reserve 10% = plan unallocated"
+   "fund": "plan cash.base $111,000; reserve 10% = plan unallocated",
+   "tem": "TEM recomputed for app request.plan planRev 168 (TEM-only reanalyze 2026-10-10T22:42:45.096Z); other names unchanged from planRev 163; weekend reuse of TEM_20261010/"
   },
   "method": "Score 0-10 per name: setup = half R from the data-based entry to T1 (x2.5) + half Trading Assistant long-term score; risk = 10 minus penalties for ATR% and ATM IV (and short history); upside = % to top structure, blended 50/50 with the published PT median when one exists; macro/news (judgment from the 7-day news and copper note); concentration (diversification value). Composite = 30/25/20/15/10. Split proportional to composite^2 / sqrt(ATR%) (volatile = smaller, about equal dollar risk; TEM x1.1 for its quoted put) x study-agreement multiplier (1 + 0.15 x agreement score, new in planRev 163), scaled to 85% invested, then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (excess to cash); 10% reserve + 5% held back. Rounded to 0.25%. Deploy-now = rungs placed now: resting limits only where trend allows (SPCX up, COP mixed); weak-trend names confirm with a daily close above the prior day's high in the zone; 0% when R<1.5 at the zone or a trend knockout. Rung sizes weighted by estimated odds, min ~10 shares.",
   "notes": [
    "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
    "81.25% invested at full targets, 18.75% cash (10% reserve + 8.75% held back). Deploy-now total 20.79% ($23,075).",
-   "Amounts from the app plan only (planRev 163: $111,000 cash, 0 shares in every name, no options).",
+   "Amounts from the app plan only (planRev 168 for TEM: target 22.5% / $24,975 in the app, 0 shares, full ladder; other six names from planRev 163).",
+   "TEM recomputed for planRev 168 with the v2 study-agreement method: 5.75% (was 5.75%); cash rebalanced to keep totals at 100%. Other six names unchanged.",
    "Full-ladder stop risk per name is $426-$852 (0.38-0.77% of the fund).",
    "Gamma flip, IV rank, order-book depth, 2-year history and Trading Assistant order-block/candlestick/Wyckoff tagging are n/a; oil price for COP is n/a; TEM/QCOM/IONQ have no published PTs in the data.",
-   "Levels are 10/9 closes (markets closed since Friday's close)."
+   "Levels are 10/9 closes (markets closed since Friday's close). Weekend TEM reanalyze reused the existing Trading Assistant folder; no new pull."
   ],
   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 163."
  },
  "reanalyze": {
-  "status": "data pending",
+  "id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
+  "request_id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
+  "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
+  "kind": "reanalyze",
   "scope": "single",
+  "requestAt": "2026-10-10T22:42:45.096Z",
+  "planRev": 168,
+  "at": "2026-10-10T18:47:25-04:00",
+  "status": "ok",
   "tickers": [
    "TEM"
   ],
-  "requestAt": "2026-10-10T22:42:45.096Z",
-  "planRev": 168,
-  "requestedFromTradingAssistant": "2026-10-10T22:43:13Z",
-  "msg": "Fresh Trading Assistant data requested for TEM; analysis and charts will publish when it arrives.",
-  "at": "2026-10-10T22:43:13Z"
- },
- "notices": [
-  {
-   "type": "info",
-   "ticker": "TEM",
-   "msg": "Reanalyze requested (planRev 168); fresh data pending from Trading Assistant.",
-   "source": "Trading Assistant",
-   "at": "2026-10-10T22:43:13Z"
+  "pending": [],
+  "reply": "analysis.TEM",
+  "summary": "Reanalyze planRev 168 complete for TEM (TEM-only) on the app's $111,000 cash, 0 shares: split 5.75%, entry 67.6 zone A (1.51R to 76.5), deploy now 0%. App buy-now 254@68.80 far above recommended size; app rungs 60.99/57.09/53.19 below the 61.71 hard stop — corrected ladder used. Weekend: reused TEM_20261010/ (10/9 close). Other tickers untouched. Recommendations only.",
+  "perTicker": {
+   "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); deploy now 0 sh ($0); agreement +0.23.",
+   "QCOM": "17.75% split; entry 171.3 (zone A, 3.61R to 180.8); deploy now 45 sh ($7,698); agreement +0.23.",
+   "IONQ": "5.5% split; entry 38.1 (zone A, 1.62R to 41.3); deploy now 0 sh ($0); agreement -0.23.",
+   "SPCX": "13.25% split; entry 154.4 (zone A, 1.53R to 170.9); deploy now 23 sh ($3,540); agreement +0.08.",
+   "COP": "17.25% split; entry 130.07 (zone B, 1.95R to 135.7); deploy now 58 sh ($7,532); agreement +0.54.",
+   "RKLB": "9.0% split; entry 64.5 (zone A, 1.75R to 73.2); deploy now 23 sh ($1,484); agreement -0.15.",
+   "FCX": "12.75% split; entry 68.8 (zone B, 2.8R to 75.7); deploy now 41 sh ($2,821); agreement +0.54."
+  },
+  "charts": {
+   "TEM": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+   },
+   "QCOM": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
+   },
+   "IONQ": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
+   },
+   "SPCX": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
+   },
+   "COP": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
+   },
+   "RKLB": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
+   },
+   "FCX": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
+     }
+    ],
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
+   }
+  },
+  "allocationId": "ra-split-20261010T1847",
+  "standingRules": {
+   "version": "2",
+   "hash": "4766c73"
   }
- ]
+ },
+ "notices": []
 }
