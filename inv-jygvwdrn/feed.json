@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:17:00-04:00",
+ "updated": "2026-10-10T13:24:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -237,7 +237,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T13:17:00-04:00",
+  "updated": "2026-10-10T13:24:00-04:00",
   "notices": [
    {
     "type": "info",
@@ -277,16 +277,16 @@
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Allocation recommendation ra-mv2nn51w-ecy4: keep $8,135.03 in TEM (existing hedged position), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
+    "msg": "Allocation recommendation ra-mv2nw5bj-4hc: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
     "source": "Trading Plan analysis",
-    "at": "2026-10-10T13:17:00-04:00"
+    "at": "2026-10-10T13:24:00-04:00"
    }
   ],
   "allocation": {
-   "id": "ra-mv2nn51w-ecy4",
+   "id": "ra-mv2nw5bj-4hc",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T13:17:00-04:00",
+   "at": "2026-10-10T13:24:00-04:00",
    "units": "cents",
    "fundC": 2500000,
    "reserveC": 125000,
@@ -329,7 +329,84 @@
     "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
    ],
    "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
-   "accountC": 2500000
+   "accountC": 2500000,
+   "requestId": "ra-mv2nw5bj-4hc",
+   "request_id": "ra-mv2nw5bj-4hc",
+   "reply": "feed.allocation",
+   "tickers": [
+    "TEM"
+   ],
+   "max": 10,
+   "unallocC": 0,
+   "allocations": [
+    {
+     "ticker": "TEM",
+     "amountC": 813503
+    }
+   ]
   }
+ },
+ "allocation": {
+  "id": "ra-mv2nw5bj-4hc",
+  "kind": "recommend-allocation",
+  "status": "ok",
+  "at": "2026-10-10T13:24:00-04:00",
+  "units": "cents",
+  "fundC": 2500000,
+  "reserveC": 125000,
+  "cashC_before": 2375000,
+  "items": [
+   {
+    "ticker": "TEM",
+    "amountC": 813503,
+    "pctOfFund": 32.54,
+    "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
+    "stock": {
+     "shares": 101,
+     "costC": 764137
+    },
+    "options": [
+     {
+      "contract": "TEM 2026-11-20 65 P",
+      "qty": 1,
+      "costC": 49366,
+      "role": "protective put"
+     }
+    ],
+    "newBuyC": 0,
+    "risk": {
+     "floor": 65.0,
+     "maxLossAtExpiryC_tradeBasis": 100573,
+     "maxLossAtExpiryC_costBasis": 157003,
+     "maxLossPctOfFund_costBasis": 6.28,
+     "maxLossPctOfFund_tradeBasis": 4.02
+    },
+    "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
+   }
+  ],
+  "totalAllocatedC": 813503,
+  "cashAfterC": 1561497,
+  "reserveAfterC": 125000,
+  "notes": [
+   "Recommendation only; no trades placed or recorded.",
+   "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
+   "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
+  ],
+  "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
+  "accountC": 2500000,
+  "requestId": "ra-mv2nw5bj-4hc",
+  "request_id": "ra-mv2nw5bj-4hc",
+  "reply": "feed.allocation",
+  "tickers": [
+   "TEM"
+  ],
+  "max": 10,
+  "unallocC": 0,
+  "allocations": [
+   {
+    "ticker": "TEM",
+    "amountC": 813503
+   }
+  ]
  }
 }
