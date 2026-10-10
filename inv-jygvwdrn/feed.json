@@ -1,716 +1,738 @@
 {
-  "profile": "inv-jygvwdrn",
-  "updated": "2026-10-10T14:29:00-04:00",
-  "analysis": {
-    "TEM": {
-      "status": "ok",
-      "updated": "2026-10-10T14:05:39-04:00",
-      "plan": {
-        "summary": "HOLD the 101 shares with the Nov 20 65 put in place. TEM is consolidating 66.7\u201373 after the 10/6 reversal from 87.99, sitting on the 61.8% retracement (69.70) of the 57.72\u219289.09 swing and above the rising SMA50 (65.60). Bias neutral-to-constructive while daily closes hold above 66.7; the put caps downside below 65.",
-        "bias": "neutral / constructive above 66.7",
-        "position": {
-          "source": "Seth's Schwab screenshot 2026-10-10 12:58 PM ET",
-          "stock": {
-            "shares": 101,
-            "trade_price": 70.07,
-            "cost_basis_usd": 7641.37
-          },
-          "option": {
-            "contract": "TEM 2026-11-20 65 P",
-            "qty": 1,
-            "trade_price": 4.93,
-            "cost_usd": 493.66,
-            "role": "protective put"
-          },
-          "last_close": 70.93,
-          "last_close_date": "2026-10-09",
-          "stock_value_at_last_close": 7163.93,
-          "stock_pl_vs_trade_price": 86.86
-        },
-        "put_protection": {
-          "how": "The 65 put gives Seth the right to sell 100 shares at 65 through Nov 20, so below 65 the loss on 100 of the 101 shares stops growing (1 share stays unhedged). It also covers the unconfirmed 11/3 earnings date.",
-          "floor_per_share": 65.0,
-          "max_loss_at_expiry_trade_price_basis_usd": 1005.73,
-          "max_loss_at_expiry_cost_basis_usd": 1570.03,
-          "breakeven_at_expiry_trade_price_basis": 74.96,
-          "protection_starts_pct_below_last": 8.36,
-          "put_current_value": {
-            "as_of": "2026-10-09 close",
-            "bid": 4.45,
-            "ask": 4.6,
-            "mid": 4.525,
-            "last": 4.4,
-            "iv": 0.808,
-            "delta": -0.313,
-            "gamma": 0.0184,
-            "theta": -0.0804,
-            "vega": 0.0845,
-            "volume": 42,
-            "oi": 740,
-            "value_usd": 452.5,
-            "pnl_vs_trade_usd": -40.5,
-            "source": "Alpaca OPRA via Trading Assistant (CBOE cross-check)"
-          },
-          "note": "Max loss figures ignore any leftover put time value and assume the stock is at or below 65 at Nov 20 expiry. Cost-basis version uses Schwab's $7,641.37."
-        },
-        "levels": {
-          "support": [
-            {
-              "p": 69.7,
-              "why": "61.8% fib of 57.72\u219289.09 swing; held 10/8\u201310/9"
-            },
-            {
-              "p": 69.2,
-              "why": "10/9 low"
-            },
-            {
-              "p": 66.71,
-              "why": "10/8 low, range floor"
-            },
-            {
-              "p": 65.6,
-              "why": "rising daily SMA50"
-            },
-            {
-              "p": 65.0,
-              "why": "Oct 23 top put wall (1,505 OI) and Seth's put strike"
-            },
-            {
-              "p": 64.43,
-              "why": "78.6% fib; daily lower Bollinger 64.02"
-            }
-          ],
-          "resistance": [
-            {
-              "p": 71.1,
-              "why": "10/9 session VWAP (~71.10\u201371.13 across TFs)"
-            },
-            {
-              "p": 71.34,
-              "why": "10/6 low, broken support now resistance"
-            },
-            {
-              "p": 72.96,
-              "why": "10/9 high / 73.09 10/7 high"
-            },
-            {
-              "p": 73.41,
-              "why": "50% fib"
-            },
-            {
-              "p": 76.35,
-              "why": "daily SMA20 / Bollinger mid; 38.2% fib 77.11"
-            },
-            {
-              "p": 80.0,
-              "why": "call wall Oct 16 (4,413 OI) and Oct 23 (1,004 OI)"
-            },
-            {
-              "p": 84.0,
-              "why": "bearish order block 84\u201388 (10/6 distribution bar, 16.6M shares)"
-            }
-          ]
-        },
-        "order_blocks": [
-          {
-            "type": "bullish",
-            "zone": [
-              57.72,
-              62.81
-            ],
-            "why": "last down/base candles (9/10\u20139/14) before the 9/15\u20139/17 impulse; untested"
-          },
-          {
-            "type": "bearish",
-            "zone": [
-              84.0,
-              87.99
-            ],
-            "why": "10/6 open-to-high spike that reversed on ~2x average volume"
-          }
-        ],
-        "fibonacci": {
-          "swing_low": 57.72,
-          "swing_low_date": "2026-09-14",
-          "swing_high": 89.09,
-          "swing_high_date": "2026-09-29",
-          "r382": 77.11,
-          "r50": 73.41,
-          "r618": 69.7,
-          "r786": 64.43,
-          "confluence": "61.8% (69.70) sits with the 10/9 low 69.2 and the 70 put/call strike cluster; 78.6% (64.43) sits with the 65 put strike and lower daily Bollinger."
-        },
-        "timeframes": {
-          "1w": "Uptrend from the 40.77 July low intact; last week a bearish reversal bar from 87.99.",
-          "1d": "RSI 48, MACD 1.98 below signal 3.86 (hist \u22121.87, momentum cooling), price under SMA20 76.35 but above SMA50 65.60 and SMA200 56.65. ATR14 5.61 (about 7.9%).",
-          "4h": "RSI 44, MACD \u22121.09 below signal, hist \u22121.53; bearish but flattening.",
-          "1h": "RSI 44, MACD hist +0.59 turned positive; price 70.93 just above BB mid 70.21, under SMA50 75.75. Early base.",
-          "15m": "RSI 55, price above SMA50 69.47, tight BB 69.50\u201371.96; consolidating.",
-          "5m": "RSI 43, closed 70.93 just under session VWAP 71.13; slight fade into the close."
-        },
-        "volume_wyckoff": "10/6 spike to 87.99 and close at 71.98 on 16.6M (about 2x the 20-day average of 8.0M) looks like an upthrust/distribution event; volume has since faded each day (9.0M, 7.5M, 6.3M) as price holds 66.7\u201373. That pattern reads as a secondary test. A hold above 66.7 with rising volume on up days would point to re-accumulation; a daily close under 65.6 would confirm distribution toward the 57.7\u201362.8 order block.",
-        "options_read": {
-          "oct16": {
-            "atm_iv": 0.755,
-            "expected_move_straddle": 5.49,
-            "range": [
-              65.44,
-              76.42
-            ],
-            "pc_oi": 1.0,
-            "pc_vol": 0.66,
-            "max_pain": 70.0,
-            "call_walls": [
-              70,
-              80,
-              85
-            ],
-            "put_walls": [
-              "50 (zero-bid, ignore)",
-              70,
-              "40 (zero-bid, ignore)"
-            ],
-            "skew_25d": -0.05
-          },
-          "oct23": {
-            "atm_iv": 0.758,
-            "expected_move_straddle": 8.1,
-            "range": [
-              62.83,
-              79.03
-            ],
-            "pc_oi": 0.82,
-            "pc_vol": 0.43,
-            "max_pain": 75.0,
-            "call_walls": [
-              80,
-              87,
-              90
-            ],
-            "put_walls": [
-              65,
-              75,
-              70
-            ]
-          },
-          "read": "Call volume outpaced puts (P/C volume 0.43\u20130.66) and 25-delta skew is slightly call-rich, so flow leans bullish. Max pain 70 (Oct 16) pins near the current price. The weekly expected move (about \u00b15.5) keeps 65\u201376 as the likely range into Oct 16. IV near 75% is elevated, which keeps Seth's put valuable if held.",
-          "gamma": "n/a (no reliable gamma-flip value in the data)",
-          "iv_rank": "n/a (no IV history in the data)",
-          "order_flow": "n/a (no live depth/order-book data; walls shown are open-interest walls)"
-        },
-        "scenarios": [
-          {
-            "case": "bull",
-            "trigger": "daily close above 73.1 (above 10/7 high and 50% fib)",
-            "targets": [
-              76.35,
-              80.0
-            ],
-            "action": "keep holding; consider whether to keep the put through 11/3 earnings"
-          },
-          {
-            "case": "base",
-            "trigger": "holds 66.7\u201373",
-            "action": "hold shares and put; no action needed"
-          },
-          {
-            "case": "bear",
-            "trigger": "daily close below 65.6 (SMA50)",
-            "targets": [
-              62.8,
-              57.7
-            ],
-            "action": "the put caps losses below 65 on 100 shares; review whether to hold the shares or exercise/sell the put"
-          }
-        ],
-        "risk": [
-          "Earnings 2026-11-03 AMC (unconfirmed) falls before the Nov 20 put expires.",
-          "ATR about 7.9% of price, so normal daily swings are large.",
-          "ESMO Congress Oct 23\u201327 (13 Tempus abstracts) and the 10/7 Merck/Moderna collaboration are possible catalysts."
-        ],
-        "recommendation": "Hold. Recommendations only; no trades placed or recorded.",
-        "next_moves": [
-          {
-            "step": 1,
-            "when": "Monday 10/12 open",
-            "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
-          },
-          {
-            "step": 2,
-            "when": "daily close above 73.1",
-            "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
-          },
-          {
-            "step": 3,
-            "when": "pullback that holds 66.7-69.7",
-            "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
-          },
-          {
-            "step": 4,
-            "when": "daily close below 65.6 (SMA50)",
-            "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
-          },
-          {
-            "step": 5,
-            "when": "before 11/3 earnings (unconfirmed)",
-            "move": "Keep the put through earnings; it expires 11/20, after the report."
-          }
-        ],
-        "strategy": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
-        "ladder_review": {
-          "R1 18@62.38": "Good spot: inside the untested bullish order block 57.72-62.81, below the 65 put wall and the 78.6% fib 64.43.",
-          "R2 18@59.36": "Good spot: deeper in the same order block.",
-          "R3 29@56.34": "Just under the SMA200 (56.65) and below the order block; only fill if the weekly uptrend from the July low (40.77) still holds.",
-          "R4 31@53.32": "Below all mapped support; a trend-break level, so re-check before it fills.",
-          "hedge_note": "The put covers 100 shares only. All four rungs add 96 unhedged shares (about $5,500), so each fill raises downside below 65. Consider sizing rungs so total unhedged exposure stays within your risk limit, or add a second put if the ladder fills.",
-          "trim 7@87.59": "Sits inside the bearish order block 84-88 (10/6 distribution bar), a sensible first trim."
-        }
-      },
-      "deep": {
-        "charts": [
-          {
-            "tf": "1d",
-            "type": "png",
-            "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
-          },
-          {
-            "tf": "1h",
-            "type": "png",
-            "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
-          },
-          {
-            "tf": "15m",
-            "type": "png",
-            "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
-          },
-          {
-            "tf": "5m",
-            "type": "png",
-            "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
-          },
-          {
-            "tf": "all",
-            "type": "pdf",
-            "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-          }
-        ],
-        "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-      },
-      "sources": "Trading Assistant system (Research raw pull: Alpaca SIP bars, Alpaca OPRA options), as of 2026-10-10 12:53 ET",
-      "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225"
-    }
-  },
-  "feed": {
-    "updated": "2026-10-10T14:29:00-04:00",
-    "notices": [
-      {
-        "type": "info",
-        "ticker": null,
-        "msg": "Markets are closed today (Saturday); all prices are Friday 10/9 closes.",
-        "source": "Alpaca SIP via Trading Assistant system",
-        "at": "2026-10-10T13:12:00-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "TEM",
-        "msg": "Gamma flip, IV rank and live order-book walls are n/a: not in the published data. Walls shown are open-interest walls.",
-        "source": "Trading Assistant system",
-        "at": "2026-10-10T13:12:00-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Support/resistance, Fibonacci and order blocks are computed by this bot from Alpaca SIP daily bars.",
-        "source": "Alpaca SIP via Trading Assistant system",
-        "at": "2026-10-10T13:12:00-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Nov 20 65P quote added (10/9 close mid 4.525, delta -0.313, IV 80.8%).",
-        "source": "Alpaca OPRA via Trading Assistant",
-        "at": "2026-10-10T13:11:00-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Allocation recommendation ra-mv2nzi3h-29q: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
-        "source": "Trading Plan analysis",
-        "at": "2026-10-10T13:25:00-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Markets closed Saturday; this reanalysis uses Friday 10/9 closing data on all timeframes, so levels match the earlier 10/10 study.",
-        "source": "Trading Assistant system (Alpaca SIP/OPRA, Cboe), 10/9 close, pulled 2026-10-10 12:52 ET",
-        "at": "2026-10-10T13:48:07-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "App plan shows 100 shares; Seth's Schwab screenshot shows 101 at 70.07. Analysis uses 101.",
-        "source": "Seth's Schwab screenshot 2026-10-10",
-        "at": "2026-10-10T13:48:07-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Basic TEM charts added: daily, 1h, 15m, 5m PNGs plus combined PDF, with support/resistance, order-block zones, entry 70.07 and the 65 put strike marked. Bars are 10/9 close.",
-        "source": "Alpaca SIP bars via Trading Assistant system; zones from analysis.TEM.plan",
-        "at": "2026-10-10T13:52:25-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Reanalyze planRev 48 answered: markets closed Saturday, so levels, studies and charts are unchanged from the 10/9-close study; ladder review updated for the new rung sizes (R1-R4 = 96 unhedged shares). App plan shows 100 shares; Seth's Schwab figure of 101 at 70.07 is used.",
-        "source": "Alpaca SIP/OPRA via Trading Assistant system, 10/9 close",
-        "at": "2026-10-10T14:05:39-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "TEM",
-        "msg": "Reanalyze planRev 48: 4h and 1w are covered in the analysis but not charted (charts are 1d, 1h, 15m, 5m). Gamma flip and live order-book walls n/a; open-interest walls used.",
-        "source": "Trading Assistant system",
-        "at": "2026-10-10T14:05:39-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
-        "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-        "at": "2026-10-10T14:15:42-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "QCOM",
-        "msg": "QCOM is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-        "source": "Trading Plan rules",
-        "at": "2026-10-10T14:29:00-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "IONQ",
-        "msg": "IONQ is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-        "source": "Trading Plan rules",
-        "at": "2026-10-10T14:29:00-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "SPCX",
-        "msg": "SPCX is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-        "source": "Trading Plan rules",
-        "at": "2026-10-10T14:29:00-04:00"
-      },
-      {
-        "type": "unsupported",
-        "ticker": "COP",
-        "msg": "COP is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-        "source": "Trading Plan rules",
-        "at": "2026-10-10T14:29:00-04:00"
-      },
-      {
-        "type": "info",
-        "ticker": "TEM",
-        "msg": "Price refresh: markets closed Saturday; TEM price unchanged at Friday 10/9 close.",
-        "source": "Alpaca SIP via Trading Assistant system",
-        "at": "2026-10-10T14:29:00-04:00"
-      }
-    ],
-    "allocation": {
-      "id": "ra-mv2o0okb-e4bg",
-      "kind": "recommend-allocation",
-      "status": "ok",
-      "at": "2026-10-10T13:26:00-04:00",
-      "units": "cents",
-      "fundC": 2500000,
-      "reserveC": 125000,
-      "cashC_before": 2375000,
-      "items": [
-        {
-          "ticker": "TEM",
-          "amountC": 813503,
-          "pctOfFund": 32.54,
-          "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
-          "stock": {
-            "shares": 101,
-            "costC": 764137
-          },
-          "options": [
-            {
-              "contract": "TEM 2026-11-20 65 P",
-              "qty": 1,
-              "costC": 49366,
-              "role": "protective put"
-            }
-          ],
-          "newBuyC": 0,
-          "risk": {
-            "floor": 65.0,
-            "maxLossAtExpiryC_tradeBasis": 100573,
-            "maxLossAtExpiryC_costBasis": 157003,
-            "maxLossPctOfFund_costBasis": 6.28,
-            "maxLossPctOfFund_tradeBasis": 4.02
-          },
-          "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
-        }
-      ],
-      "totalAllocatedC": 813503,
-      "cashAfterC": 1561497,
-      "reserveAfterC": 125000,
-      "notes": [
-        "Recommendation only; no trades placed or recorded.",
-        "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
-        "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
-      ],
-      "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
-      "accountC": 2500000,
-      "requestId": "ra-mv2o0okb-e4bg",
-      "request_id": "ra-mv2o0okb-e4bg",
-      "reply": "feed.allocation",
-      "tickers": [
-        "TEM"
-      ],
-      "max": 10,
-      "unallocC": 0,
-      "allocations": [
-        {
-          "ticker": "TEM",
-          "amountC": 813503
-        }
-      ],
-      "requestAt": "2026-10-10T17:24:42.461Z"
+ "profile": "inv-jygvwdrn",
+ "updated": "2026-10-10T14:31:00-04:00",
+ "analysis": {
+  "TEM": {
+   "status": "ok",
+   "updated": "2026-10-10T14:05:39-04:00",
+   "plan": {
+    "summary": "HOLD the 101 shares with the Nov 20 65 put in place. TEM is consolidating 66.7\u201373 after the 10/6 reversal from 87.99, sitting on the 61.8% retracement (69.70) of the 57.72\u219289.09 swing and above the rising SMA50 (65.60). Bias neutral-to-constructive while daily closes hold above 66.7; the put caps downside below 65.",
+    "bias": "neutral / constructive above 66.7",
+    "position": {
+     "source": "Seth's Schwab screenshot 2026-10-10 12:58 PM ET",
+     "stock": {
+      "shares": 101,
+      "trade_price": 70.07,
+      "cost_basis_usd": 7641.37
+     },
+     "option": {
+      "contract": "TEM 2026-11-20 65 P",
+      "qty": 1,
+      "trade_price": 4.93,
+      "cost_usd": 493.66,
+      "role": "protective put"
+     },
+     "last_close": 70.93,
+     "last_close_date": "2026-10-09",
+     "stock_value_at_last_close": 7163.93,
+     "stock_pl_vs_trade_price": 86.86
     },
-    "prices": {
-      "id": null,
-      "requestId": "3d2e2ecd-ea15-49cc-8cde-760aa0fb2a48",
-      "requestAt": "2026-10-10T18:15:11.962Z",
-      "kind": "prices",
-      "status": "ok",
-      "at": "2026-10-10T14:15:42-04:00",
-      "tickers": [
-        "TEM"
-      ],
-      "items": [
-        {
-          "ticker": "TEM",
-          "price": 70.93,
-          "priceC": 7093,
-          "asOf": "2026-10-09T16:00:00-04:00",
-          "session": "closed (Saturday); Friday 10/9 regular-session close",
-          "prevClose": 69.28,
-          "change": 1.65,
-          "changePct": 2.38,
-          "open": 70.2,
-          "high": 72.96,
-          "low": 69.2,
-          "volume": 6275746,
-          "vwap": 71.1,
-          "lastTradeExtHours": 71.19,
-          "lastTradeTime": "2026-10-09T19:59:28-04:00",
-          "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-          "position": {
-            "shares": 101,
-            "tradePrice": 70.07,
-            "marketValue": 7163.93,
-            "unrealizedPL": 86.86,
-            "source": "Seth's Schwab screenshot 2026-10-10"
-          },
-          "option": {
-            "contract": "TEM 2026-11-20 65 P",
-            "occ": "TEM261120P00065000",
-            "qty": 1,
-            "tradePrice": 4.93,
-            "bid": 4.45,
-            "ask": 4.6,
-            "mid": 4.53,
-            "last": 4.4,
-            "iv": 0.808,
-            "delta": -0.313,
-            "asOf": "2026-10-09T15:59:00-04:00",
-            "marketValue": 453.0,
-            "unrealizedPL": -41.16,
-            "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
-          }
-        }
-      ],
-      "quotes": {
-        "TEM": {
-          "ticker": "TEM",
-          "price": 70.93,
-          "priceC": 7093,
-          "asOf": "2026-10-09T16:00:00-04:00",
-          "session": "closed (Saturday); Friday 10/9 regular-session close",
-          "prevClose": 69.28,
-          "change": 1.65,
-          "changePct": 2.38,
-          "open": 70.2,
-          "high": 72.96,
-          "low": 69.2,
-          "volume": 6275746,
-          "vwap": 71.1,
-          "lastTradeExtHours": 71.19,
-          "lastTradeTime": "2026-10-09T19:59:28-04:00",
-          "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-          "position": {
-            "shares": 101,
-            "tradePrice": 70.07,
-            "marketValue": 7163.93,
-            "unrealizedPL": 86.86,
-            "source": "Seth's Schwab screenshot 2026-10-10"
-          },
-          "option": {
-            "contract": "TEM 2026-11-20 65 P",
-            "occ": "TEM261120P00065000",
-            "qty": 1,
-            "tradePrice": 4.93,
-            "bid": 4.45,
-            "ask": 4.6,
-            "mid": 4.53,
-            "last": 4.4,
-            "iv": 0.808,
-            "delta": -0.313,
-            "asOf": "2026-10-09T15:59:00-04:00",
-            "marketValue": 453.0,
-            "unrealizedPL": -41.16,
-            "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
-          }
-        }
-      }
+    "put_protection": {
+     "how": "The 65 put gives Seth the right to sell 100 shares at 65 through Nov 20, so below 65 the loss on 100 of the 101 shares stops growing (1 share stays unhedged). It also covers the unconfirmed 11/3 earnings date.",
+     "floor_per_share": 65.0,
+     "max_loss_at_expiry_trade_price_basis_usd": 1005.73,
+     "max_loss_at_expiry_cost_basis_usd": 1570.03,
+     "breakeven_at_expiry_trade_price_basis": 74.96,
+     "protection_starts_pct_below_last": 8.36,
+     "put_current_value": {
+      "as_of": "2026-10-09 close",
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.525,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "gamma": 0.0184,
+      "theta": -0.0804,
+      "vega": 0.0845,
+      "volume": 42,
+      "oi": 740,
+      "value_usd": 452.5,
+      "pnl_vs_trade_usd": -40.5,
+      "source": "Alpaca OPRA via Trading Assistant (CBOE cross-check)"
+     },
+     "note": "Max loss figures ignore any leftover put time value and assume the stock is at or below 65 at Nov 20 expiry. Cost-basis version uses Schwab's $7,641.37."
     },
-    "reanalyze": {
-      "id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
-      "request_id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
-      "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225",
-      "kind": "reanalyze",
-      "scope": "single",
-      "tickers": [
-        "TEM"
+    "levels": {
+     "support": [
+      {
+       "p": 69.7,
+       "why": "61.8% fib of 57.72\u219289.09 swing; held 10/8\u201310/9"
+      },
+      {
+       "p": 69.2,
+       "why": "10/9 low"
+      },
+      {
+       "p": 66.71,
+       "why": "10/8 low, range floor"
+      },
+      {
+       "p": 65.6,
+       "why": "rising daily SMA50"
+      },
+      {
+       "p": 65.0,
+       "why": "Oct 23 top put wall (1,505 OI) and Seth's put strike"
+      },
+      {
+       "p": 64.43,
+       "why": "78.6% fib; daily lower Bollinger 64.02"
+      }
+     ],
+     "resistance": [
+      {
+       "p": 71.1,
+       "why": "10/9 session VWAP (~71.10\u201371.13 across TFs)"
+      },
+      {
+       "p": 71.34,
+       "why": "10/6 low, broken support now resistance"
+      },
+      {
+       "p": 72.96,
+       "why": "10/9 high / 73.09 10/7 high"
+      },
+      {
+       "p": 73.41,
+       "why": "50% fib"
+      },
+      {
+       "p": 76.35,
+       "why": "daily SMA20 / Bollinger mid; 38.2% fib 77.11"
+      },
+      {
+       "p": 80.0,
+       "why": "call wall Oct 16 (4,413 OI) and Oct 23 (1,004 OI)"
+      },
+      {
+       "p": 84.0,
+       "why": "bearish order block 84\u201388 (10/6 distribution bar, 16.6M shares)"
+      }
+     ]
+    },
+    "order_blocks": [
+     {
+      "type": "bullish",
+      "zone": [
+       57.72,
+       62.81
       ],
-      "planRev": 48,
-      "requestAt": "2026-10-10T18:04:44.569Z",
-      "status": "ok",
-      "at": "2026-10-10T14:05:39-04:00",
-      "reply": "analysis.TEM",
-      "summary": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
-      "next_moves": [
-        {
-          "step": 1,
-          "when": "Monday 10/12 open",
-          "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
-        },
-        {
-          "step": 2,
-          "when": "daily close above 73.1",
-          "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
-        },
-        {
-          "step": 3,
-          "when": "pullback that holds 66.7-69.7",
-          "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
-        },
-        {
-          "step": 4,
-          "when": "daily close below 65.6 (SMA50)",
-          "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
-        },
-        {
-          "step": 5,
-          "when": "before 11/3 earnings (unconfirmed)",
-          "move": "Keep the put through earnings; it expires 11/20, after the report."
-        }
+      "why": "last down/base candles (9/10\u20139/14) before the 9/15\u20139/17 impulse; untested"
+     },
+     {
+      "type": "bearish",
+      "zone": [
+       84.0,
+       87.99
       ],
-      "charts": [
-        {
-          "tf": "1d",
-          "type": "png",
-          "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
-        },
-        {
-          "tf": "1h",
-          "type": "png",
-          "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
-        },
-        {
-          "tf": "15m",
-          "type": "png",
-          "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
-        },
-        {
-          "tf": "5m",
-          "type": "png",
-          "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
-        },
-        {
-          "tf": "all",
-          "type": "pdf",
-          "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-        }
+      "why": "10/6 open-to-high spike that reversed on ~2x average volume"
+     }
+    ],
+    "fibonacci": {
+     "swing_low": 57.72,
+     "swing_low_date": "2026-09-14",
+     "swing_high": 89.09,
+     "swing_high_date": "2026-09-29",
+     "r382": 77.11,
+     "r50": 73.41,
+     "r618": 69.7,
+     "r786": 64.43,
+     "confluence": "61.8% (69.70) sits with the 10/9 low 69.2 and the 70 put/call strike cluster; 78.6% (64.43) sits with the 65 put strike and lower daily Bollinger."
+    },
+    "timeframes": {
+     "1w": "Uptrend from the 40.77 July low intact; last week a bearish reversal bar from 87.99.",
+     "1d": "RSI 48, MACD 1.98 below signal 3.86 (hist \u22121.87, momentum cooling), price under SMA20 76.35 but above SMA50 65.60 and SMA200 56.65. ATR14 5.61 (about 7.9%).",
+     "4h": "RSI 44, MACD \u22121.09 below signal, hist \u22121.53; bearish but flattening.",
+     "1h": "RSI 44, MACD hist +0.59 turned positive; price 70.93 just above BB mid 70.21, under SMA50 75.75. Early base.",
+     "15m": "RSI 55, price above SMA50 69.47, tight BB 69.50\u201371.96; consolidating.",
+     "5m": "RSI 43, closed 70.93 just under session VWAP 71.13; slight fade into the close."
+    },
+    "volume_wyckoff": "10/6 spike to 87.99 and close at 71.98 on 16.6M (about 2x the 20-day average of 8.0M) looks like an upthrust/distribution event; volume has since faded each day (9.0M, 7.5M, 6.3M) as price holds 66.7\u201373. That pattern reads as a secondary test. A hold above 66.7 with rising volume on up days would point to re-accumulation; a daily close under 65.6 would confirm distribution toward the 57.7\u201362.8 order block.",
+    "options_read": {
+     "oct16": {
+      "atm_iv": 0.755,
+      "expected_move_straddle": 5.49,
+      "range": [
+       65.44,
+       76.42
       ],
-      "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+      "pc_oi": 1.0,
+      "pc_vol": 0.66,
+      "max_pain": 70.0,
+      "call_walls": [
+       70,
+       80,
+       85
+      ],
+      "put_walls": [
+       "50 (zero-bid, ignore)",
+       70,
+       "40 (zero-bid, ignore)"
+      ],
+      "skew_25d": -0.05
+     },
+     "oct23": {
+      "atm_iv": 0.758,
+      "expected_move_straddle": 8.1,
+      "range": [
+       62.83,
+       79.03
+      ],
+      "pc_oi": 0.82,
+      "pc_vol": 0.43,
+      "max_pain": 75.0,
+      "call_walls": [
+       80,
+       87,
+       90
+      ],
+      "put_walls": [
+       65,
+       75,
+       70
+      ]
+     },
+     "read": "Call volume outpaced puts (P/C volume 0.43\u20130.66) and 25-delta skew is slightly call-rich, so flow leans bullish. Max pain 70 (Oct 16) pins near the current price. The weekly expected move (about \u00b15.5) keeps 65\u201376 as the likely range into Oct 16. IV near 75% is elevated, which keeps Seth's put valuable if held.",
+     "gamma": "n/a (no reliable gamma-flip value in the data)",
+     "iv_rank": "n/a (no IV history in the data)",
+     "order_flow": "n/a (no live depth/order-book data; walls shown are open-interest walls)"
+    },
+    "scenarios": [
+     {
+      "case": "bull",
+      "trigger": "daily close above 73.1 (above 10/7 high and 50% fib)",
+      "targets": [
+       76.35,
+       80.0
+      ],
+      "action": "keep holding; consider whether to keep the put through 11/3 earnings"
+     },
+     {
+      "case": "base",
+      "trigger": "holds 66.7\u201373",
+      "action": "hold shares and put; no action needed"
+     },
+     {
+      "case": "bear",
+      "trigger": "daily close below 65.6 (SMA50)",
+      "targets": [
+       62.8,
+       57.7
+      ],
+      "action": "the put caps losses below 65 on 100 shares; review whether to hold the shares or exercise/sell the put"
+     }
+    ],
+    "risk": [
+     "Earnings 2026-11-03 AMC (unconfirmed) falls before the Nov 20 put expires.",
+     "ATR about 7.9% of price, so normal daily swings are large.",
+     "ESMO Congress Oct 23\u201327 (13 Tempus abstracts) and the 10/7 Merck/Moderna collaboration are possible catalysts."
+    ],
+    "recommendation": "Hold. Recommendations only; no trades placed or recorded.",
+    "next_moves": [
+     {
+      "step": 1,
+      "when": "Monday 10/12 open",
+      "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
+     },
+     {
+      "step": 2,
+      "when": "daily close above 73.1",
+      "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
+     },
+     {
+      "step": 3,
+      "when": "pullback that holds 66.7-69.7",
+      "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
+     },
+     {
+      "step": 4,
+      "when": "daily close below 65.6 (SMA50)",
+      "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
+     },
+     {
+      "step": 5,
+      "when": "before 11/3 earnings (unconfirmed)",
+      "move": "Keep the put through earnings; it expires 11/20, after the report."
+     }
+    ],
+    "strategy": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
+    "ladder_review": {
+     "R1 18@62.38": "Good spot: inside the untested bullish order block 57.72-62.81, below the 65 put wall and the 78.6% fib 64.43.",
+     "R2 18@59.36": "Good spot: deeper in the same order block.",
+     "R3 29@56.34": "Just under the SMA200 (56.65) and below the order block; only fill if the weekly uptrend from the July low (40.77) still holds.",
+     "R4 31@53.32": "Below all mapped support; a trend-break level, so re-check before it fills.",
+     "hedge_note": "The put covers 100 shares only. All four rungs add 96 unhedged shares (about $5,500), so each fill raises downside below 65. Consider sizing rungs so total unhedged exposure stays within your risk limit, or add a second put if the ladder fills.",
+     "trim 7@87.59": "Sits inside the bearish order block 84-88 (10/6 distribution bar), a sensible first trim."
     }
-  },
-  "allocation": {
-    "id": "ra-mv2o0okb-e4bg",
-    "kind": "recommend-allocation",
-    "status": "ok",
-    "at": "2026-10-10T13:26:00-04:00",
-    "units": "cents",
-    "fundC": 2500000,
-    "reserveC": 125000,
-    "cashC_before": 2375000,
-    "items": [
-      {
-        "ticker": "TEM",
-        "amountC": 813503,
-        "pctOfFund": 32.54,
-        "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
-        "stock": {
-          "shares": 101,
-          "costC": 764137
-        },
-        "options": [
-          {
-            "contract": "TEM 2026-11-20 65 P",
-            "qty": 1,
-            "costC": 49366,
-            "role": "protective put"
-          }
-        ],
-        "newBuyC": 0,
-        "risk": {
-          "floor": 65.0,
-          "maxLossAtExpiryC_tradeBasis": 100573,
-          "maxLossAtExpiryC_costBasis": 157003,
-          "maxLossPctOfFund_costBasis": 6.28,
-          "maxLossPctOfFund_tradeBasis": 4.02
-        },
-        "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
-      }
+   },
+   "deep": {
+    "charts": [
+     {
+      "tf": "1d",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
+     },
+     {
+      "tf": "1h",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
+     },
+     {
+      "tf": "15m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
+     },
+     {
+      "tf": "5m",
+      "type": "png",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
+     },
+     {
+      "tf": "all",
+      "type": "pdf",
+      "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+     }
     ],
-    "totalAllocatedC": 813503,
-    "cashAfterC": 1561497,
-    "reserveAfterC": 125000,
-    "notes": [
-      "Recommendation only; no trades placed or recorded.",
-      "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
-      "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
-    ],
-    "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
-    "accountC": 2500000,
-    "requestId": "ra-mv2o0okb-e4bg",
-    "request_id": "ra-mv2o0okb-e4bg",
-    "reply": "feed.allocation",
-    "tickers": [
-      "TEM"
-    ],
-    "max": 10,
-    "unallocC": 0,
-    "allocations": [
-      {
-        "ticker": "TEM",
-        "amountC": 813503
-      }
-    ],
-    "requestAt": "2026-10-10T17:24:42.461Z"
+    "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+   },
+   "sources": "Trading Assistant system (Research raw pull: Alpaca SIP bars, Alpaca OPRA options), as of 2026-10-10 12:53 ET",
+   "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225"
   }
+ },
+ "feed": {
+  "updated": "2026-10-10T14:31:00-04:00",
+  "notices": [
+   {
+    "type": "info",
+    "ticker": null,
+    "msg": "Markets are closed today (Saturday); all prices are Friday 10/9 closes.",
+    "source": "Alpaca SIP via Trading Assistant system",
+    "at": "2026-10-10T13:12:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "TEM",
+    "msg": "Gamma flip, IV rank and live order-book walls are n/a: not in the published data. Walls shown are open-interest walls.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T13:12:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Support/resistance, Fibonacci and order blocks are computed by this bot from Alpaca SIP daily bars.",
+    "source": "Alpaca SIP via Trading Assistant system",
+    "at": "2026-10-10T13:12:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Nov 20 65P quote added (10/9 close mid 4.525, delta -0.313, IV 80.8%).",
+    "source": "Alpaca OPRA via Trading Assistant",
+    "at": "2026-10-10T13:11:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Allocation recommendation ra-mv2nzi3h-29q: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
+    "source": "Trading Plan analysis",
+    "at": "2026-10-10T13:25:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Markets closed Saturday; this reanalysis uses Friday 10/9 closing data on all timeframes, so levels match the earlier 10/10 study.",
+    "source": "Trading Assistant system (Alpaca SIP/OPRA, Cboe), 10/9 close, pulled 2026-10-10 12:52 ET",
+    "at": "2026-10-10T13:48:07-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "App plan shows 100 shares; Seth's Schwab screenshot shows 101 at 70.07. Analysis uses 101.",
+    "source": "Seth's Schwab screenshot 2026-10-10",
+    "at": "2026-10-10T13:48:07-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Basic TEM charts added: daily, 1h, 15m, 5m PNGs plus combined PDF, with support/resistance, order-block zones, entry 70.07 and the 65 put strike marked. Bars are 10/9 close.",
+    "source": "Alpaca SIP bars via Trading Assistant system; zones from analysis.TEM.plan",
+    "at": "2026-10-10T13:52:25-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 48 answered: markets closed Saturday, so levels, studies and charts are unchanged from the 10/9-close study; ladder review updated for the new rung sizes (R1-R4 = 96 unhedged shares). App plan shows 100 shares; Seth's Schwab figure of 101 at 70.07 is used.",
+    "source": "Alpaca SIP/OPRA via Trading Assistant system, 10/9 close",
+    "at": "2026-10-10T14:05:39-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 48: 4h and 1w are covered in the analysis but not charted (charts are 1d, 1h, 15m, 5m). Gamma flip and live order-book walls n/a; open-interest walls used.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T14:05:39-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+    "at": "2026-10-10T14:15:42-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Price refresh: markets closed Saturday; TEM price unchanged at Friday 10/9 close.",
+    "source": "Alpaca SIP via Trading Assistant system",
+    "at": "2026-10-10T14:29:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "QCOM",
+    "msg": "QCOM is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
+    "source": "Trading Plan rules",
+    "at": "2026-10-10T14:31:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "IONQ",
+    "msg": "IONQ is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
+    "source": "Trading Plan rules",
+    "at": "2026-10-10T14:31:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "SPCX",
+    "msg": "SPCX is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
+    "source": "Trading Plan rules",
+    "at": "2026-10-10T14:31:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "COP",
+    "msg": "COP is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
+    "source": "Trading Plan rules",
+    "at": "2026-10-10T14:31:00-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "RKLB",
+    "msg": "RKLB is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
+    "source": "Trading Plan rules",
+    "at": "2026-10-10T14:31:00-04:00"
+   }
+  ],
+  "allocation": {
+   "id": "ra-mv2o0okb-e4bg",
+   "kind": "recommend-allocation",
+   "status": "ok",
+   "at": "2026-10-10T13:26:00-04:00",
+   "units": "cents",
+   "fundC": 2500000,
+   "reserveC": 125000,
+   "cashC_before": 2375000,
+   "items": [
+    {
+     "ticker": "TEM",
+     "amountC": 813503,
+     "pctOfFund": 32.54,
+     "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
+     "stock": {
+      "shares": 101,
+      "costC": 764137
+     },
+     "options": [
+      {
+       "contract": "TEM 2026-11-20 65 P",
+       "qty": 1,
+       "costC": 49366,
+       "role": "protective put"
+      }
+     ],
+     "newBuyC": 0,
+     "risk": {
+      "floor": 65.0,
+      "maxLossAtExpiryC_tradeBasis": 100573,
+      "maxLossAtExpiryC_costBasis": 157003,
+      "maxLossPctOfFund_costBasis": 6.28,
+      "maxLossPctOfFund_tradeBasis": 4.02
+     },
+     "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
+    }
+   ],
+   "totalAllocatedC": 813503,
+   "cashAfterC": 1561497,
+   "reserveAfterC": 125000,
+   "notes": [
+    "Recommendation only; no trades placed or recorded.",
+    "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
+    "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
+   ],
+   "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
+   "accountC": 2500000,
+   "requestId": "ra-mv2o0okb-e4bg",
+   "request_id": "ra-mv2o0okb-e4bg",
+   "reply": "feed.allocation",
+   "tickers": [
+    "TEM"
+   ],
+   "max": 10,
+   "unallocC": 0,
+   "allocations": [
+    {
+     "ticker": "TEM",
+     "amountC": 813503
+    }
+   ],
+   "requestAt": "2026-10-10T17:24:42.461Z"
+  },
+  "prices": {
+   "id": null,
+   "requestId": "51e974b5-85dd-4f6c-85a3-e14fdcf2ff38",
+   "requestAt": "2026-10-10T18:30:12.490Z",
+   "kind": "prices",
+   "status": "ok",
+   "at": "2026-10-10T14:31:00-04:00",
+   "tickers": [
+    "TEM"
+   ],
+   "items": [
+    {
+     "ticker": "TEM",
+     "price": 70.93,
+     "priceC": 7093,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 69.28,
+     "change": 1.65,
+     "changePct": 2.38,
+     "open": 70.2,
+     "high": 72.96,
+     "low": 69.2,
+     "volume": 6275746,
+     "vwap": 71.1,
+     "lastTradeExtHours": 71.19,
+     "lastTradeTime": "2026-10-09T19:59:28-04:00",
+     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+     "position": {
+      "shares": 101,
+      "tradePrice": 70.07,
+      "marketValue": 7163.93,
+      "unrealizedPL": 86.86,
+      "source": "Seth's Schwab screenshot 2026-10-10"
+     },
+     "option": {
+      "contract": "TEM 2026-11-20 65 P",
+      "occ": "TEM261120P00065000",
+      "qty": 1,
+      "tradePrice": 4.93,
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.53,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "asOf": "2026-10-09T15:59:00-04:00",
+      "marketValue": 453.0,
+      "unrealizedPL": -41.16,
+      "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
+     }
+    }
+   ],
+   "quotes": {
+    "TEM": {
+     "ticker": "TEM",
+     "price": 70.93,
+     "priceC": 7093,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 69.28,
+     "change": 1.65,
+     "changePct": 2.38,
+     "open": 70.2,
+     "high": 72.96,
+     "low": 69.2,
+     "volume": 6275746,
+     "vwap": 71.1,
+     "lastTradeExtHours": 71.19,
+     "lastTradeTime": "2026-10-09T19:59:28-04:00",
+     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+     "position": {
+      "shares": 101,
+      "tradePrice": 70.07,
+      "marketValue": 7163.93,
+      "unrealizedPL": 86.86,
+      "source": "Seth's Schwab screenshot 2026-10-10"
+     },
+     "option": {
+      "contract": "TEM 2026-11-20 65 P",
+      "occ": "TEM261120P00065000",
+      "qty": 1,
+      "tradePrice": 4.93,
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.53,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "asOf": "2026-10-09T15:59:00-04:00",
+      "marketValue": 453.0,
+      "unrealizedPL": -41.16,
+      "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
+     }
+    }
+   },
+   "requested": [
+    "TEM",
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP",
+    "RKLB"
+   ],
+   "withheld": [
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP",
+    "RKLB"
+   ]
+  },
+  "reanalyze": {
+   "id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
+   "request_id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
+   "requestId": "2bca50a0-e79f-4fcf-a576-974512f6e225",
+   "kind": "reanalyze",
+   "scope": "single",
+   "tickers": [
+    "TEM"
+   ],
+   "planRev": 48,
+   "requestAt": "2026-10-10T18:04:44.569Z",
+   "status": "ok",
+   "at": "2026-10-10T14:05:39-04:00",
+   "reply": "analysis.TEM",
+   "summary": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
+   "next_moves": [
+    {
+     "step": 1,
+     "when": "Monday 10/12 open",
+     "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
+    },
+    {
+     "step": 2,
+     "when": "daily close above 73.1",
+     "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
+    },
+    {
+     "step": 3,
+     "when": "pullback that holds 66.7-69.7",
+     "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
+    },
+    {
+     "step": 4,
+     "when": "daily close below 65.6 (SMA50)",
+     "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
+    },
+    {
+     "step": 5,
+     "when": "before 11/3 earnings (unconfirmed)",
+     "move": "Keep the put through earnings; it expires 11/20, after the report."
+    }
+   ],
+   "charts": [
+    {
+     "tf": "1d",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
+    },
+    {
+     "tf": "1h",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
+    },
+    {
+     "tf": "15m",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
+    },
+    {
+     "tf": "5m",
+     "type": "png",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
+    },
+    {
+     "tf": "all",
+     "type": "pdf",
+     "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+    }
+   ],
+   "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+  }
+ },
+ "allocation": {
+  "id": "ra-mv2o0okb-e4bg",
+  "kind": "recommend-allocation",
+  "status": "ok",
+  "at": "2026-10-10T13:26:00-04:00",
+  "units": "cents",
+  "fundC": 2500000,
+  "reserveC": 125000,
+  "cashC_before": 2375000,
+  "items": [
+   {
+    "ticker": "TEM",
+    "amountC": 813503,
+    "pctOfFund": 32.54,
+    "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
+    "stock": {
+     "shares": 101,
+     "costC": 764137
+    },
+    "options": [
+     {
+      "contract": "TEM 2026-11-20 65 P",
+      "qty": 1,
+      "costC": 49366,
+      "role": "protective put"
+     }
+    ],
+    "newBuyC": 0,
+    "risk": {
+     "floor": 65.0,
+     "maxLossAtExpiryC_tradeBasis": 100573,
+     "maxLossAtExpiryC_costBasis": 157003,
+     "maxLossPctOfFund_costBasis": 6.28,
+     "maxLossPctOfFund_tradeBasis": 4.02
+    },
+    "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
+   }
+  ],
+  "totalAllocatedC": 813503,
+  "cashAfterC": 1561497,
+  "reserveAfterC": 125000,
+  "notes": [
+   "Recommendation only; no trades placed or recorded.",
+   "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
+   "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
+  ],
+  "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
+  "accountC": 2500000,
+  "requestId": "ra-mv2o0okb-e4bg",
+  "request_id": "ra-mv2o0okb-e4bg",
+  "reply": "feed.allocation",
+  "tickers": [
+   "TEM"
+  ],
+  "max": 10,
+  "unallocC": 0,
+  "allocations": [
+   {
+    "ticker": "TEM",
+    "amountC": 813503
+   }
+  ],
+  "requestAt": "2026-10-10T17:24:42.461Z"
+ }
 }
