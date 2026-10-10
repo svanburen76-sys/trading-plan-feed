@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T17:41:57-04:00",
+ "updated": "2026-10-10T17:50:16-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -240,7 +240,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move ±5.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move \u00b15.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.0,
@@ -308,7 +308,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -326,7 +326,7 @@
        "R_mid_T1": 3.21,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       },
@@ -345,7 +345,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       }
@@ -1111,7 +1111,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move ±7.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move \u00b17.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.59,
@@ -1179,7 +1179,7 @@
        "R_class": "PASS",
        "flags": [
         "USED",
-        "WEAK-TREND→reclaim"
+        "WEAK-TREND\u2192reclaim"
        ]
       },
       {
@@ -1197,7 +1197,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-04)"
        ]
       }
@@ -1935,7 +1935,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move ±2.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move \u00b12.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -2003,7 +2003,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80 (IONQ swing stops locked 40.80 close / 39.80 hard; LT zone is a separate proposal, locked stops untouched)"
        ]
@@ -2024,7 +2024,7 @@
        "flags": [
         "NEAR",
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(below Keltner-lo; ER 2026-11-04)",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80"
@@ -2719,7 +2719,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move ±7.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move \u00b17.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -3539,7 +3539,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move ±4.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move \u00b14.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.54,
@@ -4367,7 +4367,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move ±4.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move \u00b14.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.65,
@@ -4487,7 +4487,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "A hard sits inside zone B"
        ]
       },
@@ -4506,7 +4506,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-10)"
        ]
       }
@@ -5253,7 +5253,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move ±3.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move \u00b13.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.68,
@@ -5422,7 +5422,7 @@
        "flags": [
         "FAIL",
         "USED",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -5440,7 +5440,7 @@
        "R_mid_T1": 2.76,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "B hard sits inside zone C"
        ]
       },
@@ -5458,7 +5458,7 @@
        "R_mid_T1": 2.74,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR; ER 2026-10-27)"
        ]
       }
@@ -5988,7 +5988,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T17:41:57-04:00",
+  "updated": "2026-10-10T17:50:16-04:00",
   "notices": [
    {
     "type": "info",
@@ -6014,13 +6014,6 @@
    {
     "type": "info",
     "ticker": null,
-    "msg": "Prices request answered for TEM with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
-    "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
-    "at": "2026-10-10T15:54:01-04:00"
-   },
-   {
-    "type": "info",
-    "ticker": null,
     "msg": "Not available in the data (n/a) for all 7 names: gamma flip / net gamma, IV rank, order-book depth and order flow (walls are open-interest walls), 2-year daily history (Trading Assistant holds 1 year), beta, BigBeluga order blocks and Trading Assistant order-block, candlestick and Wyckoff tagging (order blocks, candle, volume and Wyckoff reads shown are this bot's approximations from regular-hours bars), 4h/5m VWAP beyond the session, and put quotes for every name except TEM (Nov 20 65P). Also n/a: oil price for COP and published price targets for TEM, QCOM and IONQ.",
     "source": "Trading Assistant system (10/10 folders, 10/9 close)",
     "at": "2026-10-10T17:41:57-04:00"
@@ -6031,6 +6024,13 @@
     "msg": "Reanalyze planRev 163 answered for all 7 names: full plans rewritten (steps, entries, odds-sized ladders, trims, stops, options, cautions, changes). Recommended splits: QCOM 17.75, COP 17.25, SPCX 13.25, FCX 12.75, RKLB 9.0, TEM 5.75, IONQ 5.5, cash 18.75%. Deploy now 20.79% ($23,075). Recommendations only.",
     "source": "Trading Assistant long-term workups (10/9 close) + app plan planRev 163",
     "at": "2026-10-10T17:41:57-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": null,
+    "msg": "Prices request answered for TEM with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
+    "at": "2026-10-10T17:50:16-04:00"
    }
   ],
   "allocation": {
@@ -6931,11 +6931,11 @@
   },
   "prices": {
    "id": null,
-   "requestId": null,
-   "requestAt": "2026-10-10T19:53:30.925Z",
+   "requestId": "3956f622-6895-4ec9-882f-29ae46e86ddc",
+   "requestAt": "2026-10-10T21:49:22.796Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T15:54:01-04:00",
+   "at": "2026-10-10T17:50:16-04:00",
    "tickers": [
     "TEM"
    ],
