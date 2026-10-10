@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T14:05:39-04:00",
+ "updated": "2026-10-10T14:15:42-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -301,7 +301,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T14:05:39-04:00",
+  "updated": "2026-10-10T14:15:42-04:00",
   "notices": [
    {
     "type": "info",
@@ -362,13 +362,6 @@
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
-    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-    "at": "2026-10-10T14:05:06-04:00"
-   },
-   {
-    "type": "info",
-    "ticker": "TEM",
     "msg": "Reanalyze planRev 48 answered: markets closed Saturday, so levels, studies and charts are unchanged from the 10/9-close study; ladder review updated for the new rung sizes (R1-R4 = 96 unhedged shares). App plan shows 100 shares; Seth's Schwab figure of 101 at 70.07 is used.",
     "source": "Alpaca SIP/OPRA via Trading Assistant system, 10/9 close",
     "at": "2026-10-10T14:05:39-04:00"
@@ -379,6 +372,13 @@
     "msg": "Reanalyze planRev 48: 4h and 1w are covered in the analysis but not charted (charts are 1d, 1h, 15m, 5m). Gamma flip and live order-book walls n/a; open-interest walls used.",
     "source": "Trading Assistant system",
     "at": "2026-10-10T14:05:39-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+    "at": "2026-10-10T14:15:42-04:00"
    }
   ],
   "allocation": {
@@ -446,11 +446,12 @@
    "requestAt": "2026-10-10T17:24:42.461Z"
   },
   "prices": {
-   "id": "7a845e8e-dbdf-4c9b-ab1f-aaa68061f667",
-   "requestAt": "2026-10-10T18:04:46.823Z",
+   "id": null,
+   "requestId": "3d2e2ecd-ea15-49cc-8cde-760aa0fb2a48",
+   "requestAt": "2026-10-10T18:15:11.962Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T14:05:06-04:00",
+   "at": "2026-10-10T14:15:42-04:00",
    "tickers": [
     "TEM"
    ],
