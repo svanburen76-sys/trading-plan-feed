@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:52:25-04:00",
+ "updated": "2026-10-10T14:04:14-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -301,7 +301,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T13:52:25-04:00",
+  "updated": "2026-10-10T14:04:14-04:00",
   "notices": [
    {
     "type": "info",
@@ -341,13 +341,6 @@
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
-    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-    "at": "2026-10-10T13:47:36-04:00"
-   },
-   {
-    "type": "info",
-    "ticker": "TEM",
     "msg": "Markets closed Saturday; this reanalysis uses Friday 10/9 closing data on all timeframes, so levels match the earlier 10/10 study.",
     "source": "Trading Assistant system (Alpaca SIP/OPRA, Cboe), 10/9 close, pulled 2026-10-10 12:52 ET",
     "at": "2026-10-10T13:48:07-04:00"
@@ -365,6 +358,13 @@
     "msg": "Basic TEM charts added: daily, 1h, 15m, 5m PNGs plus combined PDF, with support/resistance, order-block zones, entry 70.07 and the 65 put strike marked. Bars are 10/9 close.",
     "source": "Alpaca SIP bars via Trading Assistant system; zones from analysis.TEM.plan",
     "at": "2026-10-10T13:52:25-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+    "at": "2026-10-10T14:04:14-04:00"
    }
   ],
   "allocation": {
@@ -432,11 +432,11 @@
    "requestAt": "2026-10-10T17:24:42.461Z"
   },
   "prices": {
-   "id": "08feb7d5-175e-4472-9b5f-dd89091b9ecd",
-   "requestAt": "2026-10-10T17:47:19.145Z",
+   "id": "2035cb77-e365-408f-ad1e-2eb62c05c795",
+   "requestAt": "2026-10-10T18:03:40.272Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T13:47:36-04:00",
+   "at": "2026-10-10T14:04:14-04:00",
    "tickers": [
     "TEM"
    ],
