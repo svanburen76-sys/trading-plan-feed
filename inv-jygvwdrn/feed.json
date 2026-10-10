@@ -1,11 +1,11 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T17:30:33-04:00",
+ "updated": "2026-10-10T17:31:54-04:00",
  "analysis": {
   "TEM": {
    "status": "pending",
    "updated": "2026-10-10T15:57:55-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 141,
    "plan": {
     "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($5,750), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
@@ -695,12 +695,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 141",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "QCOM": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "QCOM closed 175.5 on 10/9 (pullback inside a larger range; daily RSI 44, MACD hist -2.34). Data-based entry 171.3 in zone A 170.51-172.12 (3.61R to T1 180.8, hard stop 168.67); recommended split 18.0% ($18,000), deploy now 7.2% ($7,014). App buy-now 170.23 fails the zone check (stop too close) (6.78R).",
@@ -1275,12 +1275,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/QCOM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "IONQ": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "IONQ closed 39.89 on 10/9 (downtrend; daily RSI 44, MACD hist -0.35). Data-based entry 38.1 in zone A 37.65-38.56 (1.62R to T1 41.3, hard stop 36.13); recommended split 6.0% ($6,000), deploy now 0.0% ($0). App buy-now 38.69 fails the zone/R check (1.02R).",
@@ -1819,12 +1819,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/IONQ_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "SPCX": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "SPCX closed 162.57 on 10/9 (uptrend; daily RSI 58, MACD hist +0.98). Data-based entry 154.4 in zone A 152.6-155.41 (1.53R to T1 170.9, hard stop 143.59); recommended split 13.75% ($13,750), deploy now 3.44% ($3,233). App buy-now 157.69 fails the zone/R check (0.94R).",
@@ -2390,12 +2390,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/SPCX_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "COP": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "COP closed 134.1 on 10/9 (mixed / basing; daily RSI 60, MACD hist +0.49). Data-based entry 130.07 in zone B 129.36-130.97 (1.95R to T1 135.7, hard stop 127.18); recommended split 17.25% ($17,250), deploy now 6.9% ($6,753). App buy-now 130.07 passes and is kept (1.95R).",
@@ -2954,12 +2954,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/COP_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "RKLB": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "RKLB closed 68.21 on 10/9 (downtrend; daily RSI 46, MACD hist -0.02). Data-based entry 64.5 in zone A 63.87-65.26 (1.75R to T1 73.2, hard stop 59.52); recommended split 9.5% ($9,500), deploy now 1.43% ($1,419). App buy-now 66.16 fails the zone/R check (1.06R).",
@@ -3579,12 +3579,12 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/RKLB_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   },
   "FCX": {
    "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "planRev": 140,
    "plan": {
     "summary": "FCX closed 73.69 on 10/9 (recovery; daily RSI 56, MACD hist +0.06). Data-based entry 68.8 in zone B 68.2-69.46 (2.8R to T1 75.7, hard stop 66.34); recommended split 12.75% ($12,750), deploy now 2.55% ($2,546). App buy-now 71.47 fails the zone/R check (0.82R).",
@@ -4277,11 +4277,11 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
    },
    "sources": "Trading Assistant folders /workspace/trading_plan/FCX_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T17:30:33-04:00"
+   "pendingSince": "2026-10-10T17:31:54-04:00"
   }
  },
  "feed": {
-  "updated": "2026-10-10T17:30:33-04:00",
+  "updated": "2026-10-10T17:31:54-04:00",
   "notices": [
    {
     "type": "info",
@@ -4345,6 +4345,13 @@
     "msg": "Reanalyze planRev 160 received; fresh data requested from Trading Assistant, analysis pending (typically 10-20 min). Markets closed Saturday, so data reflects the 10/9 close.",
     "source": "Trading Assistant system",
     "at": "2026-10-10T17:30:33-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "ALL",
+    "msg": "Reanalyze planRev 163 received (same tickers and plan as planRev 160 two minutes earlier); the fresh Trading Assistant data request already in flight covers it, analysis pending (typically 10-20 min). Markets closed Saturday, so data reflects the 10/9 close.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T17:31:54-04:00"
    }
   ],
   "allocation": {
@@ -5284,9 +5291,9 @@
    "withheld": []
   },
   "reanalyze": {
-   "id": "8a313f60-0def-482f-9676-6858bb16d713",
-   "request_id": "8a313f60-0def-482f-9676-6858bb16d713",
-   "requestId": "8a313f60-0def-482f-9676-6858bb16d713",
+   "id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
+   "request_id": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
+   "requestId": "ed33c1ab-ed4a-47c4-aa29-d8b8dfa45504",
    "kind": "reanalyze",
    "scope": "all",
    "tickers": [
@@ -5298,10 +5305,10 @@
     "RKLB",
     "FCX"
    ],
-   "planRev": 160,
-   "requestAt": "2026-10-10T21:29:22.657Z",
+   "planRev": 163,
+   "requestAt": "2026-10-10T21:31:06.393Z",
    "status": "pending",
-   "at": "2026-10-10T17:30:33-04:00",
+   "at": "2026-10-10T17:31:54-04:00",
    "reply": "analysis.<TICKER>",
    "pending": [
     "TEM",
@@ -5312,7 +5319,7 @@
     "RKLB",
     "FCX"
    ],
-   "summary": "Data pending: fresh market and options data requested from Trading Assistant for TEM, QCOM, IONQ, SPCX, COP, RKLB and FCX (planRev 160, $111,000 cash, no positions). New plans, splits and charts follow when it arrives. Recommendations only; no trades placed or recorded."
+   "summary": "Data pending: fresh market and options data requested from Trading Assistant for TEM, QCOM, IONQ, SPCX, COP, RKLB and FCX (planRev 163, $111,000 cash, no positions). New plans, splits and charts follow when it arrives. Recommendations only; no trades placed or recorded."
   }
  },
  "allocation": {
