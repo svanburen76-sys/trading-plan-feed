@@ -1,18 +1,18 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:54:30-04:00",
+ "updated": "2026-10-10T15:57:55-04:00",
  "analysis": {
   "TEM": {
-   "status": "pending",
-   "updated": "2026-10-10T15:32:53-04:00",
+   "status": "ok",
+   "updated": "2026-10-10T15:57:55-04:00",
    "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
    "planRev": 141,
    "plan": {
     "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($5,750), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
     "bias": "pullback inside a larger range",
-    "planRev": 140,
+    "planRev": 141,
     "position": {
-     "source": "app request.plan (planRev 140)",
+     "source": "app request.plan (planRev 141)",
      "shares": 0,
      "avgCost": null,
      "last_close": 70.93,
@@ -240,7 +240,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move \u00b15.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move ±5.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.0,
@@ -308,7 +308,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2"
        ]
       },
@@ -326,7 +326,7 @@
        "R_mid_T1": 3.21,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       },
@@ -345,7 +345,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       }
@@ -392,16 +392,74 @@
       "price": 68.8,
       "shares": 98,
       "R_to_T1": 1.09,
-      "verdict": "Buy-now 98@68.80 is 0.14 above zone A (66.71-68.66) and only 1.09R to T1 76.5 vs the 61.71 hard stop: FAIL. 98 shares (~$6,740) is also more than the whole recommended TEM target.",
-      "correction": "Use rung 1 17@67.60 (1.51R) and rung 2 12@66.80, then zone B/C."
+      "verdict": "Buy-now 98@68.80 is 0.14 above zone A (66.71-68.66) and only 1.09R to T1 76.5 against the 61.71 hard stop: FAIL. 98 shares (about $6,740) is also more than the whole recommended TEM target ($5,750).",
+      "correction": "Use rung 1 21@67.60 (1.51R), rung 2 21@67.10 (1.74R) and rung 3 17@66.75 (1.93R), all inside zone A."
      },
      "trim": {
       "app": "4@82.56",
       "price": 82.56,
-      "verdict": "Trim 4@82.56 sits at the far edge of the 81.68-82.58 shelf and skips T1.",
-      "correction": "Trim at 76.40 (T1), 81.60 (front of the T2 shelf) and 87.90 (T3)."
+      "verdict": "Trim 4@82.56 is above T2 81.7 (at the far edge of the 81.68-82.58 shelf) and below T3 88.0, and it skips T1 76.5.",
+      "correction": "Trim at 76.40 (T1), 81.60 (front of the T2 shelf) and 87.90 (T3); runner trails under 81.7 after T3."
      },
-     "taCheck": "Trading Assistant check of the app levels, 2026-10-10"
+     "ladder": [
+      {
+       "app": "Buy-now 98@68.80",
+       "price": 68.8,
+       "shares": 98,
+       "zone": "above zone A",
+       "R_T1": 1.09,
+       "verdict": "FAIL",
+       "flag": null,
+       "why": "0.14 above zone A 66.71-68.66; 1.09R to T1 against the 61.71 hard stop.",
+       "fix": "21@67.60 (zone A, 1.51R)"
+      },
+      {
+       "app": "R1 48@64.89",
+       "price": 64.89,
+       "shares": 48,
+       "zone": "none (gap between zone A floor 66.71 and the 63.61 close stop)",
+       "R_T1": 3.65,
+       "verdict": "FAIL",
+       "flag": "BELOW ZONE A",
+       "why": "Below zone A and only 1.28 above the 63.61 close stop: a fill here means zone A has already broken its floor, so the 3.65R is on paper only.",
+       "fix": "21@67.10 (9/02 pivot high, 1.74R)"
+      },
+      {
+       "app": "R2 51@60.99",
+       "price": 60.99,
+       "shares": 51,
+       "zone": "between zone A hard stop and zone B",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "0.72 below the zone A hard stop 61.71: past invalidation for the zone A position, and 0.93 above zone B (57.72-60.06).",
+       "fix": "17@66.75 (zone A floor, 1.93R)"
+      },
+      {
+       "app": "R3 82@57.09",
+       "price": 57.09,
+       "shares": 82,
+       "zone": "zone B 57.72-60.06 (as zone B it is 3.48R vs the 53.40 stop)",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "Below the zone A hard stop 61.71: past invalidation. It only works as a separate zone B setup with its own 53.40 stop.",
+       "fix": "Conditional 14@60.00 (zone B)"
+      },
+      {
+       "app": "R4 88@53.19",
+       "price": 53.19,
+       "shares": 88,
+       "zone": "below zone B, below zone B hard stop 53.40",
+       "R_T1": null,
+       "verdict": "INVALID",
+       "flag": "BELOW HARD STOP 61.71",
+       "why": "Below the zone A hard stop 61.71 and also under the zone B hard stop 53.40 (inside the 8/19 gap 51.10-54.81).",
+       "fix": "Conditional 14@58.90 (zone B); drop 53.19"
+      }
+     ],
+     "ladderVerdict": "App ladder FAIL: buy-now 68.80 is above zone A, R1 64.89 is below zone A, and R2 60.99, R3 57.09 and R4 53.19 are all below the 61.71 hard stop (past invalidation for a zone A position). Corrected: 3 rungs inside zone A (67.60/67.10/66.75, 59 sh, about $3,970) plus a conditional zone B tranche (60.00/58.90, 28 sh, about $1,490).",
+     "taCheck": "Trading Assistant check of the app levels (planRev 141): zone A 66.71-68.66, hard stop 61.71; buy-now 68.80 just above zone A; R1 64.89 below zone A; R2 60.99, R3 57.09, R4 53.19 below the 61.71 hard stop; trim 82.56 above T2 81.7, below T3 88.0"
     },
     "entry": {
      "price": 67.6,
@@ -417,16 +475,16 @@
      "deployNowShares": 0,
      "deployNowUsd": 0.0,
      "deployNowPctOfTarget": 0,
-     "trigger": "0% now. Rung 1 (67.60) only after a daily close above the prior day's high while in zone A; rungs 3-5 in zone B 57.72-60.06 / zone C 49.35-51.10; or a breakout entry after a daily close above 76.5 that holds on a retest.",
-     "note": "Entry 67.60 is in zone A 66.71-68.66 (10/7-10/8 lows, the 9/02 pivot high now support, VP20 VAL 68.32, rising SMA50 65.60 below) and is the highest price that still gives 1.5R to the 76.5 close shelf against the 61.71 hard stop. Nothing goes in now: the trend is a weak pullback (3 lower lows) and the long-term score has knockouts (71.5, short interest 28%), so buy 67.60 only after a daily close above the prior day's high while in the zone. A daily close under 63.61 (8/25 low) cancels zone A; the next spot is zone B 57.72-60.06."
+     "trigger": "0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
+     "note": "Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A."
     },
     "ladder": [
      {
       "rung": 1,
       "price": 67.6,
-      "shares": 17,
-      "usd": 1149.2,
-      "pctOfTarget": 20,
+      "shares": 21,
+      "usd": 1419.6,
+      "pctOfTarget": 25,
       "zone": "A",
       "zoneRange": [
        66.71,
@@ -435,15 +493,17 @@
       "hardStop": 61.71,
       "closeStop": 63.61,
       "R_T1": 1.51,
-      "stopRiskUsd": 100.13,
-      "deployNow": false
+      "stopRiskUsd": 123.69,
+      "deployNow": false,
+      "tranche": "primary",
+      "condition": null
      },
      {
       "rung": 2,
-      "price": 66.8,
-      "shares": 12,
-      "usd": 801.6,
-      "pctOfTarget": 15,
+      "price": 67.1,
+      "shares": 21,
+      "usd": 1409.1,
+      "pctOfTarget": 25,
       "zone": "A",
       "zoneRange": [
        66.71,
@@ -451,16 +511,37 @@
       ],
       "hardStop": 61.71,
       "closeStop": 63.61,
-      "R_T1": 1.91,
-      "stopRiskUsd": 61.08,
-      "deployNow": false
+      "R_T1": 1.74,
+      "stopRiskUsd": 113.19,
+      "deployNow": false,
+      "tranche": "primary",
+      "condition": null
      },
      {
       "rung": 3,
+      "price": 66.75,
+      "shares": 17,
+      "usd": 1134.75,
+      "pctOfTarget": 20,
+      "zone": "A",
+      "zoneRange": [
+       66.71,
+       68.66
+      ],
+      "hardStop": 61.71,
+      "closeStop": 63.61,
+      "R_T1": 1.93,
+      "stopRiskUsd": 85.68,
+      "deployNow": false,
+      "tranche": "primary",
+      "condition": null
+     },
+     {
+      "rung": 4,
       "price": 60.0,
-      "shares": 23,
-      "usd": 1380.0,
-      "pctOfTarget": 25,
+      "shares": 14,
+      "usd": 840.0,
+      "pctOfTarget": 15,
       "zone": "B",
       "zoneRange": [
        57.72,
@@ -469,15 +550,17 @@
       "hardStop": 53.4,
       "closeStop": 54.81,
       "R_T1": 2.5,
-      "stopRiskUsd": 151.8,
-      "deployNow": false
+      "stopRiskUsd": 92.4,
+      "deployNow": false,
+      "tranche": "conditional",
+      "condition": "Conditional tranche: only (a) as a fresh setup after zone A is stopped out and TEM reclaims inside zone B (daily close above the prior day high), with its own 53.40 hard stop, or (b) with a protective put replacing the zone A stop (see hedge.deeperRungsAlternative)."
      },
      {
-      "rung": 4,
+      "rung": 5,
       "price": 58.9,
-      "shares": 19,
-      "usd": 1119.1,
-      "pctOfTarget": 20,
+      "shares": 14,
+      "usd": 824.6,
+      "pctOfTarget": 15,
       "zone": "B",
       "zoneRange": [
        57.72,
@@ -486,31 +569,17 @@
       "hardStop": 53.4,
       "closeStop": 54.81,
       "R_T1": 3.2,
-      "stopRiskUsd": 104.5,
-      "deployNow": false
-     },
-     {
-      "rung": 5,
-      "price": 51.0,
-      "shares": 22,
-      "usd": 1122.0,
-      "pctOfTarget": 20,
-      "zone": "C",
-      "zoneRange": [
-       49.35,
-       51.1
-      ],
-      "hardStop": 43.39,
-      "closeStop": 44.8,
-      "R_T1": 3.35,
-      "stopRiskUsd": 167.42,
-      "deployNow": false
+      "stopRiskUsd": 77.0,
+      "deployNow": false,
+      "tranche": "conditional",
+      "condition": "Conditional tranche: same condition as rung 4."
      }
     ],
+    "ladderNote": "Corrected ladder keeps every primary rung inside zone A above the 61.71 hard stop. Rungs 4-5 are a separate, conditional zone B tranche (own 53.40 hard stop, 54.81 close stop) and are not averaging down on a broken zone A position, unless a put replaces the zone A stop.",
     "ladderTotal": {
-     "shares": 93,
-     "usd": 5571.9,
-     "stopRiskUsd": 584.93
+     "shares": 87,
+     "usd": 5628.05,
+     "stopRiskUsd": 491.96
     },
     "profitTargets": [
      {
@@ -543,7 +612,8 @@
     ],
     "runner": "runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high",
     "hedge": {
-     "suggestion": "Pair each 100 shares with a protective put: Nov 20 65 put quoted 4.45/4.60 (mid 4.53, IV 81%, delta -0.31) at the 10/9 close, about 6.7% of a 67.60 entry; it also covers 11/3 earnings. Size TEM in 100-share lots (rungs 1-2 = ~45 sh, so the first put is only needed once rung 3 fills).",
+     "suggestion": "Primary tranche (rungs 1-3, about 59 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 87-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
+     "deeperRungsAlternative": "If you want deeper rungs in one position: buy 1 Nov 20 65 put (about $453 at the 10/9 mid 4.53) once rungs 1-3 fill and drop the 61.71 stop. The put floors losses below 65 through 11/20, covering the 11/3 earnings. For example, if all 87 shares fill (average about 64.69), the put floors them at 65, so the worst case through 11/20 is about the premium (roughly $425 net); if only rungs 1-3 fill (59 sh, average about 67.17), the worst case is about $580 with the put versus about $323 with the 61.71 stop. Roll or close the put before 11/20; there is no quote for later expiries in the data.",
      "quote": {
       "contract": "TEM 2026-11-20 65 P",
       "bid": 4.45,
@@ -576,10 +646,10 @@
       "action": "zone A fails; stand aside until the next zone (57.72-60.06)"
      }
     ],
-    "recommendation": "No position (app plan: 0 shares). Entry 67.60 is in zone A 66.71-68.66 (10/7-10/8 lows, the 9/02 pivot high now support, VP20 VAL 68.32, rising SMA50 65.60 below) and is the highest price that still gives 1.5R to the 76.5 close shelf against the 61.71 hard stop. Nothing goes in now: the trend is a weak pullback (3 lower lows) and the long-term score has knockouts (71.5, short interest 28%), so buy 67.60 only after a daily close above the prior day's high while in the zone. A daily close under 63.61 (8/25 low) cancels zone A; the next spot is zone B 57.72-60.06. Recommendations only; no trades placed or recorded.",
+    "recommendation": "No position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.",
     "risk": [
      "Earnings 2026-11-03 AMC (UNC (unconfirmed)).",
-     "ATR14 5.61 (7.9% of price); full-ladder stop risk $585.",
+     "ATR14 5.61 (7.9% of price); full-ladder stop risk $492.",
      "Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls."
     ],
     "recommendedPct": 5.75,
@@ -591,7 +661,7 @@
      "recommendedUsd": 5750.0,
      "sector": "tech/semis",
      "deployNowPct": 0.0,
-     "why": "Most volatile name (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps it smallest even with the bonus for the quoted put. The whole 93-share ladder fits under one Nov 20 65 put."
+     "why": "Most volatile name on the list (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps TEM the smallest split even with the bonus for its quoted put. Recomputed for planRev 141 with the same method; the data is unchanged since Friday's close, so the split stays the same. The corrected 87-share ladder fits under one Nov 20 65 put."
     }
    },
    "deep": {
@@ -624,8 +694,7 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
-   "pendingSince": "2026-10-10T15:54:30-04:00"
+   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 141"
   },
   "QCOM": {
    "status": "ok",
@@ -852,7 +921,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move \u00b17.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move ±7.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.59,
@@ -920,7 +989,7 @@
        "R_class": "PASS",
        "flags": [
         "USED",
-        "WEAK-TREND\u2192reclaim"
+        "WEAK-TREND→reclaim"
        ]
       },
       {
@@ -938,7 +1007,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-04)"
        ]
       }
@@ -1421,7 +1490,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move \u00b12.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move ±2.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -1489,7 +1558,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80 (IONQ swing stops locked 40.80 close / 39.80 hard; LT zone is a separate proposal, locked stops untouched)"
        ]
@@ -1510,7 +1579,7 @@
        "flags": [
         "NEAR",
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(below Keltner-lo; ER 2026-11-04)",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80"
@@ -1962,7 +2031,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move \u00b17.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move ±7.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -2523,7 +2592,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move \u00b14.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move ±4.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.54,
@@ -3096,7 +3165,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move \u00b14.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move ±4.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.65,
@@ -3216,7 +3285,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "A hard sits inside zone B"
        ]
       },
@@ -3235,7 +3304,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-10)"
        ]
       }
@@ -3726,7 +3795,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move \u00b13.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move ±3.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.68,
@@ -3895,7 +3964,7 @@
        "flags": [
         "FAIL",
         "USED",
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "R-top<1.2"
        ]
       },
@@ -3913,7 +3982,7 @@
        "R_mid_T1": 2.76,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "B hard sits inside zone C"
        ]
       },
@@ -3931,7 +4000,7 @@
        "R_mid_T1": 2.74,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND\u2192reclaim",
+        "WEAK-TREND→reclaim",
         "REACH(>2ATR; ER 2026-10-27)"
        ]
       }
@@ -4205,15 +4274,8 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:54:30-04:00",
+  "updated": "2026-10-10T15:57:55-04:00",
   "notices": [
-   {
-    "type": "info",
-    "ticker": "TEM",
-    "msg": "Reanalyze planRev 141 for TEM: fresh data requested from Trading Assistant; analysis.TEM shows previous results until the update lands.",
-    "source": "Trading Assistant system",
-    "at": "2026-10-10T15:54:30-04:00"
-   },
    {
     "type": "info",
     "ticker": null,
@@ -4255,13 +4317,20 @@
     "msg": "Prices request answered for TEM with Friday 10/9 closing data; markets are closed Saturday, so the latest Trading Assistant pull is current.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
     "at": "2026-10-10T15:54:01-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Reanalyze planRev 141 answered for TEM: fresh long-term analysis, app ladder check, corrected ladder, trims, hedge and charts. Split 5.75% ($5,750); entry 67.6 in zone A, 0% now (needs a reclaim). App rungs R2-R4 (60.99/57.09/53.19) are below the 61.71 hard stop. Other names unchanged. Recommendations only.",
+    "source": "Trading Assistant TEM long-term workup (10/9 close) + app plan planRev 141",
+    "at": "2026-10-10T15:57:55-04:00"
    }
   ],
   "allocation": {
-   "id": "ra-split-20261010T1532",
+   "id": "ra-split-20261010T1557",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T15:32:53-04:00",
+   "at": "2026-10-10T15:57:55-04:00",
    "units": "cents",
    "fundC": 10000000,
    "reserveC": 1000000,
@@ -4972,8 +5041,8 @@
      "rewardRisk": 1.51,
      "rewardRiskClass": "NEAR",
      "risk": {
-      "stopRiskC_fullTarget": 58493,
-      "stopRiskPctOfFund": 0.58,
+      "stopRiskC_fullTarget": 49196,
+      "stopRiskPctOfFund": 0.49,
       "atrPct": 7.91,
       "ivAtmPct": 75.5
      },
@@ -4981,41 +5050,41 @@
       {
        "rung": 1,
        "price": 67.6,
-       "shares": 17,
-       "usd": 1149.2,
+       "shares": 21,
+       "usd": 1419.6,
        "zone": "A",
        "deployNow": false
       },
       {
        "rung": 2,
-       "price": 66.8,
-       "shares": 12,
-       "usd": 801.6,
+       "price": 67.1,
+       "shares": 21,
+       "usd": 1409.1,
        "zone": "A",
        "deployNow": false
       },
       {
        "rung": 3,
-       "price": 60.0,
-       "shares": 23,
-       "usd": 1380.0,
-       "zone": "B",
+       "price": 66.75,
+       "shares": 17,
+       "usd": 1134.75,
+       "zone": "A",
        "deployNow": false
       },
       {
        "rung": 4,
-       "price": 58.9,
-       "shares": 19,
-       "usd": 1119.1,
+       "price": 60.0,
+       "shares": 14,
+       "usd": 840.0,
        "zone": "B",
        "deployNow": false
       },
       {
        "rung": 5,
-       "price": 51.0,
-       "shares": 22,
-       "usd": 1122.0,
-       "zone": "C",
+       "price": 58.9,
+       "shares": 14,
+       "usd": 824.6,
+       "zone": "B",
        "deployNow": false
       }
      ],
@@ -5036,8 +5105,8 @@
        "why": "T3 88.0, front of the 87.99-89.09 double top"
       }
      ],
-     "hedge": "Pair each 100 shares with a protective put: Nov 20 65 put quoted 4.45/4.60 (mid 4.53, IV 81%, delta -0.31) at the 10/9 close, about 6.7% of a 67.60 entry; it also covers 11/3 earnings. Size TEM in 100-share lots (rungs 1-2 = ~45 sh, so the first put is only needed once rung 3 fills).",
-     "deployTrigger": "0% now. Rung 1 (67.60) only after a daily close above the prior day's high while in zone A; rungs 3-5 in zone B 57.72-60.06 / zone C 49.35-51.10; or a breakout entry after a daily close above 76.5 that holds on a retest.",
+     "hedge": "Primary tranche (rungs 1-3, about 59 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 87-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
+     "deployTrigger": "0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
      "upside": "30.2% to top structure 88.0; no published PT in the data",
      "macro": "Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.",
      "score": {
@@ -5048,8 +5117,8 @@
       "concentration": 5,
       "composite": 4.43
      },
-     "why": "Most volatile name (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps it smallest even with the bonus for the quoted put. The whole 93-share ladder fits under one Nov 20 65 put.",
-     "entryNote": "Entry 67.60 is in zone A 66.71-68.66 (10/7-10/8 lows, the 9/02 pivot high now support, VP20 VAL 68.32, rising SMA50 65.60 below) and is the highest price that still gives 1.5R to the 76.5 close shelf against the 61.71 hard stop. Nothing goes in now: the trend is a weak pullback (3 lower lows) and the long-term score has knockouts (71.5, short interest 28%), so buy 67.60 only after a daily close above the prior day's high while in the zone. A daily close under 63.61 (8/25 low) cancels zone A; the next spot is zone B 57.72-60.06.",
+     "why": "Most volatile name on the list (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps TEM the smallest split even with the bonus for its quoted put. Recomputed for planRev 141 with the same method; the data is unchanged since Friday's close, so the split stays the same. The corrected 87-share ladder fits under one Nov 20 65 put.",
+     "entryNote": "Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.",
      "appTargetPct": 22.5
     }
    ],
@@ -5094,8 +5163,8 @@
    "deployNowTotalPct": 20.96,
    "sectorExposurePct": {
     "tech/semis": 29.75,
-    "space": 23.25,
-    "energy/materials": 30.0
+    "energy/materials": 30.0,
+    "space": 23.25
    },
    "sectorCapsPct": {
     "tech/semis": 40,
@@ -5113,22 +5182,24 @@
     "TEM"
    ],
    "max": 10,
-   "requestId": "ra-split-20261010T1532",
-   "request_id": "ra-split-20261010T1532",
+   "requestId": "ra-split-20261010T1557",
+   "request_id": "ra-split-20261010T1557",
    "reply": "feed.allocation",
-   "reanalyzeRequestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+   "reanalyzeRequestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
    "basedOn": {
     "plan": "app request.plan planRev 140 (reanalyze 2026-10-10T19:19:39.586Z)",
-    "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
+    "fund": "plan cash.base $100,000; reserve 10% = plan unallocated",
+    "tem": "TEM recomputed for app request.plan planRev 141 (TEM-only reanalyze 2026-10-10T19:53:42.423Z); other names unchanged from planRev 140"
    },
    "method": "Score 0-10 per name: setup = half R from the data-based entry to T1 (x2.5) + half Trading Assistant long-term score; risk = 10 minus penalties for ATR% and ATM IV (and short history); upside = % to top structure, blended 50/50 with the published PT median when one exists; macro/news (judgment from the 7-day news and copper note); concentration (diversification value). Composite = 30/25/20/15/10. Split proportional to composite^2 / sqrt(ATR%) (volatile = smaller; TEM x1.1 for its quoted put), scaled to 85% invested, then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (excess to cash); 10% reserve + 5% held back. Rounded to 0.25%. Deploy-now = rungs placed now: resting limits only where trend allows (SPCX up, COP mixed); weak-trend names confirm with a daily close above the prior day's high in the zone; 0% when R<1.5 at the zone or a trend knockout.",
    "notes": [
     "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
     "83.0% invested at full targets, 17.0% cash (10% reserve + 7.0% held back). Deploy-now total 20.96% ($20,965).",
-    "Amounts from the app plan only (planRev 140: $100,000 cash, 0 shares in every name).",
-    "Full-ladder stop risk per name is $415-$815 (0.4-0.8% of the fund); QCOM carries the most money at about the least risk because its stop is tight.",
+    "Amounts from the app plan only (planRev 141 for TEM: target 22.5% / $22,500 in the app, 0 shares, no options; planRev 140 for the other six).",
+    "TEM recomputed for planRev 141 with the same scoring method: 5.75% (was 5.75%); cash rebalanced to keep totals at 100%. Other six names unchanged.",
+    "Full-ladder stop risk per name is $415-$813 (0.41-0.81% of the fund).",
     "Gamma flip, IV rank, order-book depth and Trading Assistant order-block/candlestick/Wyckoff tagging are n/a; oil price for COP is n/a; TEM/QCOM/IONQ have no published PTs in the data.",
-    "Levels are 10/9 closes (markets closed Saturday)."
+    "Levels are 10/9 closes (markets closed since Friday's close)."
    ],
    "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 140."
   },
@@ -5192,486 +5263,245 @@
    "withheld": []
   },
   "reanalyze": {
-   "requestId": "c5720904-6261-4510-9788-29bb1accb369",
-   "requestAt": "2026-10-10T19:03:20.093Z",
-   "planRev": 137,
-   "at": "2026-10-10T15:07:11-04:00",
-   "status": "partial",
+   "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
+   "requestAt": "2026-10-10T19:53:42.423Z",
+   "planRev": 141,
+   "at": "2026-10-10T15:57:55-04:00",
+   "status": "ok",
    "tickers": [
-    "TEM",
-    "QCOM",
-    "IONQ",
-    "SPCX",
-    "COP",
-    "RKLB",
-    "FCX"
+    "TEM"
    ],
-   "pending": [
-    "FCX",
-    "RKLB (long-term workup)"
-   ],
-   "summary": "No positions in the app plan ($100,000 cash, 10% reserve). Only QCOM is a buy near the app's buy-now rung (zone A 170.51-172.12, R 3.6 to 180.8). TEM, IONQ, SPCX and COP: wait for zone A, since the buy-now rungs sit above the zones with weak R. RKLB: wait for 61.45-64.51. FCX pending. Each first tranche is the smaller of 40% of the name's target or about $750 of risk to its hard stop. Recommendations only; no trades placed or recorded.",
-   "allocation": {
-    "account": 100000,
-    "reserve_pct": 10,
-    "riskPerNameUsd": 750.0,
-    "items": {
-     "TEM": {
-      "targetPct": 22.5,
-      "targetUsd": 22500,
-      "sector": "AI health/tech",
-      "entry_zone_A": [
-       66.71,
-       68.66
-      ],
-      "zone_A_mid": 67.69,
-      "hard_stop": 61.71,
-      "tranche_A_shares": 125,
-      "tranche_A_usd": 8461.25,
-      "tranche_A_risk_usd": 747.5,
-      "targets": [
-       76.5,
-       81.7,
-       88.0
-      ],
-      "R_mid_to_T1": 1.48,
-      "app_next_rung": "Buy-now 98@68.80",
-      "app_next_trim": "4@82.56",
-      "hedge": "Largest target (22.5%) with weak R at buy-now: if the full ladder fills, pair each 100 shares with a protective put near the zone B floor (Nov 20 65 put quoted 4.53 mid at the 10/9 close) or size rungs to 100-share lots.",
-      "zones": [
-       {
-        "tranche": "A",
-        "zone": [
-         66.71,
-         68.66
-        ],
-        "hard_stop": 61.71,
-        "close_stop": 63.61,
-        "invalidation": "8/25 swing low 63.61",
-        "why": "10/7-10/8 lows 68.66/66.71 (10/8 not yet a confirmed pivot); 9/02 pivot high 67.10 now support; SMA50 65.60; VP20 VAL 68.32; VP12m HVN 67.2-68.6"
-       },
-       {
-        "tranche": "B",
-        "zone": [
-         57.72,
-         60.06
-        ],
-        "hard_stop": 53.4,
-        "close_stop": 54.81,
-        "invalidation": "8/19 breakaway-gap top 54.81 (gap 51.10-54.81)",
-        "why": "pivot lows 9/14 57.72 and 9/02 60.06; SMA100 58.33 / SMA200 56.65"
-       },
-       {
-        "tranche": "C",
-        "zone": [
-         49.35,
-         51.1
-        ],
-        "hard_stop": 43.39,
-        "close_stop": 44.8,
-        "invalidation": "8/06 swing low 44.80",
-        "why": "8/18 pivot low 49.35; 8/19 gap bottom 51.10; VP12m POC 50.4 / HVN 47.6-51.8"
-       }
-      ],
-      "LT_invalidation": {
-       "px": 39.36,
-       "why": "weekly close below 2026 low 40.77 (7/28) - 0.25xATR (S-081 s2 rounding)"
-      },
-      "score": 71.5,
-      "buy_now_check": {
-       "level": 68.96,
-       "position": "ABOVE zone A top 68.66 by 0.30 (0.05xATR)",
-       "governing_zone": "A (nearest; entry outside)",
-       "R_at_level": 1.04,
-       "R_class": "FAIL"
-      },
-      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-      "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "QCOM": {
-      "targetPct": 13.5,
-      "targetUsd": 13500,
-      "sector": "semis/tech",
-      "entry_zone_A": [
-       170.51,
-       172.12
-      ],
-      "zone_A_mid": 171.31,
-      "hard_stop": 168.67,
-      "tranche_A_shares": 31,
-      "tranche_A_usd": 5310.61,
-      "tranche_A_risk_usd": 81.84,
-      "targets": [
-       180.8,
-       194.2,
-       205.8
-      ],
-      "R_mid_to_T1": 3.59,
-      "app_next_rung": "Buy-now 23@170.23",
-      "app_next_trim": "1@204.28",
-      "hedge": "Best setup of the group (highest score, R passes at buy-now). No hedge needed for tranche A; a put under 165 could cover a full fill into the 11/4 earnings.",
-      "zones": [
-       {
-        "tranche": "A",
-        "zone": [
-         170.51,
-         172.12
-        ],
-        "hard_stop": 168.67,
-        "close_stop": 170.51,
-        "invalidation": "9/14 swing low 170.51 (= zone floor; launch low of the 205.85 rally)",
-        "why": "9/14 pivot low 170.51; 9/08 gap 170.63-172.04; 7/02 pivot 172.12; 10/8 low 171.02; SMA200 169.35 / SMA50 173.11; VP20 HVN 173.74"
-       },
-       {
-        "tranche": "B",
-        "zone": [
-         155.22,
-         156.72
-        ],
-        "hard_stop": 149.84,
-        "close_stop": 151.68,
-        "invalidation": "8/04 breakaway-gap bottom 151.68 (gap 151.68-155.31)",
-        "why": "pivot lows 8/06 155.22, 8/24 156.22, 8/18 156.72; 8/04 gap top 155.31"
-       }
-      ],
-      "LT_invalidation": {
-       "px": 119.63,
-       "why": "weekly close below 2026 low 121.99 (4/07) - 0.25xATR, round-number rule (S-081 s2)"
-      },
-      "score": 89.0,
-      "buy_now_check": {
-       "level": 170.23,
-       "position": "BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top",
-       "governing_zone": "A (nearest; entry outside)",
-       "R_at_level": 6.78,
-       "R_class": "PASS"
-      },
-      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-      "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "IONQ": {
-      "targetPct": 4.5,
-      "targetUsd": 4500,
-      "sector": "quantum/tech",
-      "entry_zone_A": [
-       37.65,
-       38.56
-      ],
-      "zone_A_mid": 38.11,
-      "hard_stop": 36.13,
-      "tranche_A_shares": 47,
-      "tranche_A_usd": 1791.17,
-      "tranche_A_risk_usd": 93.06,
-      "targets": [
-       41.3,
-       43.7,
-       47.3
-      ],
-      "R_mid_to_T1": 1.62,
-      "app_next_rung": "Buy-now 34@38.69",
-      "app_next_trim": "1@46.43",
-      "hedge": "Small speculative weight (4.5%); size is the hedge, no option needed.",
-      "zones": [
-       {
-        "tranche": "A",
-        "zone": [
-         37.65,
-         38.56
-        ],
-        "hard_stop": 36.13,
-        "close_stop": 36.78,
-        "invalidation": "9/02 swing low 36.78",
-        "why": "9/17 gap 37.65-38.09; 9/14 pivot high 38.56 now support; 10/8 low 38.83 just above"
-       },
-       {
-        "tranche": "B",
-        "zone": [
-         35.0,
-         35.84
-        ],
-        "hard_stop": 31.16,
-        "close_stop": 31.81,
-        "invalidation": "7/29 swing low 31.81",
-        "why": "9/14 pivot low 35.00; VP12m HVN 35.84; (put wall M 35 confirm only)"
-       }
-      ],
-      "LT_invalidation": {
-       "px": 25.24,
-       "why": "weekly close below 2026 low 25.89 (3/30) - 0.25xATR"
-      },
-      "score": 67.5,
-      "buy_now_check": {
-       "level": 38.69,
-       "position": "ABOVE zone A top 38.56 by 0.13 (0.05xATR)",
-       "governing_zone": "A (nearest; entry outside)",
-       "R_at_level": 1.02,
-       "R_class": "FAIL"
-      },
-      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-      "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "SPCX": {
-      "targetPct": 18,
-      "targetUsd": 18000,
-      "sector": "space",
-      "entry_zone_A": [
-       152.6,
-       155.41
-      ],
-      "zone_A_mid": 154.0,
-      "hard_stop": 143.59,
-      "tranche_A_shares": 46,
-      "tranche_A_usd": 7084.0,
-      "tranche_A_risk_usd": 478.86,
-      "targets": [
-       170.9,
-       176.4,
-       185.0
-      ],
-      "R_mid_to_T1": 1.62,
-      "app_next_rung": "Buy-now 34@157.69",
-      "app_next_trim": "1@189.23",
-      "hedge": "18% target in a 4-month-old name with high IV: consider a put at or below the 145 swing low (Nov monthly) once zone A fills, or keep size to the risk budget instead of the full target.",
-      "zones": [
-       {
-        "tranche": "A",
-        "zone": [
-         152.6,
-         155.41
-        ],
-        "hard_stop": 143.59,
-        "close_stop": 145.36,
-        "invalidation": "9/28 swing low 145.36 (last higher low of the Sept base)",
-        "why": "9/08 pivot high 155.00 now support; SMA20 154.40 / EMA21 155.38; AVWAP(9/15 low) 155.41; VP20 HVN 152.6-154.7; VP-since-IPO HVN 153.12"
-       },
-       {
-        "tranche": "B",
-        "zone": [
-         142.87,
-         145.36
-        ],
-        "hard_stop": 136.4,
-        "close_stop": 138.17,
-        "invalidation": "9/02 swing low 138.17",
-        "why": "pivot lows 9/15 142.87, 9/10 144.89, 9/28 145.36; SMA50 144.24; VP20 VAL 145.6; VP-since-IPO HVN 142.56"
-       }
-      ],
-      "LT_invalidation": {
-       "px": 102.64,
-       "why": "weekly close below post-IPO low 104.83 (8/03) - 0.25xATR, round-number rule"
-      },
-      "score": 79.5,
-      "buy_now_check": {
-       "level": 157.69,
-       "position": "ABOVE zone A top 155.41 by 2.28 (0.32xATR)",
-       "governing_zone": "A (nearest; entry outside)",
-       "R_at_level": 0.94,
-       "R_class": "FAIL"
-      },
-      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-      "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "COP": {
-      "targetPct": 13.5,
-      "targetUsd": 13500,
-      "sector": "energy (oil)",
-      "entry_zone_A": [
-       132.0,
-       132.57
-      ],
-      "zone_A_mid": 132.28,
-      "hard_stop": 127.18,
-      "tranche_A_shares": 40,
-      "tranche_A_usd": 5291.2,
-      "tranche_A_risk_usd": 204.0,
-      "targets": [
-       135.7,
-       141.2
-      ],
-      "R_mid_to_T1": 0.67,
-      "app_next_rung": "Buy-now 31@130.07",
-      "app_next_trim": "1@156.08",
-      "hedge": "Oil exposure: COP diversifies the tech/space weight. Thin R to T1 now; a put near the 125 wall is the cheapest protection if bought before an oil-moving event.",
-      "zones": [
-       {
-        "tranche": "A",
-        "zone": [
-         132.0,
-         132.57
-        ],
-        "hard_stop": 127.18,
-        "close_stop": 128.0,
-        "invalidation": "8/27 swing low 128.00",
-        "why": "nearest >=2-method zone: 9/04 pivot low 132.57; 10/8 gap 132.12-132.13; 10/7 high 132.115; VP20 HVN 132.0"
-       },
-       {
-        "tranche": "B",
-        "zone": [
-         129.36,
-         130.97
-        ],
-        "hard_stop": 127.18,
-        "close_stop": 128.0,
-        "invalidation": "8/27 swing low 128.00",
-        "why": "9/24 pivot high 130.97 and 9/17 low 130.97 now support; SMA20 129.97 / EMA21 130.04 / SMA50 129.38; VP20 HVN 129.36"
-       },
-       {
-        "tranche": "C",
-        "zone": [
-         123.46,
-         125.4
-        ],
-        "hard_stop": 118.35,
-        "close_stop": 119.17,
-        "invalidation": "8/10 breakaway-gap top 119.17 (gap 118.52-119.17)",
-        "why": "pivot lows 9/29 123.46, 9/22 124.47; VP20 POC 125.4 / VAL 124.74; VP12m HVN 123.93"
-       }
-      ],
-      "LT_invalidation": {
-       "px": 92.31,
-       "why": "weekly close below 2026 low 93.13 (1/02) - 0.25xATR"
-      },
-      "score": 72.0,
-      "buy_now_check": {
-       "level": 130.07,
-       "position": "INSIDE zone B",
-       "governing_zone": "B",
-       "R_at_level": 1.95,
-       "R_class": "PASS"
-      },
-      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
-      "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "RKLB": {
-      "targetPct": 9,
-      "targetUsd": 9000,
-      "sector": "space",
-      "entry_zone_A": [
-       61.45,
-       64.51
-      ],
-      "zone_A_mid": 62.98,
-      "hard_stop": 58.49,
-      "tranche_A_shares": 57,
-      "tranche_A_usd": 3589.86,
-      "tranche_A_risk_usd": 255.93,
-      "targets": [
-       69.72,
-       72.94
-      ],
-      "R_mid_to_T1": 0.87,
-      "app_next_rung": "Buy-now 40@66.16",
-      "app_next_trim": "2@79.39",
-      "hedge": "Space overlap with SPCX (27% combined target); treat RKLB and SPCX as one bucket for risk and hedge with a put only if both fill.",
-      "zones": null,
-      "LT_invalidation": null,
-      "score": null,
-      "buy_now_check": null,
-      "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
-      "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-     },
-     "FCX": {
-      "status": "pending",
-      "targetPct": 9,
-      "targetUsd": 9000,
-      "note": "Long-term workup requested from Trading Assistant; expected in about 10-20 minutes."
-     }
-    },
-    "notes": [
-     "Concentration: tech/AI names (TEM, QCOM, IONQ) total 40.5% and space (SPCX, RKLB) 27% of the plan; COP and FCX are the only diversifiers. Keep the 10% reserve unspent until a zone is hit.",
-     "Risk per name: each first tranche is capped at the smaller of 40% of the target or about $750 (0.75% of the $100,000 account) of loss to its hard stop, so wide-stop names like TEM hit the risk cap while tight-stop names hit the 40% cap.",
-     "Setup ranking by Trading Assistant's long-term score: QCOM 89, SPCX 79.5, COP 72, TEM 71.5, IONQ 67.5 (RKLB, FCX pending). Only QCOM passes R at the app's buy-now price; the rest are better filled at zone A.",
-     "News and macro (oil vs geopolitics for COP, copper/China for FCX, earnings dates) feed the hedge notes; QCOM reports 11/4."
-    ]
+   "pending": [],
+   "summary": "Reanalyze planRev 141 (TEM only) complete. TEM split 5.75% ($5,750) vs the app's 22.5%. Data-based entry 67.60 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); 0% now until a daily reclaim inside the zone. App ladder: buy-now 68.80 is above zone A, R1 64.89 is below it, and R2-R4 (60.99/57.09/53.19) are below the 61.71 hard stop. Corrected ladder: 21@67.60, 21@67.10, 17@66.75, plus a conditional zone B 14@60.00 and 14@58.90 (or hold them under a Nov 20 65 put). Trims at 76.40/81.60/87.90 instead of 82.56. Other six tickers unchanged; data is current as of the 10/9 close. Recommendations only.",
+   "perTicker": {
+    "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); 0% now.",
+    "QCOM": "18.0% split; entry 171.3 (zone A, 3.61R to 180.8); 40% now (rungs 1-2, 171.",
+    "IONQ": "6.0% split; entry 38.1 (zone A, 1.62R to 41.3); 0% now.",
+    "SPCX": "13.75% split; entry 154.4 (zone A, 1.53R to 170.9); 25% now as resting limits at 154.",
+    "COP": "17.25% split; entry 130.07 (zone B, 1.95R to 135.7); 40% now as resting limits at 130.",
+    "RKLB": "9.5% split; entry 64.5 (zone A, 1.75R to 73.2); 15% now at 64.",
+    "FCX": "12.75% split; entry 68.8 (zone B, 2.8R to 75.7); 20% now at 68."
    },
-   "items": {
+   "charts": {
     "TEM": {
-     "bias": "neutral, momentum cooling",
-     "buy_zone": [
-      66.71,
-      68.66
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
+      }
      ],
-     "stop": 61.71,
-     "targets": [
-      76.5,
-      81.7,
-      88.0
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
     },
     "QCOM": {
-     "bias": "neutral, momentum cooling",
-     "buy_zone": [
-      170.51,
-      172.12
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
+      }
      ],
-     "stop": 168.67,
-     "targets": [
-      180.8,
-      194.2,
-      205.8
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
     },
     "IONQ": {
-     "bias": "weak",
-     "buy_zone": [
-      37.65,
-      38.56
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
+      }
      ],
-     "stop": 36.13,
-     "targets": [
-      41.3,
-      43.7,
-      47.3
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
     },
     "SPCX": {
-     "bias": "constructive",
-     "buy_zone": [
-      152.6,
-      155.41
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
+      }
      ],
-     "stop": 143.59,
-     "targets": [
-      170.9,
-      176.4,
-      185.0
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
     },
     "COP": {
-     "bias": "constructive",
-     "buy_zone": [
-      132.0,
-      132.57
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
+      }
      ],
-     "stop": 127.18,
-     "targets": [
-      135.7,
-      141.2
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
     },
     "RKLB": {
-     "bias": "weak",
-     "buy_zone": [
-      61.45,
-      64.51
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
+      }
      ],
-     "stop": 58.49,
-     "targets": [
-      69.72,
-      72.94
-     ]
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
     },
     "FCX": {
-     "status": "pending"
+     "charts": [
+      {
+       "tf": "1d",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1d.png"
+      },
+      {
+       "tf": "1h",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1h.png"
+      },
+      {
+       "tf": "15m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_15m.png"
+      },
+      {
+       "tf": "5m",
+       "type": "png",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_5m.png"
+      },
+      {
+       "tf": "all",
+       "type": "pdf",
+       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
+      }
+     ],
+     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
     }
-   }
+   },
+   "allocationId": "ra-split-20261010T1557"
   }
  },
  "allocation": {
-  "id": "ra-split-20261010T1532",
+  "id": "ra-split-20261010T1557",
   "kind": "recommend-allocation",
   "status": "ok",
-  "at": "2026-10-10T15:32:53-04:00",
+  "at": "2026-10-10T15:57:55-04:00",
   "units": "cents",
   "fundC": 10000000,
   "reserveC": 1000000,
@@ -6382,8 +6212,8 @@
     "rewardRisk": 1.51,
     "rewardRiskClass": "NEAR",
     "risk": {
-     "stopRiskC_fullTarget": 58493,
-     "stopRiskPctOfFund": 0.58,
+     "stopRiskC_fullTarget": 49196,
+     "stopRiskPctOfFund": 0.49,
      "atrPct": 7.91,
      "ivAtmPct": 75.5
     },
@@ -6391,41 +6221,41 @@
      {
       "rung": 1,
       "price": 67.6,
-      "shares": 17,
-      "usd": 1149.2,
+      "shares": 21,
+      "usd": 1419.6,
       "zone": "A",
       "deployNow": false
      },
      {
       "rung": 2,
-      "price": 66.8,
-      "shares": 12,
-      "usd": 801.6,
+      "price": 67.1,
+      "shares": 21,
+      "usd": 1409.1,
       "zone": "A",
       "deployNow": false
      },
      {
       "rung": 3,
-      "price": 60.0,
-      "shares": 23,
-      "usd": 1380.0,
-      "zone": "B",
+      "price": 66.75,
+      "shares": 17,
+      "usd": 1134.75,
+      "zone": "A",
       "deployNow": false
      },
      {
       "rung": 4,
-      "price": 58.9,
-      "shares": 19,
-      "usd": 1119.1,
+      "price": 60.0,
+      "shares": 14,
+      "usd": 840.0,
       "zone": "B",
       "deployNow": false
      },
      {
       "rung": 5,
-      "price": 51.0,
-      "shares": 22,
-      "usd": 1122.0,
-      "zone": "C",
+      "price": 58.9,
+      "shares": 14,
+      "usd": 824.6,
+      "zone": "B",
       "deployNow": false
      }
     ],
@@ -6446,8 +6276,8 @@
       "why": "T3 88.0, front of the 87.99-89.09 double top"
      }
     ],
-    "hedge": "Pair each 100 shares with a protective put: Nov 20 65 put quoted 4.45/4.60 (mid 4.53, IV 81%, delta -0.31) at the 10/9 close, about 6.7% of a 67.60 entry; it also covers 11/3 earnings. Size TEM in 100-share lots (rungs 1-2 = ~45 sh, so the first put is only needed once rung 3 fills).",
-    "deployTrigger": "0% now. Rung 1 (67.60) only after a daily close above the prior day's high while in zone A; rungs 3-5 in zone B 57.72-60.06 / zone C 49.35-51.10; or a breakout entry after a daily close above 76.5 that holds on a retest.",
+    "hedge": "Primary tranche (rungs 1-3, about 59 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 87-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
+    "deployTrigger": "0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
     "upside": "30.2% to top structure 88.0; no published PT in the data",
     "macro": "Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.",
     "score": {
@@ -6458,8 +6288,8 @@
      "concentration": 5,
      "composite": 4.43
     },
-    "why": "Most volatile name (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps it smallest even with the bonus for the quoted put. The whole 93-share ladder fits under one Nov 20 65 put.",
-    "entryNote": "Entry 67.60 is in zone A 66.71-68.66 (10/7-10/8 lows, the 9/02 pivot high now support, VP20 VAL 68.32, rising SMA50 65.60 below) and is the highest price that still gives 1.5R to the 76.5 close shelf against the 61.71 hard stop. Nothing goes in now: the trend is a weak pullback (3 lower lows) and the long-term score has knockouts (71.5, short interest 28%), so buy 67.60 only after a daily close above the prior day's high while in the zone. A daily close under 63.61 (8/25 low) cancels zone A; the next spot is zone B 57.72-60.06.",
+    "why": "Most volatile name on the list (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps TEM the smallest split even with the bonus for its quoted put. Recomputed for planRev 141 with the same method; the data is unchanged since Friday's close, so the split stays the same. The corrected 87-share ladder fits under one Nov 20 65 put.",
+    "entryNote": "Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.",
     "appTargetPct": 22.5
    }
   ],
@@ -6504,8 +6334,8 @@
   "deployNowTotalPct": 20.96,
   "sectorExposurePct": {
    "tech/semis": 29.75,
-   "space": 23.25,
-   "energy/materials": 30.0
+   "energy/materials": 30.0,
+   "space": 23.25
   },
   "sectorCapsPct": {
    "tech/semis": 40,
@@ -6523,22 +6353,24 @@
    "TEM"
   ],
   "max": 10,
-  "requestId": "ra-split-20261010T1532",
-  "request_id": "ra-split-20261010T1532",
+  "requestId": "ra-split-20261010T1557",
+  "request_id": "ra-split-20261010T1557",
   "reply": "feed.allocation",
-  "reanalyzeRequestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+  "reanalyzeRequestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
   "basedOn": {
    "plan": "app request.plan planRev 140 (reanalyze 2026-10-10T19:19:39.586Z)",
-   "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
+   "fund": "plan cash.base $100,000; reserve 10% = plan unallocated",
+   "tem": "TEM recomputed for app request.plan planRev 141 (TEM-only reanalyze 2026-10-10T19:53:42.423Z); other names unchanged from planRev 140"
   },
   "method": "Score 0-10 per name: setup = half R from the data-based entry to T1 (x2.5) + half Trading Assistant long-term score; risk = 10 minus penalties for ATR% and ATM IV (and short history); upside = % to top structure, blended 50/50 with the published PT median when one exists; macro/news (judgment from the 7-day news and copper note); concentration (diversification value). Composite = 30/25/20/15/10. Split proportional to composite^2 / sqrt(ATR%) (volatile = smaller; TEM x1.1 for its quoted put), scaled to 85% invested, then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (excess to cash); 10% reserve + 5% held back. Rounded to 0.25%. Deploy-now = rungs placed now: resting limits only where trend allows (SPCX up, COP mixed); weak-trend names confirm with a daily close above the prior day's high in the zone; 0% when R<1.5 at the zone or a trend knockout.",
   "notes": [
    "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
    "83.0% invested at full targets, 17.0% cash (10% reserve + 7.0% held back). Deploy-now total 20.96% ($20,965).",
-   "Amounts from the app plan only (planRev 140: $100,000 cash, 0 shares in every name).",
-   "Full-ladder stop risk per name is $415-$815 (0.4-0.8% of the fund); QCOM carries the most money at about the least risk because its stop is tight.",
+   "Amounts from the app plan only (planRev 141 for TEM: target 22.5% / $22,500 in the app, 0 shares, no options; planRev 140 for the other six).",
+   "TEM recomputed for planRev 141 with the same scoring method: 5.75% (was 5.75%); cash rebalanced to keep totals at 100%. Other six names unchanged.",
+   "Full-ladder stop risk per name is $415-$813 (0.41-0.81% of the fund).",
    "Gamma flip, IV rank, order-book depth and Trading Assistant order-block/candlestick/Wyckoff tagging are n/a; oil price for COP is n/a; TEM/QCOM/IONQ have no published PTs in the data.",
-   "Levels are 10/9 closes (markets closed Saturday)."
+   "Levels are 10/9 closes (markets closed since Friday's close)."
   ],
   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 140."
  },
@@ -6546,15 +6378,13 @@
   "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
   "requestAt": "2026-10-10T19:53:42.423Z",
   "planRev": 141,
-  "at": "2026-10-10T15:54:30-04:00",
-  "status": "pending",
+  "at": "2026-10-10T15:57:55-04:00",
+  "status": "ok",
   "tickers": [
    "TEM"
   ],
-  "pending": [
-   "TEM"
-  ],
-  "summary": "Reanalyze planRev 141 (TEM only) received: data pending from Trading Assistant; fresh TEM analysis, strategy and charts will follow. Other tickers unchanged. Recommendations only.",
+  "pending": [],
+  "summary": "Reanalyze planRev 141 (TEM only) complete. TEM split 5.75% ($5,750) vs the app's 22.5%. Data-based entry 67.60 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); 0% now until a daily reclaim inside the zone. App ladder: buy-now 68.80 is above zone A, R1 64.89 is below it, and R2-R4 (60.99/57.09/53.19) are below the 61.71 hard stop. Corrected ladder: 21@67.60, 21@67.10, 17@66.75, plus a conditional zone B 14@60.00 and 14@58.90 (or hold them under a Nov 20 65 put). Trims at 76.40/81.60/87.90 instead of 82.56. Other six tickers unchanged; data is current as of the 10/9 close. Recommendations only.",
   "perTicker": {
    "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); 0% now.",
    "QCOM": "18.0% split; entry 171.3 (zone A, 3.61R to 180.8); 40% now (rungs 1-2, 171.",
@@ -6776,7 +6606,6 @@
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
    }
   },
-  "allocationId": "ra-split-20261010T1532",
-  "scope": "single"
+  "allocationId": "ra-split-20261010T1557"
  }
 }
