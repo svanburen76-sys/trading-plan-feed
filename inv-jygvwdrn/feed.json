@@ -1,17 +1,34 @@
 {
  "profile": "inv-jygvwdrn",
  "updated": "2026-10-10T12:50:00-04:00",
- "analysis": {},
+ "analysis": {
+  "TEM": {
+   "status": "data pending",
+   "updated": "2026-10-10T12:50:00-04:00",
+   "plan": null,
+   "deep": {
+    "charts": null
+   },
+   "note": "TEM (stock and Seth's TEM option) was approved for this feed on 10/10. Data has been requested from Trading Assistant; tap Reanalyze again in about 10 to 20 minutes for the full plan."
+  }
+ },
  "feed": {
+  "updated": "2026-10-10T12:50:00-04:00",
   "notices": [
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Price refresh received. TEM (stock and option) is approved for this plan; its data has been requested from Trading Assistant and takes about 10 to 20 minutes. Tap Reanalyze again after that to get prices and the full plan. Markets are closed today (Saturday), so prices will be Friday 10/9 closes.",
+    "msg": "TEM data requested from Trading Assistant (about 10 to 20 minutes). Tap Reanalyze again after that for the full analysis and charts.",
+    "source": "Trading Assistant Bot",
+    "at": "2026-10-10T12:50:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": null,
+    "msg": "Markets are closed today (Saturday); latest prices will be Friday 10/9 closes.",
     "source": "Trading Plan bot",
     "at": "2026-10-10T12:50:00-04:00"
    }
-  ],
-  "updated": "2026-10-10T12:50:00-04:00"
+  ]
  }
 }
