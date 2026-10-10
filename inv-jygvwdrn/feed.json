@@ -1,10 +1,10 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:12:00-04:00",
+ "updated": "2026-10-10T13:11:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
-   "updated": "2026-10-10T13:12:00-04:00",
+   "updated": "2026-10-10T13:11:00-04:00",
    "plan": {
     "summary": "HOLD the 101 shares with the Nov 20 65 put in place. TEM is consolidating 66.7\u201373 after the 10/6 reversal from 87.99, sitting on the 61.8% retracement (69.70) of the 57.72\u219289.09 swing and above the rising SMA50 (65.60). Bias neutral-to-constructive while daily closes hold above 66.7; the put caps downside below 65.",
     "bias": "neutral / constructive above 66.7",
@@ -34,7 +34,23 @@
      "max_loss_at_expiry_cost_basis_usd": 1570.03,
      "breakeven_at_expiry_trade_price_basis": 74.96,
      "protection_starts_pct_below_last": 8.36,
-     "put_current_value": "n/a (Nov 20 quote not yet in data)",
+     "put_current_value": {
+      "as_of": "2026-10-09 close",
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.525,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "gamma": 0.0184,
+      "theta": -0.0804,
+      "vega": 0.0845,
+      "volume": 42,
+      "oi": 740,
+      "value_usd": 452.5,
+      "pnl_vs_trade_usd": -40.5,
+      "source": "Alpaca OPRA via Trading Assistant (CBOE cross-check)"
+     },
      "note": "Max loss figures ignore any leftover put time value and assume the stock is at or below 65 at Nov 20 expiry. Cost-basis version uses Schwab's $7,641.37."
     },
     "levels": {
@@ -231,20 +247,6 @@
     "at": "2026-10-10T13:12:00-04:00"
    },
    {
-    "type": "info",
-    "ticker": "TEM",
-    "msg": "Position taken from Seth's Schwab figures (101 sh @ 70.07, cost $7,641.37; 1 Nov 20 65 put @ 4.93). The app plan sent no holdings.",
-    "source": "Seth's Schwab screenshot 2026-10-10",
-    "at": "2026-10-10T13:12:00-04:00"
-   },
-   {
-    "type": "wish",
-    "ticker": "TEM",
-    "msg": "Quote and greeks for the TEM Nov 20 2026 65 put are not in today's data yet, so its current value is n/a; requested from Trading Assistant.",
-    "source": "Trading Assistant system",
-    "at": "2026-10-10T13:12:00-04:00"
-   },
-   {
     "type": "unsupported",
     "ticker": "TEM",
     "msg": "Gamma flip, IV rank and live order-book walls are n/a: not in the published data. Walls shown are open-interest walls.",
@@ -264,6 +266,13 @@
     "msg": "Charts are off for now (research and data only).",
     "source": "Trading Plan bot",
     "at": "2026-10-10T13:12:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Nov 20 65P quote added (10/9 close mid 4.525, delta -0.313, IV 80.8%).",
+    "source": "Alpaca OPRA via Trading Assistant",
+    "at": "2026-10-10T13:11:00-04:00"
    }
   ]
  }
