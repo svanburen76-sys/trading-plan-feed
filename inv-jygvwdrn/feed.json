@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T14:04:14-04:00",
+ "updated": "2026-10-10T14:05:06-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -301,7 +301,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T14:04:14-04:00",
+  "updated": "2026-10-10T14:05:06-04:00",
   "notices": [
    {
     "type": "info",
@@ -364,7 +364,7 @@
     "ticker": "TEM",
     "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-    "at": "2026-10-10T14:04:14-04:00"
+    "at": "2026-10-10T14:05:06-04:00"
    }
   ],
   "allocation": {
@@ -432,11 +432,11 @@
    "requestAt": "2026-10-10T17:24:42.461Z"
   },
   "prices": {
-   "id": "2035cb77-e365-408f-ad1e-2eb62c05c795",
-   "requestAt": "2026-10-10T18:03:40.272Z",
+   "id": "7a845e8e-dbdf-4c9b-ab1f-aaa68061f667",
+   "requestAt": "2026-10-10T18:04:46.823Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T14:04:14-04:00",
+   "at": "2026-10-10T14:05:06-04:00",
    "tickers": [
     "TEM"
    ],
