@@ -1,10 +1,10 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:47:36-04:00",
+ "updated": "2026-10-10T13:48:07-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
-   "updated": "2026-10-10T13:11:00-04:00",
+   "updated": "2026-10-10T13:48:07-04:00",
    "plan": {
     "summary": "HOLD the 101 shares with the Nov 20 65 put in place. TEM is consolidating 66.7\u201373 after the 10/6 reversal from 87.99, sitting on the 61.8% retracement (69.70) of the 57.72\u219289.09 swing and above the rising SMA50 (65.60). Bias neutral-to-constructive while daily closes hold above 66.7; the put caps downside below 65.",
     "bias": "neutral / constructive above 66.7",
@@ -228,16 +228,53 @@
      "ATR about 7.9% of price, so normal daily swings are large.",
      "ESMO Congress Oct 23\u201327 (13 Tempus abstracts) and the 10/7 Merck/Moderna collaboration are possible catalysts."
     ],
-    "recommendation": "Hold. Recommendations only; no trades placed or recorded."
+    "recommendation": "Hold. Recommendations only; no trades placed or recorded.",
+    "next_moves": [
+     {
+      "step": 1,
+      "when": "Monday 10/12 open",
+      "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
+     },
+     {
+      "step": 2,
+      "when": "daily close above 73.1",
+      "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
+     },
+     {
+      "step": 3,
+      "when": "pullback that holds 66.7-69.7",
+      "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
+     },
+     {
+      "step": 4,
+      "when": "daily close below 65.6 (SMA50)",
+      "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
+     },
+     {
+      "step": 5,
+      "when": "before 11/3 earnings (unconfirmed)",
+      "move": "Keep the put through earnings; it expires 11/20, after the report."
+     }
+    ],
+    "strategy": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
+    "ladder_review": {
+     "R1 12@62.38": "Good spot: inside the untested bullish order block 57.72-62.81 and just under the 78.6% fib area below 64.43.",
+     "R2 12@59.36": "Good spot: deeper in the same order block.",
+     "R3 19@56.34": "Just under the SMA200 (56.65) and below the order block; only fill if the uptrend from the July low (40.77) still holds on the weekly.",
+     "R4 21@53.32": "Below all mapped support; treat as a trend-break level and re-check before it fills.",
+     "hedge_note": "Every ladder rung adds unhedged shares (the put covers 100 shares only), so each fill raises downside below 65.",
+     "trim 7@87.59": "Sits inside the bearish order block 84-88 (10/6 distribution bar), a sensible first trim."
+    }
    },
    "deep": {
-    "charts": null
+    "charts": []
    },
-   "sources": "Trading Assistant system (Research raw pull: Alpaca SIP bars, Alpaca OPRA options), as of 2026-10-10 12:53 ET"
+   "sources": "Trading Assistant system (Research raw pull: Alpaca SIP bars, Alpaca OPRA options), as of 2026-10-10 12:53 ET",
+   "requestId": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f"
   }
  },
  "feed": {
-  "updated": "2026-10-10T13:47:36-04:00",
+  "updated": "2026-10-10T13:48:07-04:00",
   "notices": [
    {
     "type": "info",
@@ -287,6 +324,27 @@
     "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
     "at": "2026-10-10T13:47:36-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Markets closed Saturday; this reanalysis uses Friday 10/9 closing data on all timeframes, so levels match the earlier 10/10 study.",
+    "source": "Trading Assistant system (Alpaca SIP/OPRA, Cboe), 10/9 close, pulled 2026-10-10 12:52 ET",
+    "at": "2026-10-10T13:48:07-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "App plan shows 100 shares; Seth's Schwab screenshot shows 101 at 70.07. Analysis uses 101.",
+    "source": "Seth's Schwab screenshot 2026-10-10",
+    "at": "2026-10-10T13:48:07-04:00"
+   },
+   {
+    "type": "unsupported",
+    "ticker": "TEM",
+    "msg": "Charts not published (charts are off for now). Gamma flip and live order-book walls n/a; open-interest walls used.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T13:48:07-04:00"
    }
   ],
   "allocation": {
@@ -448,6 +506,49 @@
      }
     }
    }
+  },
+  "reanalyze": {
+   "id": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
+   "request_id": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
+   "requestId": "97856c96-3ba1-4e8a-95e1-ab8deba6a46f",
+   "kind": "reanalyze",
+   "scope": "single",
+   "tickers": [
+    "TEM"
+   ],
+   "planRev": 35,
+   "requestAt": "2026-10-10T17:47:05.869Z",
+   "status": "ok",
+   "at": "2026-10-10T13:48:07-04:00",
+   "reply": "analysis.TEM",
+   "summary": "Hedged core hold. Stay long 101 shares with the 65 put as the floor through earnings. Add only on a confirmed close above 73.1 or on a successful hold of 66.7-69.7, keep the app's lower ladder (R1-R2) in the 57.7-62.8 order block, and trim first into 84-88. Recommendations only; no trades placed or recorded.",
+   "next_moves": [
+    {
+     "step": 1,
+     "when": "Monday 10/12 open",
+     "move": "Hold 101 shares plus the Nov 20 65 put. No new buy while price sits mid-range 66.7-73 under resistance 71.1-73.1."
+    },
+    {
+     "step": 2,
+     "when": "daily close above 73.1",
+     "move": "Bullish trigger (above the 10/7 high and 50% fib 73.41). Keep holding toward 76.35 (SMA20) and 80 (call wall). An add here would sit above the put's 100-share cover, so size it small with a stop under 69.2."
+    },
+    {
+     "step": 3,
+     "when": "pullback that holds 66.7-69.7",
+     "move": "Range support plus the 61.8% fib 69.70. Hold; this is the zone where a small add is reasonable if a bullish reversal candle prints on rising volume."
+    },
+    {
+     "step": 4,
+     "when": "daily close below 65.6 (SMA50)",
+     "move": "Bearish trigger. The 65 put now does its job on 100 shares. Review: hold shares and put into the 62.8-57.7 bullish order block, or sell the put for its gained value and decide on the shares."
+    },
+    {
+     "step": 5,
+     "when": "before 11/3 earnings (unconfirmed)",
+     "move": "Keep the put through earnings; it expires 11/20, after the report."
+    }
+   ]
   }
  },
  "allocation": {
