@@ -1,24 +1,17 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T12:35:04-04:00",
+ "updated": "2026-10-10T12:50:00-04:00",
  "analysis": {},
  "feed": {
   "notices": [
    {
     "type": "info",
-    "ticker": null,
-    "msg": "Price refresh received with no tickers and no plan, so there was nothing to price. Add tickers or holdings to the plan and tap Reanalyze. Markets are closed today (Saturday); last prices would be Friday 10/9 closes.",
+    "ticker": "TEM",
+    "msg": "Price refresh received. TEM (stock and option) is approved for this plan; its data has been requested from Trading Assistant and takes about 10 to 20 minutes. Tap Reanalyze again after that to get prices and the full plan. Markets are closed today (Saturday), so prices will be Friday 10/9 closes.",
     "source": "Trading Plan bot",
-    "at": "2026-10-10T12:35:00-04:00"
-   },
-   {
-    "type": "info",
-    "ticker": null,
-    "msg": "Reanalyze (scope all, planRev 24) received, but the plan has no stocks and no tickers were requested, so there was nothing to analyze and no charts were built. Add tickers or holdings to the plan and tap Reanalyze again.",
-    "source": "Trading Plan bot",
-    "at": "2026-10-10T12:35:04-04:00"
+    "at": "2026-10-10T12:50:00-04:00"
    }
   ],
-  "updated": "2026-10-10T12:35:04-04:00"
+  "updated": "2026-10-10T12:50:00-04:00"
  }
 }
