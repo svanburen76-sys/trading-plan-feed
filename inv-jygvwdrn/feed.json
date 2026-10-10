@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T14:31:00-04:00",
+ "updated": "2026-10-10T14:41:24-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -301,7 +301,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T14:31:00-04:00",
+  "updated": "2026-10-10T14:41:24-04:00",
   "notices": [
    {
     "type": "info",
@@ -376,51 +376,23 @@
    {
     "type": "info",
     "ticker": "TEM",
-    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
-    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
-    "at": "2026-10-10T14:15:42-04:00"
-   },
-   {
-    "type": "info",
-    "ticker": "TEM",
     "msg": "Price refresh: markets closed Saturday; TEM price unchanged at Friday 10/9 close.",
     "source": "Alpaca SIP via Trading Assistant system",
     "at": "2026-10-10T14:29:00-04:00"
    },
    {
-    "type": "unsupported",
-    "ticker": "QCOM",
-    "msg": "QCOM is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-    "source": "Trading Plan rules",
-    "at": "2026-10-10T14:31:00-04:00"
+    "type": "info",
+    "ticker": null,
+    "msg": "Prices request answered for TEM, QCOM, IONQ, SPCX and COP with Friday 10/9 closing data; markets are closed Saturday. RKLB dropped because the app no longer requests it.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10)",
+    "at": "2026-10-10T14:41:24-04:00"
    },
    {
-    "type": "unsupported",
-    "ticker": "IONQ",
-    "msg": "IONQ is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-    "source": "Trading Plan rules",
-    "at": "2026-10-10T14:31:00-04:00"
-   },
-   {
-    "type": "unsupported",
-    "ticker": "SPCX",
-    "msg": "SPCX is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-    "source": "Trading Plan rules",
-    "at": "2026-10-10T14:31:00-04:00"
-   },
-   {
-    "type": "unsupported",
-    "ticker": "COP",
-    "msg": "COP is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-    "source": "Trading Plan rules",
-    "at": "2026-10-10T14:31:00-04:00"
-   },
-   {
-    "type": "unsupported",
-    "ticker": "RKLB",
-    "msg": "RKLB is not an approved name for this feed yet; prices withheld while awaiting Seth's OK in chat.",
-    "source": "Trading Plan rules",
-    "at": "2026-10-10T14:31:00-04:00"
+    "type": "info",
+    "ticker": null,
+    "msg": "QCOM, IONQ, SPCX and COP have no position in the app plan; quotes only.",
+    "source": "app request.plan (planRev 48)",
+    "at": "2026-10-10T14:41:24-04:00"
    }
   ],
   "allocation": {
@@ -489,13 +461,17 @@
   },
   "prices": {
    "id": null,
-   "requestId": "51e974b5-85dd-4f6c-85a3-e14fdcf2ff38",
-   "requestAt": "2026-10-10T18:30:12.490Z",
+   "requestId": "a78f168d-065eef20d0ca",
+   "requestAt": "2026-10-10T18:40:03.956Z",
    "kind": "prices",
    "status": "ok",
-   "at": "2026-10-10T14:31:00-04:00",
+   "at": "2026-10-10T14:41:24-04:00",
    "tickers": [
-    "TEM"
+    "TEM",
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP"
    ],
    "items": [
     {
@@ -538,9 +514,169 @@
       "unrealizedPL": -41.16,
       "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
      }
+    },
+    {
+     "ticker": "QCOM",
+     "price": 175.5,
+     "priceC": 17550,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 176.01,
+     "change": -0.51,
+     "changePct": -0.29,
+     "open": 176.4,
+     "high": 176.4,
+     "low": 171.79,
+     "volume": 7586807,
+     "vwap": 174.42,
+     "avgVolume20d": 13584326,
+     "lastTradeExtHours": 175.4,
+     "lastTradeTime": "2026-10-09T19:58:42-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    {
+     "ticker": "IONQ",
+     "price": 39.89,
+     "priceC": 3989,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 39.45,
+     "change": 0.44,
+     "changePct": 1.12,
+     "open": 40,
+     "high": 40.24,
+     "low": 38.99,
+     "volume": 13296796,
+     "vwap": 39.6,
+     "avgVolume20d": 23615421,
+     "lastTradeExtHours": 39.8151,
+     "lastTradeTime": "2026-10-09T19:59:52-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    {
+     "ticker": "SPCX",
+     "price": 162.57,
+     "priceC": 16257,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 160.57,
+     "change": 2.0,
+     "changePct": 1.25,
+     "open": 165.34,
+     "high": 166.38,
+     "low": 160.61,
+     "volume": 93125079,
+     "vwap": 162.8,
+     "avgVolume20d": 95831797,
+     "lastTradeExtHours": 162.76,
+     "lastTradeTime": "2026-10-09T19:59:58-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
+    {
+     "ticker": "COP",
+     "price": 134.1,
+     "priceC": 13410,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 134.19,
+     "change": -0.09,
+     "changePct": -0.07,
+     "open": 133.85,
+     "high": 135.561,
+     "low": 132.9447,
+     "volume": 3840020,
+     "vwap": 134.61,
+     "avgVolume20d": 6825929,
+     "lastTradeExtHours": 134.46,
+     "lastTradeTime": "2026-10-09T19:11:49-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
     }
    ],
    "quotes": {
+    "QCOM": {
+     "ticker": "QCOM",
+     "price": 175.5,
+     "priceC": 17550,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 176.01,
+     "change": -0.51,
+     "changePct": -0.29,
+     "open": 176.4,
+     "high": 176.4,
+     "low": 171.79,
+     "volume": 7586807,
+     "vwap": 174.42,
+     "avgVolume20d": 13584326,
+     "lastTradeExtHours": 175.4,
+     "lastTradeTime": "2026-10-09T19:58:42-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    "IONQ": {
+     "ticker": "IONQ",
+     "price": 39.89,
+     "priceC": 3989,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 39.45,
+     "change": 0.44,
+     "changePct": 1.12,
+     "open": 40,
+     "high": 40.24,
+     "low": 38.99,
+     "volume": 13296796,
+     "vwap": 39.6,
+     "avgVolume20d": 23615421,
+     "lastTradeExtHours": 39.8151,
+     "lastTradeTime": "2026-10-09T19:59:52-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:34 ET"
+    },
+    "SPCX": {
+     "ticker": "SPCX",
+     "price": 162.57,
+     "priceC": 16257,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 160.57,
+     "change": 2.0,
+     "changePct": 1.25,
+     "open": 165.34,
+     "high": 166.38,
+     "low": 160.61,
+     "volume": 93125079,
+     "vwap": 162.8,
+     "avgVolume20d": 95831797,
+     "lastTradeExtHours": 162.76,
+     "lastTradeTime": "2026-10-09T19:59:58-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
+    "COP": {
+     "ticker": "COP",
+     "price": 134.1,
+     "priceC": 13410,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 134.19,
+     "change": -0.09,
+     "changePct": -0.07,
+     "open": 133.85,
+     "high": 135.561,
+     "low": 132.9447,
+     "volume": 3840020,
+     "vwap": 134.61,
+     "avgVolume20d": 6825929,
+     "lastTradeExtHours": 134.46,
+     "lastTradeTime": "2026-10-09T19:11:49-04:00",
+     "position": null,
+     "source": "Alpaca SIP via Trading Assistant system (Research pull 2026-10-10), pulled 2026-10-10 14:35 ET"
+    },
     "TEM": {
      "ticker": "TEM",
      "price": 70.93,
@@ -588,16 +724,9 @@
     "QCOM",
     "IONQ",
     "SPCX",
-    "COP",
-    "RKLB"
+    "COP"
    ],
-   "withheld": [
-    "QCOM",
-    "IONQ",
-    "SPCX",
-    "COP",
-    "RKLB"
-   ]
+   "withheld": []
   },
   "reanalyze": {
    "id": "2bca50a0-e79f-4fcf-a576-974512f6e225",
