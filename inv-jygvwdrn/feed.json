@@ -1,20 +1,22 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T18:53:26-04:00",
+ "updated": "2026-10-10T19:15:00-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
-   "updated": "2026-10-10T18:53:26-04:00",
+   "updated": "2026-10-10T19:15:00-04:00",
    "requestId": "077a52d0-5c53-4766-bf5d-794e04f4569d",
    "planRev": 169,
    "plan": {
-    "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
+    "summary": "TEM closed 70.93 on 10/9 (pullback in a larger uptrend; daily RSI 48). You hold 0 shares. Plan: buy nothing now; buy 65 sh at 67.60/67.10/66.75 after a daily close above the prior day's high in zone 66.71-68.66, hard stop 61.71; conditional 32 sh at 60.00/58.90; trims 76.4/81.6/87.9; optional Nov 20 65 put ~$453. Split 5.75% ($6,382) vs app 22.5%. Odds (est.): up 56/down 44, T1 before stop 42%.",
     "bias": "pullback inside a larger range",
     "planRev": 169,
     "position": {
-     "source": "app request.plan (planRev 169)",
+     "source": "app request.plan planRev 169 (sole source of truth)",
      "shares": 0,
      "avgCost": null,
+     "options": [],
+     "strategies": [],
      "last_close": 70.93,
      "last_close_date": "2026-10-09"
     },
@@ -240,7 +242,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move ±5.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move \u00b15.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.0,
@@ -273,7 +275,7 @@
     },
     "earnings": {
      "date": "2026-11-03 AMC",
-     "status": "UNC (unconfirmed)",
+     "status": "unconfirmed",
      "source": "raw/TEM_earnings.json (events_registry TEM-EARN-20261103; IR page checked, not confirmed)"
     },
     "buy_zone": [
@@ -308,7 +310,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -326,7 +328,7 @@
        "R_mid_T1": 3.21,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       },
@@ -345,7 +347,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       }
@@ -458,7 +460,14 @@
        "evR_est": 0.06
       },
       "tranche": "primary",
-      "condition": null
+      "condition": null,
+      "label": "R1 23@67.60",
+      "stop": {
+       "close": 63.61,
+       "hard": 61.71
+      },
+      "hedgedBy": "stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it",
+      "fillOdds20d_est": 83
      },
      {
       "rung": 2,
@@ -481,7 +490,14 @@
        "evR_est": 0.06
       },
       "tranche": "primary",
-      "condition": null
+      "condition": null,
+      "label": "R2 23@67.10",
+      "stop": {
+       "close": 63.61,
+       "hard": 61.71
+      },
+      "hedgedBy": "stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it",
+      "fillOdds20d_est": 81
      },
      {
       "rung": 3,
@@ -504,7 +520,14 @@
        "evR_est": 0.07
       },
       "tranche": "primary",
-      "condition": null
+      "condition": null,
+      "label": "R3 19@66.75",
+      "stop": {
+       "close": 63.61,
+       "hard": 61.71
+      },
+      "hedgedBy": "stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it",
+      "fillOdds20d_est": 79
      },
      {
       "rung": 4,
@@ -527,7 +550,14 @@
        "evR_est": 0.08
       },
       "tranche": "conditional",
-      "condition": "Conditional tranche: only (a) as a fresh setup after zone A is stopped out and TEM reclaims inside zone B (daily close above the prior day high), with its own 53.40 hard stop, or (b) with a protective put replacing the zone A stop (see hedge.deeperRungsAlternative)."
+      "condition": "Conditional tranche: only (a) as a fresh setup after zone A is stopped out and TEM reclaims inside zone B (daily close above the prior day high), with its own 53.40 hard stop, or (b) with a protective put replacing the zone A stop (see hedge.deeperRungsAlternative).",
+      "label": "R4 16@60.00 (conditional)",
+      "stop": {
+       "close": 54.81,
+       "hard": 53.4
+      },
+      "hedgedBy": "own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure",
+      "fillOdds20d_est": 46
      },
      {
       "rung": 5,
@@ -550,7 +580,14 @@
        "evR_est": 0.1
       },
       "tranche": "conditional",
-      "condition": "Conditional tranche: same condition as rung 4."
+      "condition": "Conditional tranche: same condition as rung 4.",
+      "label": "R5 16@58.90 (conditional)",
+      "stop": {
+       "close": 54.81,
+       "hard": 53.4
+      },
+      "hedgedBy": "own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure",
+      "fillOdds20d_est": 41
      }
     ],
     "ladderNote": "Corrected ladder keeps every primary rung inside zone A above the 61.71 hard stop. Rungs 4-5 are a separate, conditional zone B tranche (own 53.40 hard stop, 54.81 close stop) and are not averaging down on a broken zone A position, unless a put replaces the zone A stop.",
@@ -591,7 +628,7 @@
     "runner": "runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high",
     "hedge": {
      "suggestion": "Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
-     "deeperRungsAlternative": "If you want the deeper rungs in one position: buy 1 Nov 20 65 put (about $453 at the 10/9 mid 4.53) once rungs 1-3 fill and drop the 61.71 stop. If all 97 shares fill (average about 64.63), the put floors them at 65 through 11/20 (covers the 11/3 earnings), so the worst case through 11/20 is about $417 (premium less the 0.37 the strike sits above the average); with only rungs 1-3 (65 sh, average 67.17) the worst case is about $594 with the put versus $355 with the 61.71 stop. No quote for later expiries in the data.",
+     "deeperRungsAlternative": "If you want the deeper rungs in one position: buy 1 Nov 20 65 put (about $453 at the 10/9 mid 4.53) once rungs 1-3 fill and drop the 61.71 stop. If all 97 shares fill (average about 64.63), the put floors them at 65 through 11/20 (covers the 11/3 earnings), so the worst case through 11/20 is about $417 (premium less the 0.37 the strike sits above the average); with only rungs 1-3 (65 sh, average 67.17) the worst case is about $594 with the put versus $355 with the 61.71 stop.",
      "quote": {
       "contract": "TEM 2026-11-20 65 P",
       "bid": 4.45,
@@ -626,9 +663,9 @@
     ],
     "recommendation": "No position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.",
     "risk": [
-     "Earnings 2026-11-03 AMC (UNC (unconfirmed)).",
-     "ATR14 5.61 (7.9% of price); full-ladder stop risk $549.",
-     "Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls."
+     "Earnings 2026-11-03 after close (unconfirmed): review size before the print.",
+     "ATR14 5.61 (7.9% of price); full-ladder stop risk $549; primary tranche $355.",
+     "Short interest 27.8%: squeeze and crowding risk both ways."
     ],
     "recommendedPct": 5.75,
     "recommendedUsd": 6382.5,
@@ -798,11 +835,85 @@
       "T3": 25
      },
      "fillEntry20d": 87,
-     "reasoning": "Entry 67.6 vs hard stop 61.71; agreement +0.23 shifts odds by +2 pts. Scored after each new session (first scoring after Monday's data)."
+     "reasoning": "Entry 67.60 vs hard stop 61.71 is 5.89 of risk against 8.90 to T1, so a driftless walk gives about 40% to T1 first; study agreement +0.23 (5 bullish, 2 bearish of 13) adds 2 points to 42%. Up vs down 56/44 over 20 sessions: price above the rising 50- and 200-day with rising OBV, offset by 3 lower lows and MACD below signal. Estimates, not forecasts.",
+     "keyLevels": [
+      {
+       "level": 76.5,
+       "name": "T1",
+       "pBeforeStopFromEntry": 42,
+       "pTouch20dFromClose": 74
+      },
+      {
+       "level": 81.7,
+       "name": "T2",
+       "pBeforeStopFromEntry": 32,
+       "pTouch20dFromClose": 53
+      },
+      {
+       "level": 88.0,
+       "name": "T3",
+       "pBeforeStopFromEntry": 25,
+       "pTouch20dFromClose": 34
+      },
+      {
+       "level": 67.6,
+       "name": "entry / R1",
+       "pTouch20dFromClose": 83
+      },
+      {
+       "level": 63.61,
+       "name": "zone A close stop",
+       "pTouch20dFromClose": 63
+      },
+      {
+       "level": 61.71,
+       "name": "hard stop",
+       "pBeforeT1FromEntry": 58,
+       "pTouch20dFromClose": 54
+      },
+      {
+       "level": 60.0,
+       "name": "R4 (zone B)",
+       "pTouch20dFromClose": 46
+      }
+     ],
+     "touchMethod": "touch odds over 20 sessions from the 70.93 close, driftless, using Nov 20 put IV 80.8% (20-session sigma 22.8%); no study tilt. ESTIMATES. (fillEntry20d 87 uses the older ATR method, so it reads a little higher than the 83% touch odds here.)",
+     "scorecard": {
+      "status": "open, nothing scored yet",
+      "firstScoring": "after the 2026-10-12 session",
+      "method": "each run logs the odds; after each session mark which levels touched first and compare with the stated odds (Brier score per level)",
+      "log": [
+       {
+        "run": "planRev 163",
+        "at": "2026-10-10T17:41:57-04:00",
+        "T1": 42,
+        "stopFirst": 58,
+        "up20d": 56
+       },
+       {
+        "run": "planRev 169",
+        "at": "2026-10-10T18:53:26-04:00",
+        "T1": 42,
+        "stopFirst": 58,
+        "up20d": 56
+       },
+       {
+        "run": "rebuild (planRev 169)",
+        "at": "2026-10-10T19:15:00-04:00",
+        "T1": 42,
+        "stopFirst": 58,
+        "up20d": 56
+       }
+      ],
+      "hits": 0,
+      "misses": 0,
+      "source": "/workspace/trading_plan_app/odds_log_r163.json"
+     }
     },
     "options": {
      "puts": [
       {
+       "contract": "TEM 2026-11-20 65 P",
        "strike": 65,
        "expiry": "2026-11-20",
        "contracts": 1,
@@ -810,13 +921,20 @@
         "bid": 4.45,
         "ask": 4.6,
         "mid": 4.525,
-        "source": "Alpaca OPRA 10/9 close"
+        "asOf": "2026-10-09 close",
+        "source": "Alpaca OPRA"
        },
-       "when": "Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs."
+       "costUsd": 452.5,
+       "iv": 0.8076,
+       "delta": -0.313,
+       "covers": "up to 100 shares (whole 97-share ladder); covers the 11/3 earnings",
+       "when": "optional: only if you want to hold rungs 1-3 through a zone A failure into rungs 4-5; it then replaces the 61.71 stop",
+       "status": "suggestion, not held"
       }
      ],
-     "calls": "none recommended: no covered calls before T1 on a long-term entry; call walls are used as targets only",
-     "note": "Suggestion only; quotes other than TEM are n/a."
+     "calls": [],
+     "callsNote": "No calls recommended: no covered calls before T1 on a long-term entry; call walls (80) are used as targets only.",
+     "held": []
     },
     "history": {
      "status": "2-year history n/a: Trading Assistant holds 1 year of daily bars (first bar 2025-10-06); stats below are 1-year",
@@ -826,37 +944,201 @@
      "beta": "n/a (no index series in the data)",
      "rungSpacingNote": "rung spacing follows Trading Assistant zones (sized from ATR and swing structure), not a fixed % step"
     },
-    "strategy": "Long-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.",
+    "strategy": "Long-term accumulation, pullback entry: wait for a trigger inside zone A (66.71-68.66), buy 65 sh in 3 rungs with a 61.71 hard stop, keep a 32-sh conditional zone B tranche (60.00/58.90), trim 20% at 76.4/81.6/87.9 and trail a runner. Sized at 5.75% ($6,382), not the app's 22.5%, because TEM is the most volatile name.",
     "steps": [
-     "1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
-     "2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)",
-     "3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.",
-     "4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.",
-     "5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
-     "6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print."
+     "1. Now: buy nothing. TEM closed 70.93; you hold 0 shares and no options.",
+     "2. Buy-now entry: 23@67.60 only after a daily close above the prior day's high while TEM is inside 66.71-68.66 (why: 10/7-10/8 lows, 67.10 pivot, 50-day 65.60 and volume shelf stack there; 1.51R to T1).",
+     "3. Ladder, zone A: R2 23@67.10, R3 19@66.75 on the same trigger (65 sh, $4,366.35).",
+     "4. Stops for R1-R3: sell on a daily close under 63.61; hard stop 61.71 (risk $355).",
+     "5. Ladder, zone B (conditional): R4 16@60.00, R5 16@58.90 only after a zone A stop-out and a fresh close above the prior day's high inside 57.72-60.06; own stops 54.81 close / 53.40 hard.",
+     "6. Option (optional): 1x TEM Nov 20 65 put, quoted 4.45/4.60 (mid 4.525, ~$453), only if you want to hold R1-R3 through a zone A failure into R4-R5; it replaces the 61.71 stop. No calls.",
+     "7. Trims: 13@76.40 (T1), 13@81.60 (T2), 13@87.90 (T3) if R1-R3 filled (19 each if all 97 fill); runner 26 sh trails under 81.7 after T3.",
+     "8. Breakout alternative: a daily close above 76.5 that holds on a retest replaces the pullback entry.",
+     "9. Before 11/3 earnings (unconfirmed): review size."
     ],
     "cautions": [
-     "Earnings 2026-11-03 AMC (UNC (unconfirmed)).",
-     "ATR14 5.61 (7.9% of price); full-ladder stop risk $549.",
-     "Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls.",
-     "Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.",
-     "Data as of the 10/9 close; markets closed until Monday."
+     "Earnings 2026-11-03 after close (unconfirmed): review size before the print.",
+     "ATR14 5.61 (7.9% of price); full-ladder stop risk $549; primary tranche $355.",
+     "Short interest 27.8%: squeeze and crowding risk both ways.",
+     "Treasury yields at 24-year highs weigh on unprofitable growth names.",
+     "Tailwinds: Moderna/Merck cancer-vaccine collaboration (10/7) and 13 ESMO abstracts (Oct 23-27).",
+     "Studies are mixed (5 of 13 bullish, 2 bearish), so size stays small and entry waits for the trigger.",
+     "App buy-now 254@68.80 is about 2.7x the recommended whole-name size; app rungs 60.99/57.09/53.19 sit below the 61.71 hard stop."
     ],
     "changes": [
-     "Fund: $111,000 -> $111,000 (app planRev 169)",
-     "Recommended split: unchanged (5.75% ($6,382))",
-     "Entry: unchanged (67.6)",
-     "Deploy now: unchanged (0 sh ($0))",
-     "Ladder: unchanged (5 rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9)",
-     "Trims: unchanged (76.4, 81.6, 87.9)",
-     "Hard stop: unchanged (61.71)",
-     "Options: put now specified as 1x 2026-11-20 65P (quoted 4.525)",
-     "Odds (estimates): up 56% / down 44% over ~20 sessions; T1 before stop 42%",
-     "Strategy: study agreement (+0.23, split x1.03); odds-weighted rungs; Wyckoff labeled as a guess",
-     "App plan (planRev 169): Buy-now 254@68.80 vs recommended $6,382; corrected ladder 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9",
-     "Data: weekend reuse of TEM_20261010/ (10/9 close); no fresh Trading Assistant pull"
+     "Plan levels: unchanged from planRev 169 (entry 67.60, zone A 66.71-68.66, hard stop 61.71, close stop 63.61, targets 76.5/81.7/88.0).",
+     "Ladder vs the app (planRev 168 ladder): Buy-now 254@68.80 -> 0 now, 23@67.60 on trigger; R1 23@64.89 -> 23@67.10; R2 24@60.99 -> 19@66.75; R3 39@57.09 -> 16@60.00 (conditional); R4 42@53.19 -> 16@58.90 (conditional). 5 rungs -> 5 rungs; 382 sh -> 97 sh.",
+     "Trims: app 10@82.56 -> 13@76.40, 13@81.60, 13@87.90 (20% each of 65 sh; 19 each if all 97 fill); runner 26 sh.",
+     "Stops: one 61.71 stop -> per-rung stops (R1-R3 63.61 close / 61.71 hard; R4-R5 54.81 / 53.40) with a 'hedgedBy' tag on each rung.",
+     "Options: none held -> optional 1x Nov 20 65P at 4.525 ($453); calls: none.",
+     "Odds: unchanged (up 56 / down 44; T1 42, T2 32, T3 25 before stop); added 20-session touch odds for each key level and an odds scorecard.",
+     "Split: app 22.5% ($24,975) -> recommended 5.75% ($6,382); deploy now $0.",
+     "Format: rebuilt to the app's plan-output rules 1-4 (buy-now entry with why, labeled rungs, trim shares, stops list, structured puts/calls, cautions, sizing to holdings/cash/target); data notices moved to feed.notices."
     ],
-    "methodology": "planRev 169 all-names reanalyze (v2 standingRules hash 4766c73): same study-agreement thesis, agreement-tilted odds, odds-weighted rungs and Wyckoff-as-guess as planRev 163/168, plus app-size and below-hard-stop flags. Weekend: reused /workspace/trading_plan/TEM_20261010/ (10/9 close); no fresh Trading Assistant pull. No new methodology change this run (no new sessions to score)."
+    "methodology": "planRev 169 all-names reanalyze (v2 standingRules hash 4766c73): same study-agreement thesis, agreement-tilted odds, odds-weighted rungs and Wyckoff-as-guess as planRev 163/168, plus app-size and below-hard-stop flags. Weekend: reused /workspace/trading_plan/TEM_20261010/ (10/9 close); no fresh Trading Assistant pull. No new methodology change this run (no new sessions to score). Rebuild 10/10 7:15 PM ET: format only, same data and levels; added touch odds (IV-based) and the odds scorecard.",
+    "sizing": {
+     "holdings": {
+      "shares": 0,
+      "usd": 0,
+      "options": "none"
+     },
+     "cash": {
+      "account": 111000,
+      "cash": 111000,
+      "unallocatedReserve": 11100
+     },
+     "appTarget": {
+      "pct": 22.5,
+      "usd": 24975
+     },
+     "recommended": {
+      "pct": 5.75,
+      "usd": 6382.5,
+      "why": "Most volatile name on the list (ATR 7.9%, IV 76%, short interest 28%), so equal-risk sizing keeps TEM among the smallest splits even with the bonus for its quoted put. The corrected ladder stays at or under 100 shares, so one Nov 20 65 put covers all of it."
+     },
+     "ladderTotal": {
+      "shares": 97,
+      "usd": 6268.75,
+      "stopRiskUsd": 548.8
+     },
+     "primaryTranche": {
+      "shares": 65,
+      "usd": 4366.35,
+      "stopRiskUsd": 355.2
+     },
+     "conditionalTranche": {
+      "shares": 32,
+      "usd": 1902.4,
+      "stopRiskUsd": 193.6
+     },
+     "deployNow": {
+      "shares": 0,
+      "usd": 0
+     },
+     "cashAfterFullLadder": 104731.25,
+     "gapToAppTargetUsd": 18592.5
+    },
+    "buyNow": {
+     "price": 67.6,
+     "sharesNow": 0,
+     "sharesOnTrigger": 23,
+     "label": "Buy-now 0 now; 23@67.60 on trigger",
+     "trigger": "daily close above the prior day's high while price is inside zone A 66.71-68.66",
+     "cancel": "daily close under 63.61",
+     "why": "Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.",
+     "appBuyNow": {
+      "label": "Buy-now 254@68.80",
+      "verdict": "FAIL: 0.14 above zone A, 1.09R to T1, 254 sh (~$17,475) vs $6,382 recommended for the whole name"
+     }
+    },
+    "trims": [
+     {
+      "target": "T1",
+      "price": 76.4,
+      "pct": 20,
+      "sharesIfPrimaryFilled": 13,
+      "sharesIfFullLadder": 19,
+      "label": "13@76.40",
+      "why": "proximal edge of the 76.50-77.19 close shelf (10/1-10/2 closes 76.50/76.63, 9/22-9/23 closes 76.59/77.19); SMA20 76.35; VP20 HVN 75.6-77.28"
+     },
+     {
+      "target": "T2",
+      "price": 81.6,
+      "pct": 20,
+      "sharesIfPrimaryFilled": 13,
+      "sharesIfFullLadder": 19,
+      "label": "13@81.60",
+      "why": "proximal edge of 81.68-82.58 (9/30 low 81.68, 9/18 high 81.83, 9/29-9/30 closes 81.90-82.58); VP20 POC 80.08 on the path"
+     },
+     {
+      "target": "T3",
+      "price": 87.9,
+      "pct": 20,
+      "sharesIfPrimaryFilled": 13,
+      "sharesIfFullLadder": 19,
+      "label": "13@87.90",
+      "why": "proximal edge of the 87.99-89.09 double top (10/6 high 87.99, 9/29 high 89.09)"
+     }
+    ],
+    "sellPoints": {
+     "trims": [
+      "13@76.40",
+      "13@81.60",
+      "13@87.90"
+     ],
+     "runner": {
+      "sharesIfPrimaryFilled": 26,
+      "sharesIfFullLadder": 40,
+      "rule": "runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high"
+     },
+     "stopExits": [
+      {
+       "level": 63.61,
+       "type": "close stop",
+       "applies": "rungs 1-3",
+       "action": "sell rungs 1-3 on a daily close under 63.61"
+      },
+      {
+       "level": 61.71,
+       "type": "hard stop",
+       "applies": "rungs 1-3",
+       "action": "sell rungs 1-3 at 61.71"
+      },
+      {
+       "level": 54.81,
+       "type": "close stop",
+       "applies": "rungs 4-5",
+       "action": "sell rungs 4-5 on a daily close under 54.81"
+      },
+      {
+       "level": 53.4,
+       "type": "hard stop",
+       "applies": "rungs 4-5",
+       "action": "sell rungs 4-5 at 53.40"
+      },
+      {
+       "level": 39.36,
+       "type": "long-term invalidation",
+       "applies": "all",
+       "action": "weekly close under 39.36 ends the long-term thesis"
+      }
+     ],
+     "appTrim": {
+      "label": "10@82.56",
+      "verdict": "skips T1 76.5; sits at the far edge of the T2 shelf"
+     }
+    },
+    "stops": [
+     {
+      "tranche": "A (rungs 1-3)",
+      "close": 63.61,
+      "hard": 61.71,
+      "why": "8/25 swing low 63.61 invalidates zone A"
+     },
+     {
+      "tranche": "B (rungs 4-5)",
+      "close": 54.81,
+      "hard": 53.4,
+      "why": "top of the 8/19 breakaway gap 54.81"
+     },
+     {
+      "tranche": "long-term",
+      "weeklyClose": 39.36,
+      "why": "below the 2026 low 40.77 less 0.25 ATR"
+     }
+    ],
+    "readOnly": "Recommendations only. Grok Bot never trades, places orders, buys anything or changes accounts; you execute every trade yourself in the app.",
+    "outputRules": {
+     "hash": "4766c73",
+     "group": "A",
+     "rules": {
+      "1": "steps, strategy, position, buyNow, ladder, trims, sellPoints, stops, options, cautions, sizing",
+      "2": "ladder (odds-sized rungs, fillOdds20d_est), odds (upVsDown20d, reachBeforeStop, keyLevels, reasoning, scorecard)",
+      "3": "changes (old -> new)",
+      "4": "readOnly"
+     }
+    },
+    "updated": "2026-10-10T19:15:00-04:00"
    },
    "deep": {
     "charts": [
@@ -888,26 +1170,32 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
-   "strategy": "Long-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.",
+   "summary": "TEM closed 70.93 on 10/9 (pullback in a larger uptrend; daily RSI 48). You hold 0 shares. Plan: buy nothing now; buy 65 sh at 67.60/67.10/66.75 after a daily close above the prior day's high in zone 66.71-68.66, hard stop 61.71; conditional 32 sh at 60.00/58.90; trims 76.4/81.6/87.9; optional Nov 20 65 put ~$453. Split 5.75% ($6,382) vs app 22.5%. Odds (est.): up 56/down 44, T1 before stop 42%.",
+   "strategy": "Long-term accumulation, pullback entry: wait for a trigger inside zone A (66.71-68.66), buy 65 sh in 3 rungs with a 61.71 hard stop, keep a 32-sh conditional zone B tranche (60.00/58.90), trim 20% at 76.4/81.6/87.9 and trail a runner. Sized at 5.75% ($6,382), not the app's 22.5%, because TEM is the most volatile name.",
    "nextMoves": [
-    "1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
-    "2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)",
-    "3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.",
-    "4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.",
-    "5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
-    "6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print."
+    "1. Now: buy nothing. TEM closed 70.93; you hold 0 shares and no options.",
+    "2. Buy-now entry: 23@67.60 only after a daily close above the prior day's high while TEM is inside 66.71-68.66 (why: 10/7-10/8 lows, 67.10 pivot, 50-day 65.60 and volume shelf stack there; 1.51R to T1).",
+    "3. Ladder, zone A: R2 23@67.10, R3 19@66.75 on the same trigger (65 sh, $4,366.35).",
+    "4. Stops for R1-R3: sell on a daily close under 63.61; hard stop 61.71 (risk $355).",
+    "5. Ladder, zone B (conditional): R4 16@60.00, R5 16@58.90 only after a zone A stop-out and a fresh close above the prior day's high inside 57.72-60.06; own stops 54.81 close / 53.40 hard.",
+    "6. Option (optional): 1x TEM Nov 20 65 put, quoted 4.45/4.60 (mid 4.525, ~$453), only if you want to hold R1-R3 through a zone A failure into R4-R5; it replaces the 61.71 stop. No calls.",
+    "7. Trims: 13@76.40 (T1), 13@81.60 (T2), 13@87.90 (T3) if R1-R3 filled (19 each if all 97 fill); runner 26 sh trails under 81.7 after T3.",
+    "8. Breakout alternative: a daily close above 76.5 that holds on a retest replaces the pullback entry.",
+    "9. Before 11/3 earnings (unconfirmed): review size."
    ],
    "next_moves": [
-    "1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.",
-    "2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)",
-    "3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.",
-    "4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.",
-    "5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.",
-    "6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print."
+    "1. Now: buy nothing. TEM closed 70.93; you hold 0 shares and no options.",
+    "2. Buy-now entry: 23@67.60 only after a daily close above the prior day's high while TEM is inside 66.71-68.66 (why: 10/7-10/8 lows, 67.10 pivot, 50-day 65.60 and volume shelf stack there; 1.51R to T1).",
+    "3. Ladder, zone A: R2 23@67.10, R3 19@66.75 on the same trigger (65 sh, $4,366.35).",
+    "4. Stops for R1-R3: sell on a daily close under 63.61; hard stop 61.71 (risk $355).",
+    "5. Ladder, zone B (conditional): R4 16@60.00, R5 16@58.90 only after a zone A stop-out and a fresh close above the prior day's high inside 57.72-60.06; own stops 54.81 close / 53.40 hard.",
+    "6. Option (optional): 1x TEM Nov 20 65 put, quoted 4.45/4.60 (mid 4.525, ~$453), only if you want to hold R1-R3 through a zone A failure into R4-R5; it replaces the 61.71 stop. No calls.",
+    "7. Trims: 13@76.40 (T1), 13@81.60 (T2), 13@87.90 (T3) if R1-R3 filled (19 each if all 97 fill); runner 26 sh trails under 81.7 after T3.",
+    "8. Breakout alternative: a daily close above 76.5 that holds on a retest replaces the pullback entry.",
+    "9. Before 11/3 earnings (unconfirmed): review size."
    ],
-   "text": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).\n\nStrategy: Long-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.\n\nNext moves:\n1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)\n3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.\n4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.\n5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print.\n\nEntry 67.6: Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\nThesis: 5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure.\n\nRecommendation: No position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.\n\nHedge: Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n\nRisk: Earnings 2026-11-03 AMC (UNC (unconfirmed)).; ATR14 5.61 (7.9% of price); full-ladder stop risk $549.; Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls.; Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.; Data as of the 10/9 close; markets closed until Monday.",
-   "markdown": "# TEM plan (planRev 169)\n\n## Summary\nTEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($6,382), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).\n\n## Strategy\nLong-term accumulation in Trading Assistant zones (pullback inside a larger range); wait for trigger; trims at structure; hard stop per zone.\n\n## Next moves\n- 1. Wait: nothing goes in now - 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n- 2. Remaining rungs: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional)\n- 3. Stop: daily close under 63.61 cancels zone A; hard stop 61.71.\n- 4. Trims (20% each): 76.4 (T1), 81.6 (T2), 87.9 (T3); runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high.\n- 5. Hedge: 1x 2026-11-20 65P - Primary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n- 6. Event: earnings 2026-11-03 AMC (UNC (unconfirmed)) - review size before the print.\n\n## Entry\n**67.6** in zone A 66.71-68.66 (1.51R to T1 76.5; hard stop 61.71).\n\nEntry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\nTrigger: 0% now. Rungs 1-3 (67.60/67.10/66.75) only after a daily close above the prior day's high while in zone A. Rungs 4-5 (60.00/58.90, zone B) are conditional: a fresh zone B setup after a zone A stop-out, or held under a Nov 20 65 put. Breakout alternative: a daily close above 76.5 that holds on a retest.\n\n## Thesis\n5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure.\nAgreement score: +0.23. Supporting: Trend / moving averages, Weekly (1w), 1h MACD (short-term), OBV (20d), Fibonacci at S/R. Disagreeing: Daily MACD, 4h MACD.\n\nWyckoff (guess, confidence medium): markup (Phase E) or re-accumulation. Contextual hypothesis from daily bars by this bot (Trading Assistant Wyckoff tagging n/a); conflicts are flagged, not resolved.\n\n## Recommendation\nNo position (app plan: 0 shares). Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A. Recommendations only; no trades placed or recorded.\n\nCorrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0, 16@58.9.\nTargets / trims: 76.4 (T1), 81.6 (T2), 87.9 (T3).\n\n## Hedge\nPrimary tranche (rungs 1-3, about 65 shares) uses the 61.71 hard stop / 63.61 close stop, no put needed. The whole 97-share corrected ladder fits under one Nov 20 65 put (quoted 4.45/4.60 at the 10/9 close, mid 4.53, IV 81%, delta -0.31, about 6.7% of a 67.60 entry; covers the 11/3 earnings). Buy the put only if you want to hold through zone A failure into the zone B rungs.\n\n## Risk / cautions\n- Earnings 2026-11-03 AMC (UNC (unconfirmed)).\n- ATR14 5.61 (7.9% of price); full-ladder stop risk $549.\n- Gamma flip, IV rank and order-book depth are n/a; walls are open-interest walls.\n- Moderna/Merck multi-year collaboration for the intismeran cancer-vaccine rollout (10/7) and 13 ESMO abstracts (Oct 23-27) are company tailwinds; short interest 27.8% adds squeeze and crowding risk; Treasury yields at 24-year highs weigh on unprofitable growth.\n- Data as of the 10/9 close; markets closed until Monday.\n\nApp check: App buy-now FAIL (OUTSIDE ZONES). App buy-now 254 shares (~$17,475) is far above the recommended whole-name size $6,382 and deploy-now $0. Corrected ladder: 23@67.6, 23@67.1, 19@66.75, 16@60.0 (conditional), 16@58.9 (conditional).\n\n_Recommendations only; no trades placed. Data: 10/9 close (weekend reuse)._",
+   "text": "TEM closed 70.93 on 10/9 (pullback in a larger uptrend; daily RSI 48). You hold 0 shares. Plan: buy nothing now; buy 65 sh at 67.60/67.10/66.75 after a daily close above the prior day's high in zone 66.71-68.66, hard stop 61.71; conditional 32 sh at 60.00/58.90; trims 76.4/81.6/87.9; optional Nov 20 65 put ~$453. Split 5.75% ($6,382) vs app 22.5%. Odds (est.): up 56/down 44, T1 before stop 42%.\n\nStrategy: Long-term accumulation, pullback entry: wait for a trigger inside zone A (66.71-68.66), buy 65 sh in 3 rungs with a 61.71 hard stop, keep a 32-sh conditional zone B tranche (60.00/58.90), trim 20% at 76.4/81.6/87.9 and trail a runner. Sized at 5.75% ($6,382), not the app's 22.5%, because TEM is the most volatile name.\n\nNext moves:\n1. Now: buy nothing. TEM closed 70.93; you hold 0 shares and no options.\n2. Buy-now entry: 23@67.60 only after a daily close above the prior day's high while TEM is inside 66.71-68.66 (why: 10/7-10/8 lows, 67.10 pivot, 50-day 65.60 and volume shelf stack there; 1.51R to T1).\n3. Ladder, zone A: R2 23@67.10, R3 19@66.75 on the same trigger (65 sh, $4,366.35).\n4. Stops for R1-R3: sell on a daily close under 63.61; hard stop 61.71 (risk $355).\n5. Ladder, zone B (conditional): R4 16@60.00, R5 16@58.90 only after a zone A stop-out and a fresh close above the prior day's high inside 57.72-60.06; own stops 54.81 close / 53.40 hard.\n6. Option (optional): 1x TEM Nov 20 65 put, quoted 4.45/4.60 (mid 4.525, ~$453), only if you want to hold R1-R3 through a zone A failure into R4-R5; it replaces the 61.71 stop. No calls.\n7. Trims: 13@76.40 (T1), 13@81.60 (T2), 13@87.90 (T3) if R1-R3 filled (19 each if all 97 fill); runner 26 sh trails under 81.7 after T3.\n8. Breakout alternative: a daily close above 76.5 that holds on a retest replaces the pullback entry.\n9. Before 11/3 earnings (unconfirmed): review size.\n\nBuy-now entry 67.60: Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\nLadder:\n- R1 23@67.60: stop 63.61 close / 61.71 hard; hedged by stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it; fill odds 20d ~83% (est.)\n- R2 23@67.10: stop 63.61 close / 61.71 hard; hedged by stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it; fill odds 20d ~81% (est.)\n- R3 19@66.75: stop 63.61 close / 61.71 hard; hedged by stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it; fill odds 20d ~79% (est.)\n- R4 16@60.00 (conditional): stop 54.81 close / 53.4 hard; hedged by own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure; fill odds 20d ~46% (est.)\n- R5 16@58.90 (conditional): stop 54.81 close / 53.4 hard; hedged by own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure; fill odds 20d ~41% (est.)\n\nTrims and sell points:\n- 13@76.40 (T1, 20%)\n- 13@81.60 (T2, 20%)\n- 13@87.90 (T3, 20%)\n- Runner 26 sh: runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high\n- sell rungs 1-3 on a daily close under 63.61\n- sell rungs 1-3 at 61.71\n- sell rungs 4-5 on a daily close under 54.81\n- sell rungs 4-5 at 53.40\n- weekly close under 39.36 ends the long-term thesis\n\nOptions:\n- Put: 1x TEM 2026-11-20 65P, quote 4.45/4.60 (mid 4.525), ~$453; optional, replaces the 61.71 stop if bought.\n- Calls: none.\n\nOdds (estimates): up 56 / down 44 over 20 sessions; T1 76.5: touch 74%, T2 81.7: touch 53%, T3 88.0: touch 34%, entry / R1 67.6: touch 83%, zone A close stop 63.61: touch 63%, hard stop 61.71: touch 54%, R4 (zone B) 60.0: touch 46%. Entry 67.60 vs hard stop 61.71 is 5.89 of risk against 8.90 to T1, so a driftless walk gives about 40% to T1 first; study agreement +0.23 (5 bullish, 2 bearish of 13) adds 2 points to 42%. Up vs down 56/44 over 20 sessions: price above the rising 50- and 200-day with rising OBV, offset by 3 lower lows and MACD below signal. Estimates, not forecasts.\n\nThesis: 5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure. Supporting: Trend / moving averages, Weekly (1w), 1h MACD (short-term), OBV (20d), Fibonacci at S/R. Disagreeing: Daily MACD, 4h MACD. Bullish view strengthens on a daily close above T1 76.5; it is cancelled by a daily close under 63.61 (zone A close stop) and the long-term view by 39.36.\n\nSizing: 0 sh held; cash $111,000 (reserve $11,100); app target 22.5% ($24,975); recommended 5.75% ($6,382.50); full ladder $6,268.75.\n\nCautions:\n- Earnings 2026-11-03 after close (unconfirmed): review size before the print.\n- ATR14 5.61 (7.9% of price); full-ladder stop risk $549; primary tranche $355.\n- Short interest 27.8%: squeeze and crowding risk both ways.\n- Treasury yields at 24-year highs weigh on unprofitable growth names.\n- Tailwinds: Moderna/Merck cancer-vaccine collaboration (10/7) and 13 ESMO abstracts (Oct 23-27).\n- Studies are mixed (5 of 13 bullish, 2 bearish), so size stays small and entry waits for the trigger.\n- App buy-now 254@68.80 is about 2.7x the recommended whole-name size; app rungs 60.99/57.09/53.19 sit below the 61.71 hard stop.\n\nWhat changed:\n- Plan levels: unchanged from planRev 169 (entry 67.60, zone A 66.71-68.66, hard stop 61.71, close stop 63.61, targets 76.5/81.7/88.0).\n- Ladder vs the app (planRev 168 ladder): Buy-now 254@68.80 -> 0 now, 23@67.60 on trigger; R1 23@64.89 -> 23@67.10; R2 24@60.99 -> 19@66.75; R3 39@57.09 -> 16@60.00 (conditional); R4 42@53.19 -> 16@58.90 (conditional). 5 rungs -> 5 rungs; 382 sh -> 97 sh.\n- Trims: app 10@82.56 -> 13@76.40, 13@81.60, 13@87.90 (20% each of 65 sh; 19 each if all 97 fill); runner 26 sh.\n- Stops: one 61.71 stop -> per-rung stops (R1-R3 63.61 close / 61.71 hard; R4-R5 54.81 / 53.40) with a 'hedgedBy' tag on each rung.\n- Options: none held -> optional 1x Nov 20 65P at 4.525 ($453); calls: none.\n- Odds: unchanged (up 56 / down 44; T1 42, T2 32, T3 25 before stop); added 20-session touch odds for each key level and an odds scorecard.\n- Split: app 22.5% ($24,975) -> recommended 5.75% ($6,382); deploy now $0.\n- Format: rebuilt to the app's plan-output rules 1-4 (buy-now entry with why, labeled rungs, trim shares, stops list, structured puts/calls, cautions, sizing to holdings/cash/target); data notices moved to feed.notices.\n\nRecommendations only. Grok Bot never trades, places orders, buys anything or changes accounts; you execute every trade yourself in the app.",
+   "markdown": "# TEM plan (planRev 169, rebuilt 10/10 7:15 PM ET)\n\n## Summary\nTEM closed 70.93 on 10/9 (pullback in a larger uptrend; daily RSI 48). You hold 0 shares. Plan: buy nothing now; buy 65 sh at 67.60/67.10/66.75 after a daily close above the prior day's high in zone 66.71-68.66, hard stop 61.71; conditional 32 sh at 60.00/58.90; trims 76.4/81.6/87.9; optional Nov 20 65 put ~$453. Split 5.75% ($6,382) vs app 22.5%. Odds (est.): up 56/down 44, T1 before stop 42%.\n\n## Strategy\nLong-term accumulation, pullback entry: wait for a trigger inside zone A (66.71-68.66), buy 65 sh in 3 rungs with a 61.71 hard stop, keep a 32-sh conditional zone B tranche (60.00/58.90), trim 20% at 76.4/81.6/87.9 and trail a runner. Sized at 5.75% ($6,382), not the app's 22.5%, because TEM is the most volatile name.\n\n## Next moves\n1. Now: buy nothing. TEM closed 70.93; you hold 0 shares and no options.\n2. Buy-now entry: 23@67.60 only after a daily close above the prior day's high while TEM is inside 66.71-68.66 (why: 10/7-10/8 lows, 67.10 pivot, 50-day 65.60 and volume shelf stack there; 1.51R to T1).\n3. Ladder, zone A: R2 23@67.10, R3 19@66.75 on the same trigger (65 sh, $4,366.35).\n4. Stops for R1-R3: sell on a daily close under 63.61; hard stop 61.71 (risk $355).\n5. Ladder, zone B (conditional): R4 16@60.00, R5 16@58.90 only after a zone A stop-out and a fresh close above the prior day's high inside 57.72-60.06; own stops 54.81 close / 53.40 hard.\n6. Option (optional): 1x TEM Nov 20 65 put, quoted 4.45/4.60 (mid 4.525, ~$453), only if you want to hold R1-R3 through a zone A failure into R4-R5; it replaces the 61.71 stop. No calls.\n7. Trims: 13@76.40 (T1), 13@81.60 (T2), 13@87.90 (T3) if R1-R3 filled (19 each if all 97 fill); runner 26 sh trails under 81.7 after T3.\n8. Breakout alternative: a daily close above 76.5 that holds on a retest replaces the pullback entry.\n9. Before 11/3 earnings (unconfirmed): review size.\n\n## Buy-now entry\n67.60 \u2014 Entry 67.60 is inside zone A 66.71-68.66, where the 10/7-10/8 lows, the 9/02 pivot high (67.10, now support), VP20 VAL 68.32 and the 12-month volume shelf 67.2-70.0 stack up, with the rising SMA50 65.60 just below. It is the highest price that still clears 1.5R to the 76.5 close shelf (T1) against the 61.71 hard stop; the app's 68.80 sits 0.14 above the zone at only 1.09R. Nothing goes in yet because the daily trend is a weak pullback (3 lower lows, MACD below signal) and short interest is about 28%, so buy only after a daily close above the prior day's high while inside zone A. A daily close under 63.61 (8/25 low) cancels zone A.\n\n## Ladder\n| Rung | Shares @ price | Zone | Stop (close/hard) | Hedged by |\n|---|---|---|---|---|\n| R1 | 23@67.60 | A | 63.61/61.71 | stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it |\n| R2 | 23@67.10 | A | 63.61/61.71 | stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it |\n| R3 | 19@66.75 | A | 63.61/61.71 | stop (61.71 hard / 63.61 close); optional Nov 20 65P replaces it |\n| R4 | 16@60.00 (cond.) | B | 54.81/53.4 | own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure |\n| R5 | 16@58.90 (cond.) | B | 54.81/53.4 | own zone B stop (53.40 hard / 54.81 close), or the Nov 20 65P if held through a zone A failure |\n\n## Trims and sell points\n- 13@76.40 (T1)\n- 13@81.60 (T2)\n- 13@87.90 (T3)\n- Runner 26 sh: runner trails under T2 81.7 after T3, or holds toward the 104.32 52-week high\n- sell rungs 1-3 on a daily close under 63.61\n- sell rungs 1-3 at 61.71\n- sell rungs 4-5 on a daily close under 54.81\n- sell rungs 4-5 at 53.40\n- weekly close under 39.36 ends the long-term thesis\n\n## Options\n- Put: 1x TEM 2026-11-20 65P, 4.45/4.60 (mid 4.525), ~$453 (optional)\n- Calls: none\n\n## Odds (estimates)\n- Up 56% / down 44% (20 sessions)\n- T1 76.5: touch 20d 74%, before stop from entry 42%\n- T2 81.7: touch 20d 53%, before stop from entry 32%\n- T3 88.0: touch 20d 34%, before stop from entry 25%\n- entry / R1 67.6: touch 20d 83%\n- zone A close stop 63.61: touch 20d 63%\n- hard stop 61.71: touch 20d 54%\n- R4 (zone B) 60.0: touch 20d 46%\n- Entry 67.60 vs hard stop 61.71 is 5.89 of risk against 8.90 to T1, so a driftless walk gives about 40% to T1 first; study agreement +0.23 (5 bullish, 2 bearish of 13) adds 2 points to 42%. Up vs down 56/44 over 20 sessions: price above the rising 50- and 200-day with rising OBV, offset by 3 lower lows and MACD below signal. Estimates, not forecasts.\n\n## Thesis\n5 of 13 studies lean bullish and 2 bearish (agreement +0.23). Studies are split, so sizing stays modest and entries lean on structure.\n- Supporting: Trend / moving averages, Weekly (1w), 1h MACD (short-term), OBV (20d), Fibonacci at S/R\n- Disagreeing: Daily MACD, 4h MACD\n- Bullish view strengthens on a daily close above T1 76.5; it is cancelled by a daily close under 63.61 (zone A close stop) and the long-term view by 39.36.\n\n## Sizing\n0 sh held; cash $111,000; app target 22.5% ($24,975); recommended 5.75% ($6,382.50); full ladder 97 sh $6,268.75.\n\n## Cautions\n- Earnings 2026-11-03 after close (unconfirmed): review size before the print.\n- ATR14 5.61 (7.9% of price); full-ladder stop risk $549; primary tranche $355.\n- Short interest 27.8%: squeeze and crowding risk both ways.\n- Treasury yields at 24-year highs weigh on unprofitable growth names.\n- Tailwinds: Moderna/Merck cancer-vaccine collaboration (10/7) and 13 ESMO abstracts (Oct 23-27).\n- Studies are mixed (5 of 13 bullish, 2 bearish), so size stays small and entry waits for the trigger.\n- App buy-now 254@68.80 is about 2.7x the recommended whole-name size; app rungs 60.99/57.09/53.19 sit below the 61.71 hard stop.\n\n## What changed\n- Plan levels: unchanged from planRev 169 (entry 67.60, zone A 66.71-68.66, hard stop 61.71, close stop 63.61, targets 76.5/81.7/88.0).\n- Ladder vs the app (planRev 168 ladder): Buy-now 254@68.80 -> 0 now, 23@67.60 on trigger; R1 23@64.89 -> 23@67.10; R2 24@60.99 -> 19@66.75; R3 39@57.09 -> 16@60.00 (conditional); R4 42@53.19 -> 16@58.90 (conditional). 5 rungs -> 5 rungs; 382 sh -> 97 sh.\n- Trims: app 10@82.56 -> 13@76.40, 13@81.60, 13@87.90 (20% each of 65 sh; 19 each if all 97 fill); runner 26 sh.\n- Stops: one 61.71 stop -> per-rung stops (R1-R3 63.61 close / 61.71 hard; R4-R5 54.81 / 53.40) with a 'hedgedBy' tag on each rung.\n- Options: none held -> optional 1x Nov 20 65P at 4.525 ($453); calls: none.\n- Odds: unchanged (up 56 / down 44; T1 42, T2 32, T3 25 before stop); added 20-session touch odds for each key level and an odds scorecard.\n- Split: app 22.5% ($24,975) -> recommended 5.75% ($6,382); deploy now $0.\n- Format: rebuilt to the app's plan-output rules 1-4 (buy-now entry with why, labeled rungs, trim shares, stops list, structured puts/calls, cautions, sizing to holdings/cash/target); data notices moved to feed.notices.\n\nRecommendations only. Grok Bot never trades, places orders, buys anything or changes accounts; you execute every trade yourself in the app.",
    "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 169"
   },
   "QCOM": {
@@ -1135,7 +1423,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move ±7.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move \u00b17.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.59,
@@ -1203,7 +1491,7 @@
        "R_class": "PASS",
        "flags": [
         "USED",
-        "WEAK-TREND→reclaim"
+        "WEAK-TREND\u2192reclaim"
        ]
       },
       {
@@ -1221,7 +1509,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-04)"
        ]
       }
@@ -1983,7 +2271,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move ±2.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move \u00b12.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -2051,7 +2339,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80 (IONQ swing stops locked 40.80 close / 39.80 hard; LT zone is a separate proposal, locked stops untouched)"
        ]
@@ -2072,7 +2360,7 @@
        "flags": [
         "NEAR",
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(below Keltner-lo; ER 2026-11-04)",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80"
@@ -2791,7 +3079,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move ±7.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move \u00b17.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -3635,7 +3923,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move ±4.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move \u00b14.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.54,
@@ -4487,7 +4775,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move ±4.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move \u00b14.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.65,
@@ -4607,7 +4895,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "A hard sits inside zone B"
        ]
       },
@@ -4626,7 +4914,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-10)"
        ]
       }
@@ -5397,7 +5685,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move ±3.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move \u00b13.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.68,
@@ -5566,7 +5854,7 @@
        "flags": [
         "FAIL",
         "USED",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -5584,7 +5872,7 @@
        "R_mid_T1": 2.76,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "B hard sits inside zone C"
        ]
       },
@@ -5602,7 +5890,7 @@
        "R_mid_T1": 2.74,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR; ER 2026-10-27)"
        ]
       }
@@ -8783,5 +9071,41 @@
    "hash": "4766c73"
   }
  },
- "notices": []
+ "notices": [
+  {
+   "type": "unsupported",
+   "ticker": "TEM",
+   "msg": "TEM: gamma flip, net gamma, IV rank and order-book depth are not in the data; option walls are open-interest only.",
+   "source": "Grok Bot (TEM_20261010 data, 10/9 close)",
+   "at": "2026-10-10T19:15:00-04:00"
+  },
+  {
+   "type": "unsupported",
+   "ticker": "TEM",
+   "msg": "TEM: no published analyst price target in the data; yearly target shows n/a.",
+   "source": "Grok Bot (TEM_20261010 data, 10/9 close)",
+   "at": "2026-10-10T19:15:00-04:00"
+  },
+  {
+   "type": "wish",
+   "ticker": "TEM",
+   "msg": "TEM: no put quote past Nov 20; a Dec or Jan 60-65 put quote would let the hedge last longer.",
+   "source": "Grok Bot (TEM_20261010 data, 10/9 close)",
+   "at": "2026-10-10T19:15:00-04:00"
+  },
+  {
+   "type": "fallback",
+   "ticker": "TEM",
+   "msg": "TEM: order blocks estimated from daily bars; BigBeluga zones not available. Data reused from the 10/9 close (markets closed).",
+   "source": "Grok Bot (TEM_20261010 data, 10/9 close)",
+   "at": "2026-10-10T19:15:00-04:00"
+  },
+  {
+   "type": "info",
+   "ticker": "TEM",
+   "msg": "TEM plan rebuilt to the app's plan-output rules 1-4 (hash 4766c73): same levels and sizes; added buy-now entry, rung labels/stops/hedgedBy, trim shares, stops, structured options, sizing, key-level odds and scorecard.",
+   "source": "Grok Bot (TEM_20261010 data, 10/9 close)",
+   "at": "2026-10-10T19:15:00-04:00"
+  }
+ ]
 }
