@@ -1,6 +1,6 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T13:26:00-04:00",
+ "updated": "2026-10-10T13:45:30-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
@@ -237,7 +237,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T13:25:00-04:00",
+  "updated": "2026-10-10T13:45:30-04:00",
   "notices": [
    {
     "type": "info",
@@ -280,6 +280,13 @@
     "msg": "Allocation recommendation ra-mv2nzi3h-29q: keep $8,135.03 in TEM (existing hedged position: 101 sh + Nov 20 65 put), no new buy, $15,614.97 stays cash plus $1,250 reserve.",
     "source": "Trading Plan analysis",
     "at": "2026-10-10T13:25:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "TEM",
+    "msg": "Prices request answered with Friday 10/9 closing data; markets are closed Saturday, so no newer prints exist.",
+    "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+    "at": "2026-10-10T13:45:30-04:00"
    }
   ],
   "allocation": {
@@ -345,6 +352,102 @@
     }
    ],
    "requestAt": "2026-10-10T17:24:42.461Z"
+  },
+  "prices": {
+   "id": "8c4f97af-465e-4508-b9ab-15098ad0b5c9",
+   "requestAt": "2026-10-10T17:44:42.593Z",
+   "kind": "prices",
+   "status": "ok",
+   "at": "2026-10-10T13:45:30-04:00",
+   "tickers": [
+    "TEM"
+   ],
+   "items": [
+    {
+     "ticker": "TEM",
+     "price": 70.93,
+     "priceC": 7093,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 69.28,
+     "change": 1.65,
+     "changePct": 2.38,
+     "open": 70.2,
+     "high": 72.96,
+     "low": 69.2,
+     "volume": 6275746,
+     "vwap": 71.1,
+     "lastTradeExtHours": 71.19,
+     "lastTradeTime": "2026-10-09T19:59:28-04:00",
+     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+     "position": {
+      "shares": 101,
+      "tradePrice": 70.07,
+      "marketValue": 7163.93,
+      "unrealizedPL": 86.86,
+      "source": "Seth's Schwab screenshot 2026-10-10"
+     },
+     "option": {
+      "contract": "TEM 2026-11-20 65 P",
+      "occ": "TEM261120P00065000",
+      "qty": 1,
+      "tradePrice": 4.93,
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.53,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "asOf": "2026-10-09T15:59:00-04:00",
+      "marketValue": 453.0,
+      "unrealizedPL": -41.16,
+      "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
+     }
+    }
+   ],
+   "quotes": {
+    "TEM": {
+     "ticker": "TEM",
+     "price": 70.93,
+     "priceC": 7093,
+     "asOf": "2026-10-09T16:00:00-04:00",
+     "session": "closed (Saturday); Friday 10/9 regular-session close",
+     "prevClose": 69.28,
+     "change": 1.65,
+     "changePct": 2.38,
+     "open": 70.2,
+     "high": 72.96,
+     "low": 69.2,
+     "volume": 6275746,
+     "vwap": 71.1,
+     "lastTradeExtHours": 71.19,
+     "lastTradeTime": "2026-10-09T19:59:28-04:00",
+     "source": "Alpaca SIP via Trading Assistant system (Research pull as of 2026-10-10 12:52 ET)",
+     "position": {
+      "shares": 101,
+      "tradePrice": 70.07,
+      "marketValue": 7163.93,
+      "unrealizedPL": 86.86,
+      "source": "Seth's Schwab screenshot 2026-10-10"
+     },
+     "option": {
+      "contract": "TEM 2026-11-20 65 P",
+      "occ": "TEM261120P00065000",
+      "qty": 1,
+      "tradePrice": 4.93,
+      "bid": 4.45,
+      "ask": 4.6,
+      "mid": 4.53,
+      "last": 4.4,
+      "iv": 0.808,
+      "delta": -0.313,
+      "asOf": "2026-10-09T15:59:00-04:00",
+      "marketValue": 453.0,
+      "unrealizedPL": -41.16,
+      "source": "Alpaca OPRA snapshot via Trading Assistant system (Cboe check: 4.25/4.55)"
+     }
+    }
+   }
   }
  },
  "allocation": {
