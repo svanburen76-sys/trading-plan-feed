@@ -1,11 +1,11 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:57:55-04:00",
+ "updated": "2026-10-10T17:26:21-04:00",
  "analysis": {
   "TEM": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:57:55-04:00",
-   "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
    "planRev": 141,
    "plan": {
     "summary": "TEM closed 70.93 on 10/9 (pullback inside a larger range; daily RSI 48, MACD hist -1.87). Data-based entry 67.6 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); recommended split 5.75% ($5,750), deploy now 0.0% ($0). App buy-now 68.8 fails the zone/R check (1.09R).",
@@ -240,7 +240,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move ±5.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.0), call volume outpaced puts (P/C vol 0.66); max pain 70.0; straddle expected move \u00b15.49 (65.44-76.42); ATM IV 75.5%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.0,
@@ -308,7 +308,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -326,7 +326,7 @@
        "R_mid_T1": 3.21,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       },
@@ -345,7 +345,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-03)"
        ]
       }
@@ -694,12 +694,13 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 141"
+   "sources": "Trading Assistant folders /workspace/trading_plan/TEM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 141",
+   "pendingSince": "2026-10-10T17:26:21-04:00"
   },
   "QCOM": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
    "planRev": 140,
    "plan": {
     "summary": "QCOM closed 175.5 on 10/9 (pullback inside a larger range; daily RSI 44, MACD hist -2.34). Data-based entry 171.3 in zone A 170.51-172.12 (3.61R to T1 180.8, hard stop 168.67); recommended split 18.0% ($18,000), deploy now 7.2% ($7,014). App buy-now 170.23 fails the zone check (stop too close) (6.78R).",
@@ -921,7 +922,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move ±7.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.59), call volume outpaced puts (P/C vol 0.94); max pain 175.0; straddle expected move \u00b17.88 (167.62-183.38); ATM IV 43.9%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.59,
@@ -989,7 +990,7 @@
        "R_class": "PASS",
        "flags": [
         "USED",
-        "WEAK-TREND→reclaim"
+        "WEAK-TREND\u2192reclaim"
        ]
       },
       {
@@ -1007,7 +1008,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-04)"
        ]
       }
@@ -1273,12 +1274,13 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/QCOM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140"
+   "sources": "Trading Assistant folders /workspace/trading_plan/QCOM_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
+   "pendingSince": "2026-10-10T17:26:21-04:00"
   },
   "IONQ": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
    "planRev": 140,
    "plan": {
     "summary": "IONQ closed 39.89 on 10/9 (downtrend; daily RSI 44, MACD hist -0.35). Data-based entry 38.1 in zone A 37.65-38.56 (1.62R to T1 41.3, hard stop 36.13); recommended split 6.0% ($6,000), deploy now 0.0% ($0). App buy-now 38.69 fails the zone/R check (1.02R).",
@@ -1490,7 +1492,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move ±2.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 40.0; straddle expected move \u00b12.62 (37.27-42.51); ATM IV 64.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -1558,7 +1560,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80 (IONQ swing stops locked 40.80 close / 39.80 hard; LT zone is a separate proposal, locked stops untouched)"
        ]
@@ -1579,7 +1581,7 @@
        "flags": [
         "NEAR",
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(below Keltner-lo; ER 2026-11-04)",
         "R-top<1.2",
         "BELOW LOCKED SWING HARD 39.80"
@@ -1816,12 +1818,13 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/IONQ_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140"
+   "sources": "Trading Assistant folders /workspace/trading_plan/IONQ_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
+   "pendingSince": "2026-10-10T17:26:21-04:00"
   },
   "SPCX": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
    "planRev": 140,
    "plan": {
     "summary": "SPCX closed 162.57 on 10/9 (uptrend; daily RSI 58, MACD hist +0.98). Data-based entry 154.4 in zone A 152.6-155.41 (1.53R to T1 170.9, hard stop 143.59); recommended split 13.75% ($13,750), deploy now 3.44% ($3,233). App buy-now 157.69 fails the zone/R check (0.94R).",
@@ -2031,7 +2034,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move ±7.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: balanced open interest (P/C OI 1.08), call volume outpaced puts (P/C vol 0.57); max pain 150.0; straddle expected move \u00b17.75 (154.82-170.32); ATM IV 46.6%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 1.08,
@@ -2386,12 +2389,13 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/SPCX_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140"
+   "sources": "Trading Assistant folders /workspace/trading_plan/SPCX_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
+   "pendingSince": "2026-10-10T17:26:21-04:00"
   },
   "COP": {
-   "status": "ok",
+   "status": "pending",
    "updated": "2026-10-10T15:32:53-04:00",
-   "requestId": "5841e7a5-a5ce-4085-9c54-1ac79a440029",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
    "planRev": 140,
    "plan": {
     "summary": "COP closed 134.1 on 10/9 (mixed / basing; daily RSI 60, MACD hist +0.49). Data-based entry 130.07 in zone B 129.36-130.97 (1.95R to T1 135.7, hard stop 127.18); recommended split 17.25% ($17,250), deploy now 6.9% ($6,753). App buy-now 130.07 passes and is kept (1.95R).",
@@ -2592,7 +2596,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move ±4.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.54), call volume outpaced puts (P/C vol 0.65); max pain 125.0; straddle expected move \u00b14.25 (129.85-138.35); ATM IV 30.8%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.54,
@@ -2949,7 +2953,8 @@
     ],
     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
    },
-   "sources": "Trading Assistant folders /workspace/trading_plan/COP_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140"
+   "sources": "Trading Assistant folders /workspace/trading_plan/COP_20261010/ (data.json, sources.md, longterm_plan.json; Alpaca SIP bars, Alpaca OPRA + Cboe options, 10/9 close; news_7d.md); app request.plan planRev 140",
+   "pendingSince": "2026-10-10T17:26:21-04:00"
   },
   "RKLB": {
    "status": "ok",
@@ -3165,7 +3170,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move ±4.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.65), call volume outpaced puts (P/C vol 0.56); max pain 70.0; straddle expected move \u00b14.42 (63.79-72.63); ATM IV 63.4%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.65,
@@ -3285,7 +3290,7 @@
        "R_class": "NEAR",
        "flags": [
         "NEAR",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "A hard sits inside zone B"
        ]
       },
@@ -3304,7 +3309,7 @@
        "R_class": "PASS",
        "flags": [
         "STRUCTURE-ONLY",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR,below Keltner-lo; ER 2026-11-10)"
        ]
       }
@@ -3795,7 +3800,7 @@
       "gamma_flip": "n/a",
       "iv_rank": "n/a"
      },
-     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move ±3.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
+     "read": "2026-10-16 monthly: call-heavy open interest (bullish lean) (P/C OI 0.68), call volume outpaced puts (P/C vol 0.65); max pain 72.0; straddle expected move \u00b13.41 (70.28-77.1); ATM IV 45.1%. Walls are open-interest walls (no gamma flip, IV rank or order-book depth in the data); the 10/16 walls expire before most long-term fills, so they guide timing only."
     },
     "oi_putcall": {
      "pc_oi": 0.68,
@@ -3964,7 +3969,7 @@
        "flags": [
         "FAIL",
         "USED",
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "R-top<1.2"
        ]
       },
@@ -3982,7 +3987,7 @@
        "R_mid_T1": 2.76,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "B hard sits inside zone C"
        ]
       },
@@ -4000,7 +4005,7 @@
        "R_mid_T1": 2.74,
        "R_class": "PASS",
        "flags": [
-        "WEAK-TREND→reclaim",
+        "WEAK-TREND\u2192reclaim",
         "REACH(>2ATR; ER 2026-10-27)"
        ]
       }
@@ -4274,7 +4279,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:57:55-04:00",
+  "updated": "2026-10-10T17:26:21-04:00",
   "notices": [
    {
     "type": "info",
@@ -4324,6 +4329,13 @@
     "msg": "Reanalyze planRev 141 answered for TEM: fresh long-term analysis, app ladder check, corrected ladder, trims, hedge and charts. Split 5.75% ($5,750); entry 67.6 in zone A, 0% now (needs a reclaim). App rungs R2-R4 (60.99/57.09/53.19) are below the 61.71 hard stop. Other names unchanged. Recommendations only.",
     "source": "Trading Assistant TEM long-term workup (10/9 close) + app plan planRev 141",
     "at": "2026-10-10T15:57:55-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": "ALL",
+    "msg": "Reanalyze planRev 148 received; fresh data requested from Trading Assistant, analysis pending (typically 10-20 min). Markets closed Saturday, so data reflects the 10/9 close.",
+    "source": "Trading Assistant system",
+    "at": "2026-10-10T17:26:21-04:00"
    }
   ],
   "allocation": {
@@ -5263,238 +5275,31 @@
    "withheld": []
   },
   "reanalyze": {
-   "requestId": "04e2c3be-6f57-4543-acbb-1827dc65372b",
-   "requestAt": "2026-10-10T19:53:42.423Z",
-   "planRev": 141,
-   "at": "2026-10-10T15:57:55-04:00",
-   "status": "ok",
+   "id": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
+   "request_id": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
+   "requestId": "b768892b-5c62-49ea-b1e7-9b7240dfc579",
+   "kind": "reanalyze",
+   "scope": "all",
    "tickers": [
-    "TEM"
+    "TEM",
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP"
    ],
-   "pending": [],
-   "summary": "Reanalyze planRev 141 (TEM only) complete. TEM split 5.75% ($5,750) vs the app's 22.5%. Data-based entry 67.60 in zone A 66.71-68.66 (1.51R to T1 76.5, hard stop 61.71); 0% now until a daily reclaim inside the zone. App ladder: buy-now 68.80 is above zone A, R1 64.89 is below it, and R2-R4 (60.99/57.09/53.19) are below the 61.71 hard stop. Corrected ladder: 21@67.60, 21@67.10, 17@66.75, plus a conditional zone B 14@60.00 and 14@58.90 (or hold them under a Nov 20 65 put). Trims at 76.40/81.60/87.90 instead of 82.56. Other six tickers unchanged; data is current as of the 10/9 close. Recommendations only.",
-   "perTicker": {
-    "TEM": "5.75% split; entry 67.6 (zone A, 1.51R to 76.5); 0% now.",
-    "QCOM": "18.0% split; entry 171.3 (zone A, 3.61R to 180.8); 40% now (rungs 1-2, 171.",
-    "IONQ": "6.0% split; entry 38.1 (zone A, 1.62R to 41.3); 0% now.",
-    "SPCX": "13.75% split; entry 154.4 (zone A, 1.53R to 170.9); 25% now as resting limits at 154.",
-    "COP": "17.25% split; entry 130.07 (zone B, 1.95R to 135.7); 40% now as resting limits at 130.",
-    "RKLB": "9.5% split; entry 64.5 (zone A, 1.75R to 73.2); 15% now at 64.",
-    "FCX": "12.75% split; entry 68.8 (zone B, 2.8R to 75.7); 20% now at 68."
-   },
-   "charts": {
-    "TEM": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/TEM.pdf"
-    },
-    "QCOM": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/QCOM.pdf"
-    },
-    "IONQ": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/IONQ.pdf"
-    },
-    "SPCX": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/SPCX.pdf"
-    },
-    "COP": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/COP.pdf"
-    },
-    "RKLB": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/RKLB.pdf"
-    },
-    "FCX": {
-     "charts": [
-      {
-       "tf": "1d",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1d.png"
-      },
-      {
-       "tf": "1h",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_1h.png"
-      },
-      {
-       "tf": "15m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_15m.png"
-      },
-      {
-       "tf": "5m",
-       "type": "png",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX_5m.png"
-      },
-      {
-       "tf": "all",
-       "type": "pdf",
-       "url": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
-      }
-     ],
-     "pdf": "https://raw.githubusercontent.com/svanburen76-sys/trading-plan-feed/main/inv-jygvwdrn/charts/FCX.pdf"
-    }
-   },
-   "allocationId": "ra-split-20261010T1557"
+   "planRev": 148,
+   "requestAt": "2026-10-10T21:25:42.962Z",
+   "status": "pending",
+   "at": "2026-10-10T17:26:21-04:00",
+   "reply": "analysis.<TICKER>",
+   "pending": [
+    "TEM",
+    "QCOM",
+    "IONQ",
+    "SPCX",
+    "COP"
+   ],
+   "summary": "Data pending: fresh market and options data requested from Trading Assistant for TEM, QCOM, IONQ, SPCX and COP (planRev 148, $100,000 cash, no positions). New plans, splits and charts follow when it arrives. Recommendations only; no trades placed or recorded."
   }
  },
  "allocation": {
