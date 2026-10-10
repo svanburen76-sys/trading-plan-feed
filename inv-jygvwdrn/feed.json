@@ -1,12 +1,12 @@
 {
  "profile": "inv-jygvwdrn",
- "updated": "2026-10-10T15:10:00-04:00",
+ "updated": "2026-10-10T15:14:17-04:00",
  "analysis": {
   "TEM": {
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "TEM closed 70.93 on 10/9. Bias neutral, momentum cooling: daily RSI 48, MACD hist -1.87, price above SMA50 65.60 and above SMA200 56.65. Nearest support 70.63, resistance 71.89. Options (2026-10-16) show balanced positioning, expected move \u00b15.49 (65.44-76.42), max pain 70.0.",
+    "summary": "TEM closed 70.93 on 10/9. Bias neutral, momentum cooling: daily RSI 48, MACD hist -1.87, price above SMA50 65.60 and above SMA200 56.65. Nearest support 70.63, resistance 71.89. Options (2026-10-16) show balanced positioning, expected move ±5.49 (65.44-76.42), max pain 70.0.",
     "bias": "neutral, momentum cooling",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -349,7 +349,8 @@
      },
      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
      "why": "Tranche A 125 sh in 66.71-68.66 risks about $747 to the 61.71 stop (cap: the smaller of ~$750 risk or 40% of the $22,500 target); app buy-now 68.96 is ABOVE zone A top 68.66 by 0.30 (0.05xATR) (R 1.04, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 8.0
    },
    "deep": {
     "charts": [
@@ -388,7 +389,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "QCOM closed 175.5 on 10/9. Bias neutral, momentum cooling: daily RSI 44, MACD hist -2.34, price above SMA50 173.11 and above SMA200 169.35. Nearest support 173.11, resistance 178.65. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b17.88 (167.62-183.38), max pain 175.0.",
+    "summary": "QCOM closed 175.5 on 10/9. Bias neutral, momentum cooling: daily RSI 44, MACD hist -2.34, price above SMA50 173.11 and above SMA200 169.35. Nearest support 173.11, resistance 178.65. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±7.88 (167.62-183.38), max pain 175.0.",
     "bias": "neutral, momentum cooling",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -709,7 +710,8 @@
      },
      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
      "why": "Tranche A 31 sh in 170.51-172.12 risks about $82 to the 168.67 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 170.23 is BELOW zone A floor 170.51 by 0.28 (0.04xATR); above zone B top (R 6.78, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 20.0
    },
    "deep": {
     "charts": [
@@ -748,7 +750,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "IONQ closed 39.89 on 10/9. Bias weak: daily RSI 44, MACD hist -0.35, price below SMA50 41.33 and below SMA200 43.27. Nearest support 39.77, resistance 40.0. Options (2026-10-16) show balanced positioning, expected move \u00b12.62 (37.27-42.51), max pain 40.0.",
+    "summary": "IONQ closed 39.89 on 10/9. Bias weak: daily RSI 44, MACD hist -0.35, price below SMA50 41.33 and below SMA200 43.27. Nearest support 39.77, resistance 40.0. Options (2026-10-16) show balanced positioning, expected move ±2.62 (37.27-42.51), max pain 40.0.",
     "bias": "weak",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1065,7 +1067,8 @@
      },
      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
      "why": "Tranche A 47 sh in 37.65-38.56 risks about $93 to the 36.13 stop (cap: the smaller of ~$750 risk or 40% of the $4,500 target); app buy-now 38.69 is ABOVE zone A top 38.56 by 0.13 (0.05xATR) (R 1.02, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 5.5
    },
    "deep": {
     "charts": [
@@ -1104,7 +1107,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "SPCX closed 162.57 on 10/9. Bias constructive: daily RSI 58, MACD hist +0.98, price above SMA50 144.24. Nearest support 160.0, resistance 165.23. Options (2026-10-12) show call-heavy positioning (bullish lean), expected move \u00b13.58 (159.0-166.14), max pain 165.0.",
+    "summary": "SPCX closed 162.57 on 10/9. Bias constructive: daily RSI 58, MACD hist +0.98, price above SMA50 144.24. Nearest support 160.0, resistance 165.23. Options (2026-10-12) show call-heavy positioning (bullish lean), expected move ±3.58 (159.0-166.14), max pain 165.0.",
     "bias": "constructive",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1425,7 +1428,8 @@
      },
      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
      "why": "Tranche A 46 sh in 152.6-155.41 risks about $479 to the 143.59 stop (cap: the smaller of ~$750 risk or 40% of the $18,000 target); app buy-now 157.69 is ABOVE zone A top 155.41 by 2.28 (0.32xATR) (R 0.94, FAIL). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 13.0
    },
    "deep": {
     "charts": [
@@ -1464,7 +1468,7 @@
    "status": "ok",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "COP closed 134.1 on 10/9. Bias constructive: daily RSI 60, MACD hist +0.49, price above SMA50 129.38 and above SMA200 117.50. Nearest support 132.57, resistance 135.0. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b14.25 (129.85-138.35), max pain 125.0.",
+    "summary": "COP closed 134.1 on 10/9. Bias constructive: daily RSI 60, MACD hist +0.49, price above SMA50 129.38 and above SMA200 117.50. Nearest support 132.57, resistance 135.0. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±4.25 (129.85-138.35), max pain 125.0.",
     "bias": "constructive",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -1793,7 +1797,8 @@
      },
      "levels_basis": "Trading Assistant long-term workup (zones A/B/C, T1-T3)",
      "why": "Tranche A 40 sh in 132.0-132.57 risks about $204 to the 127.18 stop (cap: the smaller of ~$750 risk or 40% of the $13,500 target); app buy-now 130.07 is INSIDE zone B (R 1.95, PASS). Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 17.0
    },
    "deep": {
     "charts": [
@@ -1832,7 +1837,7 @@
    "status": "partial",
    "updated": "2026-10-10T15:07:11-04:00",
    "plan": {
-    "summary": "RKLB closed 68.21 on 10/9. Bias weak: daily RSI 46, MACD hist -0.02, price below SMA50 70.53 and below SMA200 81.61. Nearest support 64.51, resistance 69.72. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move \u00b14.42 (63.79-72.63), max pain 70.0.",
+    "summary": "RKLB closed 68.21 on 10/9. Bias weak: daily RSI 46, MACD hist -0.02, price below SMA50 70.53 and below SMA200 81.61. Nearest support 64.51, resistance 69.72. Options (2026-10-16) show call-heavy positioning (bullish lean), expected move ±4.42 (63.79-72.63), max pain 70.0.",
     "bias": "weak",
     "position": {
      "source": "app request.plan (planRev 137)",
@@ -2057,7 +2062,8 @@
      "buy_now_check": null,
      "levels_basis": "interim bot S/R from Trading Assistant data; long-term workup pending",
      "why": "Tranche A 57 sh in 61.45-64.51 risks about $256 to the 58.49 stop (cap: the smaller of ~$750 risk or 40% of the $9,000 target); Remaining rungs go into the deeper zones; first trim at T1 per the app's 20% trim plan."
-    }
+    },
+    "recommendedPct": 9.5
    },
    "deep": {
     "charts": [
@@ -2107,7 +2113,8 @@
      "targetPct": 9,
      "targetUsd": 9000,
      "note": "Long-term workup requested from Trading Assistant; expected in about 10-20 minutes."
-    }
+    },
+    "recommendedPct": 11.0
    },
    "deep": {
     "charts": [],
@@ -2118,7 +2125,7 @@
   }
  },
  "feed": {
-  "updated": "2026-10-10T15:10:00-04:00",
+  "updated": "2026-10-10T15:14:17-04:00",
   "notices": [
    {
     "type": "info",
@@ -2245,73 +2252,481 @@
     "msg": "Prices refresh: markets closed Saturday, so all 7 prices are Friday 10/9 closes (RKLB and FCX added). Positions follow the app plan (no shares held).",
     "source": "Alpaca SIP via Trading Assistant system",
     "at": "2026-10-10T15:10:00-04:00"
+   },
+   {
+    "type": "info",
+    "ticker": null,
+    "msg": "Recommended splits updated from analysis (not flat): QCOM 20, COP 17, SPCX 13, FCX 11, RKLB 9.5, TEM 8, IONQ 5.5, cash 16.0%. Deploy-now parts and triggers are in feed.allocation. Recommendations only.",
+    "source": "Trading Assistant long-term workups (10/9 close) + app plan planRev 137",
+    "at": "2026-10-10T15:14:17-04:00"
    }
   ],
   "allocation": {
-   "id": "ra-mv2o0okb-e4bg",
+   "id": "ra-split-20261010T1514",
    "kind": "recommend-allocation",
    "status": "ok",
-   "at": "2026-10-10T13:26:00-04:00",
+   "at": "2026-10-10T15:14:17-04:00",
    "units": "cents",
-   "fundC": 2500000,
-   "reserveC": 125000,
-   "cashC_before": 2375000,
+   "fundC": 10000000,
+   "reserveC": 1000000,
+   "cashC_before": 10000000,
+   "accountC": 10000000,
+   "unallocC": 1600000,
    "items": [
     {
-     "ticker": "TEM",
-     "amountC": 813503,
-     "pctOfFund": 32.54,
-     "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
-     "stock": {
-      "shares": 101,
-      "costC": 764137
+     "ticker": "QCOM",
+     "amountC": 2000000,
+     "pctOfFund": 20.0,
+     "recommendedPct": 20.0,
+     "recommendedUsd": 20000.0,
+     "recommendedC": 2000000,
+     "deployNowPct": 8.0,
+     "deployNowPctOfTarget": 40,
+     "deployNowUsd": 8000.0,
+     "deployNowC": 800000,
+     "deployNowShares": 46,
+     "sector": "tech/semis",
+     "newBuyC": 800000,
+     "dataBasedEntry": {
+      "zone": [
+       170.51,
+       172.12
+      ],
+      "zoneLabel": "A",
+      "mid": 171.31,
+      "basis": "Trading Assistant long-term zone A"
      },
-     "options": [
-      {
-       "contract": "TEM 2026-11-20 65 P",
-       "qty": 1,
-       "costC": 49366,
-       "role": "protective put"
-      }
+     "firstTarget": 180.8,
+     "targets": [
+      180.8,
+      194.2,
+      205.8
      ],
-     "newBuyC": 0,
+     "stop": 168.67,
+     "ltFloor": 119.63,
+     "rewardRisk": 3.59,
+     "rewardRiskClass": "PASS",
      "risk": {
-      "floor": 65.0,
-      "maxLossAtExpiryC_tradeBasis": 100573,
-      "maxLossAtExpiryC_costBasis": 157003,
-      "maxLossPctOfFund_costBasis": 6.28,
-      "maxLossPctOfFund_tradeBasis": 4.02
+      "stopRiskC_fullTarget": 30821,
+      "stopRiskPctOfFund": 0.31,
+      "ltFloorRiskC_fullTarget": 603351,
+      "atrPct": 4.2,
+      "ivAtmPct": 43.9
      },
-     "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
-    }
-   ],
-   "totalAllocatedC": 813503,
-   "cashAfterC": 1561497,
-   "reserveAfterC": 125000,
-   "notes": [
-    "Recommendation only; no trades placed or recorded.",
-    "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
-    "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
-   ],
-   "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
-   "accountC": 2500000,
-   "requestId": "ra-mv2o0okb-e4bg",
-   "request_id": "ra-mv2o0okb-e4bg",
-   "reply": "feed.allocation",
-   "tickers": [
-    "TEM"
-   ],
-   "max": 10,
-   "unallocC": 0,
-   "allocations": [
+     "hedge": "No put needed for the first tranche (hard stop 168.67 is only 1.5% below the zone middle). If the full 20% fills, a Nov put near the 150 put wall (below zone B 155.22) caps the long-term downside; IV 44% is the 2nd-cheapest on the list. Quote n/a in data.",
+     "deployTrigger": "Resting limit in zone A 170.51-172.12 now (app buy-now 170.23 is just under it, R 6.78). Rest of target: zone B 155.22-156.72 or after a daily close above T1 180.8.",
+     "upside": "T3 205.8 = +20% from 171.31; 52w range 121.99-259.92; yearly target n/a (no published PT in data)",
+     "macro": "Arm v. Qualcomm Delaware trial (two-sided headline risk); chips screen cheaper than S&P forward P/E; Treasury yields at 24-yr highs; earnings 11/4 VERIFIED",
+     "score": {
+      "setup": 9,
+      "risk": 7,
+      "upside": 6,
+      "macro": 6,
+      "concentration": 5,
+      "composite": 7.05
+     },
+     "why": "Highest-quality setup on the list: score 89 with no knockouts and 3.6R from the zone middle to the 180.8 close shelf, with a tight 168.67 hard stop under the 9/14 low and SMA200. That tight stop lets it carry the largest split at the lowest dollar risk (~$310 to the stop for the full 20%). Entry is 170.51-172.12 because the 9/14 pivot, the 9/08 gap and the SMA200 stack there; a weekly close under 168.67 cancels it."
+    },
+    {
+     "ticker": "COP",
+     "amountC": 1700000,
+     "pctOfFund": 17.0,
+     "recommendedPct": 17.0,
+     "recommendedUsd": 17000.0,
+     "recommendedC": 1700000,
+     "deployNowPct": 6.8,
+     "deployNowPctOfTarget": 40,
+     "deployNowUsd": 6800.0,
+     "deployNowC": 680000,
+     "deployNowShares": 52,
+     "sector": "energy/materials",
+     "newBuyC": 680000,
+     "dataBasedEntry": {
+      "zone": [
+       129.36,
+       130.97
+      ],
+      "zoneLabel": "B",
+      "mid": 130.17,
+      "basis": "Trading Assistant long-term zone B"
+     },
+     "firstTarget": 135.7,
+     "targets": [
+      135.7,
+      141.2
+     ],
+     "stop": 127.18,
+     "ltFloor": 92.31,
+     "rewardRisk": 1.85,
+     "rewardRiskClass": "PASS",
+     "risk": {
+      "stopRiskC_fullTarget": 39049,
+      "stopRiskPctOfFund": 0.39,
+      "ltFloorRiskC_fullTarget": 494446,
+      "atrPct": 2.4,
+      "ivAtmPct": 30.8
+     },
+     "hedge": "Cheapest protection on the list (IV 31%): a put near the 125 strike (thin wall, OI 1,698) bought before earnings 11/5 or an oil-moving event. Quote n/a in data.",
+     "deployTrigger": "Resting limit in zone B 129.36-130.97 now (app buy-now 130.07 sits inside it, 1.95R). Zone A 132.0-132.57 is skipped: only 0.67R to T1. Rest: zone C 123.46-125.40.",
+     "upside": "T2 141.2 = +8.5% from 130.17 (52w high 141.62); published PTs Truist 136, Jefferies 174",
+     "macro": "Oil/crude price and geopolitics n/a (no oil series in the data); EPA methane-rule rollback (cost tailwind); only energy name, diversifies tech/space; earnings 11/5 VERIFIED",
+     "score": {
+      "setup": 7,
+      "risk": 9,
+      "upside": 6,
+      "macro": 5,
+      "concentration": 9,
+      "composite": 7.2
+     },
+     "why": "Lowest volatility (ATR 2.4%, IV 31%) and the only energy name, so it gets a large split as the portfolio stabilizer. Entry is zone B 129.36-130.97 (SMA20/EMA21/SMA50 plus the 9/24 pivot), not the 132 zone, because zone B gives 1.85R to the 135.7 shelf versus 0.67R higher up. Upside is the smallest (52w high 141.62 caps the structure) and oil prices aren't in the data, so it stays below QCOM."
+    },
+    {
+     "ticker": "SPCX",
+     "amountC": 1300000,
+     "pctOfFund": 13.0,
+     "recommendedPct": 13.0,
+     "recommendedUsd": 13000.0,
+     "recommendedC": 1300000,
+     "deployNowPct": 3.25,
+     "deployNowPctOfTarget": 25,
+     "deployNowUsd": 3250.0,
+     "deployNowC": 325000,
+     "deployNowShares": 21,
+     "sector": "space",
+     "newBuyC": 325000,
+     "dataBasedEntry": {
+      "zone": [
+       152.6,
+       155.41
+      ],
+      "zoneLabel": "A",
+      "mid": 154.0,
+      "basis": "Trading Assistant long-term zone A"
+     },
+     "firstTarget": 170.9,
+     "targets": [
+      170.9,
+      176.4,
+      185.0
+     ],
+     "stop": 143.59,
+     "ltFloor": 102.64,
+     "rewardRisk": 1.62,
+     "rewardRiskClass": "NEAR",
+     "risk": {
+      "stopRiskC_fullTarget": 87877,
+      "stopRiskPctOfFund": 0.88,
+      "ltFloorRiskC_fullTarget": 433558,
+      "atrPct": 4.3,
+      "ivAtmPct": 46.6
+     },
+     "hedge": "Space bucket with RKLB (22.5% combined). Once zone A fills, a Nov monthly put at/below the 145 swing low (150 put wall OI 2,973 above it) caps the widest stop on the list. Quote n/a in data.",
+     "deployTrigger": "Starter (25%) as a resting limit in zone A 152.6-155.41; main add in zone B 142.87-145.36 (3.47R). Only 4 months of history, data 55%.",
+     "upside": "T3 185.0 = +20% from 154.0; published PTs Barclays 254 (initiation, OW), TD Cowen 200; 52w (since 6/12 IPO) 104.83-225.64",
+     "macro": "Barclays/TD Cowen coverage positive; heavy retail buzz (crowding risk); FCC D2D approval pressures telecom/ASTS; yields at 24-yr highs weigh on growth; earnings 11/3 UNC",
+     "score": {
+      "setup": 6,
+      "risk": 5,
+      "upside": 8,
+      "macro": 6,
+      "concentration": 5,
+      "composite": 6.05
+     },
+     "why": "Uptrend with the strongest analyst upside (PTs 200-254) but only 1.6R from zone A and the widest stop (10.41/share to 143.59), so the split is trimmed to keep its stop risk (~$880 full size) in line with the others. Entry 152.6-155.41 is where the 9/08 pivot, SMA20/EMA21 and the 9/15 AVWAP meet; the bigger add waits for zone B at 3.5R."
+    },
+    {
+     "ticker": "FCX",
+     "amountC": 1100000,
+     "pctOfFund": 11.0,
+     "recommendedPct": 11.0,
+     "recommendedUsd": 11000.0,
+     "recommendedC": 1100000,
+     "deployNowPct": 2.2,
+     "deployNowPctOfTarget": 20,
+     "deployNowUsd": 2200.0,
+     "deployNowC": 220000,
+     "deployNowShares": 31,
+     "sector": "energy/materials",
+     "newBuyC": 220000,
+     "dataBasedEntry": {
+      "zone": [
+       68.2,
+       69.46
+      ],
+      "zoneLabel": "B",
+      "mid": 68.83,
+      "basis": "Trading Assistant long-term zone B"
+     },
+     "firstTarget": 75.7,
+     "targets": [
+      75.7,
+      78.6,
+      79.9
+     ],
+     "stop": 66.34,
+     "ltFloor": 49.86,
+     "rewardRisk": 2.76,
+     "rewardRiskClass": "PASS",
+     "risk": {
+      "stopRiskC_fullTarget": 39794,
+      "stopRiskPctOfFund": 0.4,
+      "ltFloorRiskC_fullTarget": 303167,
+      "atrPct": 3.6,
+      "ivAtmPct": 45.1
+     },
+     "hedge": "Earnings 10/27 lands inside any hold: if more than the starter is bought before it, a put at the 65 strike (real put wall, OI 12,163) protects through the print. Quote n/a in data.",
+     "deployTrigger": "Starter (20%) resting in zone B 68.2-69.46; hold the rest until after 10/27 earnings or zone C 65.57-67.01 (2.74R). Zone A 71.24-72.18 / app buy-now 71.47 fails (0.95-1.07R).",
+     "upside": "T3 79.9 = +16% from 68.83 (52w high 80.24); published PTs 75-92 (median 85, +23%)",
+     "macro": "Copper (HG1! 6.69) above SMA20/50 in upper 3-month range; Antofagasta strike (supply-tight); US copper tariff plan stalled; China demand mixed; earnings 10/27 VERIFIED (event knockout)",
+     "score": {
+      "setup": 5,
+      "risk": 7,
+      "upside": 7,
+      "macro": 6,
+      "concentration": 8,
+      "composite": 6.35
+     },
+     "why": "Copper backdrop and PTs are supportive and zone B gives 2.76R, but the long-term score is only 61 with earnings 10/27 inside the window, so it gets a mid split and a small starter. Entry is zone B 68.2-69.46 (9/28 and 10/01 lows) rather than the app's 71.47, which is only about 1R to the 75.7 shelf. Energy/materials together (COP+FCX) are held to 28%."
+    },
+    {
+     "ticker": "RKLB",
+     "amountC": 950000,
+     "pctOfFund": 9.5,
+     "recommendedPct": 9.5,
+     "recommendedUsd": 9500.0,
+     "recommendedC": 950000,
+     "deployNowPct": 1.43,
+     "deployNowPctOfTarget": 15,
+     "deployNowUsd": 1425.0,
+     "deployNowC": 142500,
+     "deployNowShares": 22,
+     "sector": "space",
+     "newBuyC": 142500,
+     "dataBasedEntry": {
+      "zone": [
+       63.87,
+       65.26
+      ],
+      "zoneLabel": "A",
+      "mid": 64.56,
+      "basis": "Trading Assistant long-term zone A"
+     },
+     "firstTarget": 73.2,
+     "targets": [
+      73.2,
+      80.0,
+      85.5
+     ],
+     "stop": 59.52,
+     "ltFloor": 54.8,
+     "rewardRisk": 1.71,
+     "rewardRiskClass": "NEAR",
+     "risk": {
+      "stopRiskC_fullTarget": 74164,
+      "stopRiskPctOfFund": 0.74,
+      "ltFloorRiskC_fullTarget": 143618,
+      "atrPct": 5.8,
+      "ivAtmPct": 63.4
+     },
+     "hedge": "Treat with SPCX as one space bucket; add a put only if both fill (IV 63% makes puts costly). Below-price put walls are thin/zero-bid, so no wall anchor.",
+     "deployTrigger": "Small starter (15%) resting in zone A 63.87-65.26; main add in zone B 58.2-61.45 (2.66R) or after a daily close back above SMA20/SMA50 69.72-70.53.",
+     "upside": "Yearly reference 85.5-90 (+32-39% from 64.56; Barclays 85, TD Cowen 90); 52w range 37.57-151.00, now 55% below the high",
+     "macro": "NASA reportedly near a bulk launch buy; ARK buying; FAA launch-rule streamlining; SpaceX competition; yields at 24-yr highs; earnings 11/10 UNC",
+     "score": {
+      "setup": 5,
+      "risk": 3,
+      "upside": 9,
+      "macro": 7,
+      "concentration": 4,
+      "composite": 5.5
+     },
+     "why": "Best long-term upside on the list (yearly reference 85.5-90) and supportive news, but it is in a downtrend below its SMA50/200 with high volatility, and it shares the space bucket with SPCX. That earns a modest split and a small starter. Entry 63.87-65.26 has 1.7R to the 73.2 target; a weekly close under 54.80 cancels the long-term idea."
+    },
     {
      "ticker": "TEM",
-     "amountC": 813503
+     "amountC": 800000,
+     "pctOfFund": 8.0,
+     "recommendedPct": 8.0,
+     "recommendedUsd": 8000.0,
+     "recommendedC": 800000,
+     "deployNowPct": 0.0,
+     "deployNowPctOfTarget": 0,
+     "deployNowUsd": 0.0,
+     "deployNowC": 0,
+     "deployNowShares": 0,
+     "sector": "tech/semis",
+     "newBuyC": 0,
+     "dataBasedEntry": {
+      "zone": [
+       66.71,
+       68.66
+      ],
+      "zoneLabel": "A",
+      "mid": 67.69,
+      "basis": "Trading Assistant long-term zone A"
+     },
+     "firstTarget": 76.5,
+     "targets": [
+      76.5,
+      81.7,
+      88.0
+     ],
+     "stop": 61.71,
+     "ltFloor": 39.36,
+     "rewardRisk": 1.48,
+     "rewardRiskClass": "NEAR",
+     "risk": {
+      "stopRiskC_fullTarget": 70675,
+      "stopRiskPctOfFund": 0.71,
+      "ltFloorRiskC_fullTarget": 334821,
+      "atrPct": 7.9,
+      "ivAtmPct": 75.5
+     },
+     "hedge": "When it fills, pair each 100 shares with a protective put: the Nov 20 65 put was 4.45/4.60 (mid 4.525, IV 80.8%, delta -0.31) at the 10/9 close. Or size rungs in 100-share lots.",
+     "deployTrigger": "Deploy only at <=67.60 (lower half of zone A, where R to 76.5 reaches 1.5) or in zone B 57.72-60.06 (3.21R); or after a daily close above 76.5 that then holds.",
+     "upside": "T3 88.0 = +30% from 67.69; 52w range 40.77-104.32; yearly target n/a (no published PT in data)",
+     "macro": "Moderna/Merck multi-year collaboration (10/7), 13 ESMO abstracts; short interest 27.8% (squeeze and crowding risk); rates headwind for growth; earnings 11/3 UNC",
+     "score": {
+      "setup": 5,
+      "risk": 3,
+      "upside": 7,
+      "macro": 6,
+      "concentration": 6,
+      "composite": 5.15
+     },
+     "why": "The most volatile name (ATR 7.9%, IV 76%, short interest 28%), so equal dollar risk means a smaller split even though upside to 88 is good. Zone A 66.71-68.66 is only 1.48R to the 76.5 shelf, so nothing goes in now; at 67.60 or lower the R clears 1.5. It is the one name where the suggested protective put is quoted in the data."
+    },
+    {
+     "ticker": "IONQ",
+     "amountC": 550000,
+     "pctOfFund": 5.5,
+     "recommendedPct": 5.5,
+     "recommendedUsd": 5500.0,
+     "recommendedC": 550000,
+     "deployNowPct": 0.0,
+     "deployNowPctOfTarget": 0,
+     "deployNowUsd": 0.0,
+     "deployNowC": 0,
+     "deployNowShares": 0,
+     "sector": "tech/semis",
+     "newBuyC": 0,
+     "dataBasedEntry": {
+      "zone": [
+       37.65,
+       38.56
+      ],
+      "zoneLabel": "A",
+      "mid": 38.11,
+      "basis": "Trading Assistant long-term zone A"
+     },
+     "firstTarget": 41.3,
+     "targets": [
+      41.3,
+      43.7,
+      47.3
+     ],
+     "stop": 36.13,
+     "ltFloor": 25.24,
+     "rewardRisk": 1.62,
+     "rewardRiskClass": "NEAR",
+     "risk": {
+      "stopRiskC_fullTarget": 28575,
+      "stopRiskPctOfFund": 0.29,
+      "ltFloorRiskC_fullTarget": 185739,
+      "atrPct": 6.4,
+      "ivAtmPct": 64.1
+     },
+     "hedge": "Puts are expensive (IV 64%); keep the size small instead of hedging. The 40 put wall (OI 24,226) sits right at price.",
+     "deployTrigger": "Wait for a daily close back above SMA50/SMA20 41.33-41.61 (trend reclaim), then buy a pullback into zone A 37.65-38.56; deeper zone B 35.00-35.84.",
+     "upside": "T3 47.3 = +24% from 38.11; 52w range 25.89-84.64; yearly target n/a (no published PT in data)",
+     "macro": "DARPA QBI Stage C (up to $300M) and a networking record are positive; trend DOWN; rates headwind for unprofitable growth; earnings 11/4 UNC",
+     "score": {
+      "setup": 4,
+      "risk": 2,
+      "upside": 6,
+      "macro": 6,
+      "concentration": 5,
+      "composite": 4.3
+     },
+     "why": "Weakest setup: trend is down (below SMA20/50/200), score 67.5 with a trend knockout, and volatility is high, so it gets the smallest split. Zone A 37.65-38.56 has 1.6R to 41.3, but the runbook wants a trend reclaim first, so nothing goes in now. The DARPA Stage C news is the reason it stays on the list at all."
     }
    ],
-   "requestAt": "2026-10-10T17:24:42.461Z",
-   "superseded": true,
-   "supersededBy": "reanalyze planRev 137 (app plan is the only position source)"
+   "allocations": [
+    {
+     "ticker": "QCOM",
+     "amountC": 2000000
+    },
+    {
+     "ticker": "COP",
+     "amountC": 1700000
+    },
+    {
+     "ticker": "SPCX",
+     "amountC": 1300000
+    },
+    {
+     "ticker": "FCX",
+     "amountC": 1100000
+    },
+    {
+     "ticker": "RKLB",
+     "amountC": 950000
+    },
+    {
+     "ticker": "TEM",
+     "amountC": 800000
+    },
+    {
+     "ticker": "IONQ",
+     "amountC": 550000
+    }
+   ],
+   "totalAllocatedC": 8400000,
+   "totalAllocatedPct": 84.0,
+   "cashAfterC": 1600000,
+   "reserveAfterC": 1000000,
+   "cashPct": 16.0,
+   "reservePct": 10.0,
+   "dryPowderPct": 6.0,
+   "deployNowTotalC": 2167500,
+   "deployNowTotalPct": 21.68,
+   "sectorExposurePct": {
+    "tech/semis": 33.5,
+    "energy/materials": 28.0,
+    "space": 22.5
+   },
+   "sectorCapsPct": {
+    "tech/semis": 40,
+    "space": 25,
+    "energy/materials": 30
+   },
+   "perNameCapPct": 25,
+   "tickers": [
+    "QCOM",
+    "COP",
+    "SPCX",
+    "FCX",
+    "RKLB",
+    "TEM",
+    "IONQ"
+   ],
+   "max": 10,
+   "requestId": "ra-split-20261010T1514",
+   "request_id": "ra-split-20261010T1514",
+   "reply": "feed.allocation",
+   "basedOn": {
+    "plan": "app request.plan planRev 137 (reanalyze 2026-10-10 15:03 ET)",
+    "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
+   },
+   "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split ∝ composite² ÷ √IV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R≥1.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
+   "notes": [
+    "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
+    "Targets total 84.0% invested, 16.0% cash (10% reserve + 6.0% dry powder for the deeper zones). Deploy-now total 21.68% ($21,675).",
+    "Amounts from the app plan only (planRev 137: $100,000 cash, 0 shares everywhere). The earlier TEM-only Schwab-based allocation was removed.",
+    "Gamma flip and IV rank are n/a in the data; walls are open-interest walls. Oil price for COP is n/a in the data; TEM/QCOM/IONQ have no published price targets in the data.",
+    "Levels are 10/9 closes (markets closed Saturday)."
+   ],
+   "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 137."
   },
   "prices": {
    "id": null,
@@ -2941,70 +3356,471 @@
   }
  },
  "allocation": {
-  "id": "ra-mv2o0okb-e4bg",
+  "id": "ra-split-20261010T1514",
   "kind": "recommend-allocation",
   "status": "ok",
-  "at": "2026-10-10T13:26:00-04:00",
+  "at": "2026-10-10T15:14:17-04:00",
   "units": "cents",
-  "fundC": 2500000,
-  "reserveC": 125000,
-  "cashC_before": 2375000,
+  "fundC": 10000000,
+  "reserveC": 1000000,
+  "cashC_before": 10000000,
+  "accountC": 10000000,
+  "unallocC": 1600000,
   "items": [
    {
-    "ticker": "TEM",
-    "amountC": 813503,
-    "pctOfFund": 32.54,
-    "basis": "Seth's existing hedged position (Schwab 10/10): 101 sh @ 70.07 = $7,641.37 + 1 Nov 20 2026 65 put @ 4.93 = $493.66",
-    "stock": {
-     "shares": 101,
-     "costC": 764137
+    "ticker": "QCOM",
+    "amountC": 2000000,
+    "pctOfFund": 20.0,
+    "recommendedPct": 20.0,
+    "recommendedUsd": 20000.0,
+    "recommendedC": 2000000,
+    "deployNowPct": 8.0,
+    "deployNowPctOfTarget": 40,
+    "deployNowUsd": 8000.0,
+    "deployNowC": 800000,
+    "deployNowShares": 46,
+    "sector": "tech/semis",
+    "newBuyC": 800000,
+    "dataBasedEntry": {
+     "zone": [
+      170.51,
+      172.12
+     ],
+     "zoneLabel": "A",
+     "mid": 171.31,
+     "basis": "Trading Assistant long-term zone A"
     },
-    "options": [
-     {
-      "contract": "TEM 2026-11-20 65 P",
-      "qty": 1,
-      "costC": 49366,
-      "role": "protective put"
-     }
+    "firstTarget": 180.8,
+    "targets": [
+     180.8,
+     194.2,
+     205.8
     ],
-    "newBuyC": 0,
+    "stop": 168.67,
+    "ltFloor": 119.63,
+    "rewardRisk": 3.59,
+    "rewardRiskClass": "PASS",
     "risk": {
-     "floor": 65.0,
-     "maxLossAtExpiryC_tradeBasis": 100573,
-     "maxLossAtExpiryC_costBasis": 157003,
-     "maxLossPctOfFund_costBasis": 6.28,
-     "maxLossPctOfFund_tradeBasis": 4.02
+     "stopRiskC_fullTarget": 30821,
+     "stopRiskPctOfFund": 0.31,
+     "ltFloorRiskC_fullTarget": 603351,
+     "atrPct": 4.2,
+     "ivAtmPct": 43.9
     },
-    "why": "Allocation mirrors the hedged position Seth already holds. TEM closed 70.93 on 10/9, mid-range 66.7-73 under resistance 71.1-73.1, with earnings ~11/3 unconfirmed, so no new buy now. Conditional add only (not recommended yet): on a daily close above 73.1, or a hold of 66.7-69.7 support; e.g. 50 more shares above 73.1 with a stop under 69.2 risks about $195 (0.8% of fund), but those shares would sit above the put's 100-share cover."
-   }
-  ],
-  "totalAllocatedC": 813503,
-  "cashAfterC": 1561497,
-  "reserveAfterC": 125000,
-  "notes": [
-   "Recommendation only; no trades placed or recorded.",
-   "With the $25,000 fund, TEM is ~32.5% of the fund and worst-case loss with the put is ~$1,006-$1,570 (4.0-6.3% of fund). $15,614.97 stays as cash plus the $1,250 reserve.",
-   "Only TEM is approved for this feed; no other names were considered (max 10 allowed)."
-  ],
-  "sources": "Position from Seth's Schwab screenshot; price/options from Trading Assistant feeds (Alpaca SIP/OPRA, Cboe) 10/9 close.",
-  "accountC": 2500000,
-  "requestId": "ra-mv2o0okb-e4bg",
-  "request_id": "ra-mv2o0okb-e4bg",
-  "reply": "feed.allocation",
-  "tickers": [
-   "TEM"
-  ],
-  "max": 10,
-  "unallocC": 0,
-  "allocations": [
+    "hedge": "No put needed for the first tranche (hard stop 168.67 is only 1.5% below the zone middle). If the full 20% fills, a Nov put near the 150 put wall (below zone B 155.22) caps the long-term downside; IV 44% is the 2nd-cheapest on the list. Quote n/a in data.",
+    "deployTrigger": "Resting limit in zone A 170.51-172.12 now (app buy-now 170.23 is just under it, R 6.78). Rest of target: zone B 155.22-156.72 or after a daily close above T1 180.8.",
+    "upside": "T3 205.8 = +20% from 171.31; 52w range 121.99-259.92; yearly target n/a (no published PT in data)",
+    "macro": "Arm v. Qualcomm Delaware trial (two-sided headline risk); chips screen cheaper than S&P forward P/E; Treasury yields at 24-yr highs; earnings 11/4 VERIFIED",
+    "score": {
+     "setup": 9,
+     "risk": 7,
+     "upside": 6,
+     "macro": 6,
+     "concentration": 5,
+     "composite": 7.05
+    },
+    "why": "Highest-quality setup on the list: score 89 with no knockouts and 3.6R from the zone middle to the 180.8 close shelf, with a tight 168.67 hard stop under the 9/14 low and SMA200. That tight stop lets it carry the largest split at the lowest dollar risk (~$310 to the stop for the full 20%). Entry is 170.51-172.12 because the 9/14 pivot, the 9/08 gap and the SMA200 stack there; a weekly close under 168.67 cancels it."
+   },
+   {
+    "ticker": "COP",
+    "amountC": 1700000,
+    "pctOfFund": 17.0,
+    "recommendedPct": 17.0,
+    "recommendedUsd": 17000.0,
+    "recommendedC": 1700000,
+    "deployNowPct": 6.8,
+    "deployNowPctOfTarget": 40,
+    "deployNowUsd": 6800.0,
+    "deployNowC": 680000,
+    "deployNowShares": 52,
+    "sector": "energy/materials",
+    "newBuyC": 680000,
+    "dataBasedEntry": {
+     "zone": [
+      129.36,
+      130.97
+     ],
+     "zoneLabel": "B",
+     "mid": 130.17,
+     "basis": "Trading Assistant long-term zone B"
+    },
+    "firstTarget": 135.7,
+    "targets": [
+     135.7,
+     141.2
+    ],
+    "stop": 127.18,
+    "ltFloor": 92.31,
+    "rewardRisk": 1.85,
+    "rewardRiskClass": "PASS",
+    "risk": {
+     "stopRiskC_fullTarget": 39049,
+     "stopRiskPctOfFund": 0.39,
+     "ltFloorRiskC_fullTarget": 494446,
+     "atrPct": 2.4,
+     "ivAtmPct": 30.8
+    },
+    "hedge": "Cheapest protection on the list (IV 31%): a put near the 125 strike (thin wall, OI 1,698) bought before earnings 11/5 or an oil-moving event. Quote n/a in data.",
+    "deployTrigger": "Resting limit in zone B 129.36-130.97 now (app buy-now 130.07 sits inside it, 1.95R). Zone A 132.0-132.57 is skipped: only 0.67R to T1. Rest: zone C 123.46-125.40.",
+    "upside": "T2 141.2 = +8.5% from 130.17 (52w high 141.62); published PTs Truist 136, Jefferies 174",
+    "macro": "Oil/crude price and geopolitics n/a (no oil series in the data); EPA methane-rule rollback (cost tailwind); only energy name, diversifies tech/space; earnings 11/5 VERIFIED",
+    "score": {
+     "setup": 7,
+     "risk": 9,
+     "upside": 6,
+     "macro": 5,
+     "concentration": 9,
+     "composite": 7.2
+    },
+    "why": "Lowest volatility (ATR 2.4%, IV 31%) and the only energy name, so it gets a large split as the portfolio stabilizer. Entry is zone B 129.36-130.97 (SMA20/EMA21/SMA50 plus the 9/24 pivot), not the 132 zone, because zone B gives 1.85R to the 135.7 shelf versus 0.67R higher up. Upside is the smallest (52w high 141.62 caps the structure) and oil prices aren't in the data, so it stays below QCOM."
+   },
+   {
+    "ticker": "SPCX",
+    "amountC": 1300000,
+    "pctOfFund": 13.0,
+    "recommendedPct": 13.0,
+    "recommendedUsd": 13000.0,
+    "recommendedC": 1300000,
+    "deployNowPct": 3.25,
+    "deployNowPctOfTarget": 25,
+    "deployNowUsd": 3250.0,
+    "deployNowC": 325000,
+    "deployNowShares": 21,
+    "sector": "space",
+    "newBuyC": 325000,
+    "dataBasedEntry": {
+     "zone": [
+      152.6,
+      155.41
+     ],
+     "zoneLabel": "A",
+     "mid": 154.0,
+     "basis": "Trading Assistant long-term zone A"
+    },
+    "firstTarget": 170.9,
+    "targets": [
+     170.9,
+     176.4,
+     185.0
+    ],
+    "stop": 143.59,
+    "ltFloor": 102.64,
+    "rewardRisk": 1.62,
+    "rewardRiskClass": "NEAR",
+    "risk": {
+     "stopRiskC_fullTarget": 87877,
+     "stopRiskPctOfFund": 0.88,
+     "ltFloorRiskC_fullTarget": 433558,
+     "atrPct": 4.3,
+     "ivAtmPct": 46.6
+    },
+    "hedge": "Space bucket with RKLB (22.5% combined). Once zone A fills, a Nov monthly put at/below the 145 swing low (150 put wall OI 2,973 above it) caps the widest stop on the list. Quote n/a in data.",
+    "deployTrigger": "Starter (25%) as a resting limit in zone A 152.6-155.41; main add in zone B 142.87-145.36 (3.47R). Only 4 months of history, data 55%.",
+    "upside": "T3 185.0 = +20% from 154.0; published PTs Barclays 254 (initiation, OW), TD Cowen 200; 52w (since 6/12 IPO) 104.83-225.64",
+    "macro": "Barclays/TD Cowen coverage positive; heavy retail buzz (crowding risk); FCC D2D approval pressures telecom/ASTS; yields at 24-yr highs weigh on growth; earnings 11/3 UNC",
+    "score": {
+     "setup": 6,
+     "risk": 5,
+     "upside": 8,
+     "macro": 6,
+     "concentration": 5,
+     "composite": 6.05
+    },
+    "why": "Uptrend with the strongest analyst upside (PTs 200-254) but only 1.6R from zone A and the widest stop (10.41/share to 143.59), so the split is trimmed to keep its stop risk (~$880 full size) in line with the others. Entry 152.6-155.41 is where the 9/08 pivot, SMA20/EMA21 and the 9/15 AVWAP meet; the bigger add waits for zone B at 3.5R."
+   },
+   {
+    "ticker": "FCX",
+    "amountC": 1100000,
+    "pctOfFund": 11.0,
+    "recommendedPct": 11.0,
+    "recommendedUsd": 11000.0,
+    "recommendedC": 1100000,
+    "deployNowPct": 2.2,
+    "deployNowPctOfTarget": 20,
+    "deployNowUsd": 2200.0,
+    "deployNowC": 220000,
+    "deployNowShares": 31,
+    "sector": "energy/materials",
+    "newBuyC": 220000,
+    "dataBasedEntry": {
+     "zone": [
+      68.2,
+      69.46
+     ],
+     "zoneLabel": "B",
+     "mid": 68.83,
+     "basis": "Trading Assistant long-term zone B"
+    },
+    "firstTarget": 75.7,
+    "targets": [
+     75.7,
+     78.6,
+     79.9
+    ],
+    "stop": 66.34,
+    "ltFloor": 49.86,
+    "rewardRisk": 2.76,
+    "rewardRiskClass": "PASS",
+    "risk": {
+     "stopRiskC_fullTarget": 39794,
+     "stopRiskPctOfFund": 0.4,
+     "ltFloorRiskC_fullTarget": 303167,
+     "atrPct": 3.6,
+     "ivAtmPct": 45.1
+    },
+    "hedge": "Earnings 10/27 lands inside any hold: if more than the starter is bought before it, a put at the 65 strike (real put wall, OI 12,163) protects through the print. Quote n/a in data.",
+    "deployTrigger": "Starter (20%) resting in zone B 68.2-69.46; hold the rest until after 10/27 earnings or zone C 65.57-67.01 (2.74R). Zone A 71.24-72.18 / app buy-now 71.47 fails (0.95-1.07R).",
+    "upside": "T3 79.9 = +16% from 68.83 (52w high 80.24); published PTs 75-92 (median 85, +23%)",
+    "macro": "Copper (HG1! 6.69) above SMA20/50 in upper 3-month range; Antofagasta strike (supply-tight); US copper tariff plan stalled; China demand mixed; earnings 10/27 VERIFIED (event knockout)",
+    "score": {
+     "setup": 5,
+     "risk": 7,
+     "upside": 7,
+     "macro": 6,
+     "concentration": 8,
+     "composite": 6.35
+    },
+    "why": "Copper backdrop and PTs are supportive and zone B gives 2.76R, but the long-term score is only 61 with earnings 10/27 inside the window, so it gets a mid split and a small starter. Entry is zone B 68.2-69.46 (9/28 and 10/01 lows) rather than the app's 71.47, which is only about 1R to the 75.7 shelf. Energy/materials together (COP+FCX) are held to 28%."
+   },
+   {
+    "ticker": "RKLB",
+    "amountC": 950000,
+    "pctOfFund": 9.5,
+    "recommendedPct": 9.5,
+    "recommendedUsd": 9500.0,
+    "recommendedC": 950000,
+    "deployNowPct": 1.43,
+    "deployNowPctOfTarget": 15,
+    "deployNowUsd": 1425.0,
+    "deployNowC": 142500,
+    "deployNowShares": 22,
+    "sector": "space",
+    "newBuyC": 142500,
+    "dataBasedEntry": {
+     "zone": [
+      63.87,
+      65.26
+     ],
+     "zoneLabel": "A",
+     "mid": 64.56,
+     "basis": "Trading Assistant long-term zone A"
+    },
+    "firstTarget": 73.2,
+    "targets": [
+     73.2,
+     80.0,
+     85.5
+    ],
+    "stop": 59.52,
+    "ltFloor": 54.8,
+    "rewardRisk": 1.71,
+    "rewardRiskClass": "NEAR",
+    "risk": {
+     "stopRiskC_fullTarget": 74164,
+     "stopRiskPctOfFund": 0.74,
+     "ltFloorRiskC_fullTarget": 143618,
+     "atrPct": 5.8,
+     "ivAtmPct": 63.4
+    },
+    "hedge": "Treat with SPCX as one space bucket; add a put only if both fill (IV 63% makes puts costly). Below-price put walls are thin/zero-bid, so no wall anchor.",
+    "deployTrigger": "Small starter (15%) resting in zone A 63.87-65.26; main add in zone B 58.2-61.45 (2.66R) or after a daily close back above SMA20/SMA50 69.72-70.53.",
+    "upside": "Yearly reference 85.5-90 (+32-39% from 64.56; Barclays 85, TD Cowen 90); 52w range 37.57-151.00, now 55% below the high",
+    "macro": "NASA reportedly near a bulk launch buy; ARK buying; FAA launch-rule streamlining; SpaceX competition; yields at 24-yr highs; earnings 11/10 UNC",
+    "score": {
+     "setup": 5,
+     "risk": 3,
+     "upside": 9,
+     "macro": 7,
+     "concentration": 4,
+     "composite": 5.5
+    },
+    "why": "Best long-term upside on the list (yearly reference 85.5-90) and supportive news, but it is in a downtrend below its SMA50/200 with high volatility, and it shares the space bucket with SPCX. That earns a modest split and a small starter. Entry 63.87-65.26 has 1.7R to the 73.2 target; a weekly close under 54.80 cancels the long-term idea."
+   },
    {
     "ticker": "TEM",
-    "amountC": 813503
+    "amountC": 800000,
+    "pctOfFund": 8.0,
+    "recommendedPct": 8.0,
+    "recommendedUsd": 8000.0,
+    "recommendedC": 800000,
+    "deployNowPct": 0.0,
+    "deployNowPctOfTarget": 0,
+    "deployNowUsd": 0.0,
+    "deployNowC": 0,
+    "deployNowShares": 0,
+    "sector": "tech/semis",
+    "newBuyC": 0,
+    "dataBasedEntry": {
+     "zone": [
+      66.71,
+      68.66
+     ],
+     "zoneLabel": "A",
+     "mid": 67.69,
+     "basis": "Trading Assistant long-term zone A"
+    },
+    "firstTarget": 76.5,
+    "targets": [
+     76.5,
+     81.7,
+     88.0
+    ],
+    "stop": 61.71,
+    "ltFloor": 39.36,
+    "rewardRisk": 1.48,
+    "rewardRiskClass": "NEAR",
+    "risk": {
+     "stopRiskC_fullTarget": 70675,
+     "stopRiskPctOfFund": 0.71,
+     "ltFloorRiskC_fullTarget": 334821,
+     "atrPct": 7.9,
+     "ivAtmPct": 75.5
+    },
+    "hedge": "When it fills, pair each 100 shares with a protective put: the Nov 20 65 put was 4.45/4.60 (mid 4.525, IV 80.8%, delta -0.31) at the 10/9 close. Or size rungs in 100-share lots.",
+    "deployTrigger": "Deploy only at <=67.60 (lower half of zone A, where R to 76.5 reaches 1.5) or in zone B 57.72-60.06 (3.21R); or after a daily close above 76.5 that then holds.",
+    "upside": "T3 88.0 = +30% from 67.69; 52w range 40.77-104.32; yearly target n/a (no published PT in data)",
+    "macro": "Moderna/Merck multi-year collaboration (10/7), 13 ESMO abstracts; short interest 27.8% (squeeze and crowding risk); rates headwind for growth; earnings 11/3 UNC",
+    "score": {
+     "setup": 5,
+     "risk": 3,
+     "upside": 7,
+     "macro": 6,
+     "concentration": 6,
+     "composite": 5.15
+    },
+    "why": "The most volatile name (ATR 7.9%, IV 76%, short interest 28%), so equal dollar risk means a smaller split even though upside to 88 is good. Zone A 66.71-68.66 is only 1.48R to the 76.5 shelf, so nothing goes in now; at 67.60 or lower the R clears 1.5. It is the one name where the suggested protective put is quoted in the data."
+   },
+   {
+    "ticker": "IONQ",
+    "amountC": 550000,
+    "pctOfFund": 5.5,
+    "recommendedPct": 5.5,
+    "recommendedUsd": 5500.0,
+    "recommendedC": 550000,
+    "deployNowPct": 0.0,
+    "deployNowPctOfTarget": 0,
+    "deployNowUsd": 0.0,
+    "deployNowC": 0,
+    "deployNowShares": 0,
+    "sector": "tech/semis",
+    "newBuyC": 0,
+    "dataBasedEntry": {
+     "zone": [
+      37.65,
+      38.56
+     ],
+     "zoneLabel": "A",
+     "mid": 38.11,
+     "basis": "Trading Assistant long-term zone A"
+    },
+    "firstTarget": 41.3,
+    "targets": [
+     41.3,
+     43.7,
+     47.3
+    ],
+    "stop": 36.13,
+    "ltFloor": 25.24,
+    "rewardRisk": 1.62,
+    "rewardRiskClass": "NEAR",
+    "risk": {
+     "stopRiskC_fullTarget": 28575,
+     "stopRiskPctOfFund": 0.29,
+     "ltFloorRiskC_fullTarget": 185739,
+     "atrPct": 6.4,
+     "ivAtmPct": 64.1
+    },
+    "hedge": "Puts are expensive (IV 64%); keep the size small instead of hedging. The 40 put wall (OI 24,226) sits right at price.",
+    "deployTrigger": "Wait for a daily close back above SMA50/SMA20 41.33-41.61 (trend reclaim), then buy a pullback into zone A 37.65-38.56; deeper zone B 35.00-35.84.",
+    "upside": "T3 47.3 = +24% from 38.11; 52w range 25.89-84.64; yearly target n/a (no published PT in data)",
+    "macro": "DARPA QBI Stage C (up to $300M) and a networking record are positive; trend DOWN; rates headwind for unprofitable growth; earnings 11/4 UNC",
+    "score": {
+     "setup": 4,
+     "risk": 2,
+     "upside": 6,
+     "macro": 6,
+     "concentration": 5,
+     "composite": 4.3
+    },
+    "why": "Weakest setup: trend is down (below SMA20/50/200), score 67.5 with a trend knockout, and volatility is high, so it gets the smallest split. Zone A 37.65-38.56 has 1.6R to 41.3, but the runbook wants a trend reclaim first, so nothing goes in now. The DARPA Stage C news is the reason it stays on the list at all."
    }
   ],
-  "requestAt": "2026-10-10T17:24:42.461Z",
-  "superseded": true,
-  "supersededBy": "reanalyze planRev 137 (app plan is the only position source)"
+  "allocations": [
+   {
+    "ticker": "QCOM",
+    "amountC": 2000000
+   },
+   {
+    "ticker": "COP",
+    "amountC": 1700000
+   },
+   {
+    "ticker": "SPCX",
+    "amountC": 1300000
+   },
+   {
+    "ticker": "FCX",
+    "amountC": 1100000
+   },
+   {
+    "ticker": "RKLB",
+    "amountC": 950000
+   },
+   {
+    "ticker": "TEM",
+    "amountC": 800000
+   },
+   {
+    "ticker": "IONQ",
+    "amountC": 550000
+   }
+  ],
+  "totalAllocatedC": 8400000,
+  "totalAllocatedPct": 84.0,
+  "cashAfterC": 1600000,
+  "reserveAfterC": 1000000,
+  "cashPct": 16.0,
+  "reservePct": 10.0,
+  "dryPowderPct": 6.0,
+  "deployNowTotalC": 2167500,
+  "deployNowTotalPct": 21.68,
+  "sectorExposurePct": {
+   "tech/semis": 33.5,
+   "energy/materials": 28.0,
+   "space": 22.5
+  },
+  "sectorCapsPct": {
+   "tech/semis": 40,
+   "space": 25,
+   "energy/materials": 30
+  },
+  "perNameCapPct": 25,
+  "tickers": [
+   "QCOM",
+   "COP",
+   "SPCX",
+   "FCX",
+   "RKLB",
+   "TEM",
+   "IONQ"
+  ],
+  "max": 10,
+  "requestId": "ra-split-20261010T1514",
+  "request_id": "ra-split-20261010T1514",
+  "reply": "feed.allocation",
+  "basedOn": {
+   "plan": "app request.plan planRev 137 (reanalyze 2026-10-10 15:03 ET)",
+   "fund": "plan cash.base $100,000; reserve 10% = plan unallocated"
+  },
+  "method": "Score 0-10 per name on setup (R from the data-based entry zone to T1, long-term score), risk (ATR%, IV, trend), upside (T3/yearly reference/PTs, 52w range), macro/news and concentration; composite = 30/25/20/15/10. Split ∝ composite² ÷ √IV (more volatile = smaller), then caps: 25% per name, tech/semis 40%, space 25%, energy/materials 30% (held to 28%), 10% reserve; excess kept as cash. Deploy-now = share of the target to rest as limit buys in the data-based zone: 40% if R≥1.8 PASS, 15-25% if 1.5-1.8, 0% if R<1.5 or trend knockout (trigger given).",
+  "notes": [
+   "Recommendations only; no trades placed or recorded. Seth sets the actual splits.",
+   "Targets total 84.0% invested, 16.0% cash (10% reserve + 6.0% dry powder for the deeper zones). Deploy-now total 21.68% ($21,675).",
+   "Amounts from the app plan only (planRev 137: $100,000 cash, 0 shares everywhere). The earlier TEM-only Schwab-based allocation was removed.",
+   "Gamma flip and IV rank are n/a in the data; walls are open-interest walls. Oil price for COP is n/a in the data; TEM/QCOM/IONQ have no published price targets in the data.",
+   "Levels are 10/9 closes (markets closed Saturday)."
+  ],
+  "sources": "Trading Assistant long-term workups /workspace/trading_plan/<T>_20261010/longterm_plan.json (Alpaca SIP/OPRA, Cboe, 10/9 close), news_7d.md, FCX copper/macro note; app plan planRev 137."
  },
  "reanalyze": {
   "requestId": "c5720904-6261-4510-9788-29bb1accb369",
